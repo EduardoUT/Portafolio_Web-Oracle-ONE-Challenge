@@ -1,7 +1,7 @@
 Challenge Tres de Seis | Formación Front-End | Portafolio Personal
 
 # Portaforlio_Web-Oracle-ONE-Challenge
-![Challenge Alura Latam + Oracle](https://raw.githubusercontent.com/EduardoUT/Portafolio_Web-Oracle-ONE-Challenge/master/assets/challengeImage.jpg)
+![Challenge Alura Latam + Oracle](https://raw.githubusercontent.com/EduardoUT/Portafolio_Web-Oracle-ONE-Challenge/master/img/assets/challengeImage.jpg)
 
 Página Web:
 

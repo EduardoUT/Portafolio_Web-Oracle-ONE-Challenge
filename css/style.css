@@ -87,7 +87,13 @@ radio del borde de 1.6px*/
     margin-left: 0.5em;
     text-decoration: none;
     color: var(--font-color);
-    transition: all 0.3s ease-out;
+    /*Estableciendo tiempo de desplazamiento al pasar el mouse*/
+    transition: all 0.5s ease-out;
+}
+
+/*Desplazando links hacía abajo al pasar el mouse*/
+.headerPrincipal-nav .estiloLink-menu:hover {
+    transform: translate(0, 0.3em);
 }
 
 /*<--------------------------------------------------Fin Menú-------------------------------------------------->*/
@@ -166,6 +172,7 @@ radio del borde de 1.6px*/
     - Definiendo un espaciado interno superior e inferior de 6.4px.
     - Definiendo un borde solido de 3px.
     - Definiendo un ancho heredado del nav.
+    - Definiendo tiempo de transición al dar click.
     */
     .headerPrincipal-nav .estiloLink-menu {
         display: flex;
@@ -174,8 +181,18 @@ radio del borde de 1.6px*/
         padding: 0.4em 0 0.4em 0;
         border-top: solid 0.2em #464646;
         width: inherit;
+        transition: all 0.1s ease-out;
     }
 
+    /*
+    - Invirtiendo color de fondo con el de tipografía.
+    - Eliminando propiedad transform.
+    */
+    .headerPrincipal-nav .estiloLink-menu:active {
+        transform: none;
+        background-color: var(--font-color);
+        color: var(--color-fondo-primario);
+    }
 
 }
 

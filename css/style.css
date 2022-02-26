@@ -1,8 +1,8 @@
 /*Definiendo propiedad general*/
-*, 
+*,
 ::before,
 ::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*Dwefiniendo variables*/
@@ -47,7 +47,7 @@ de 88px*/
 }
 
 /*Contenedor de logotipo y autor centralizados verticalmente posicionados
-uno al lado del otro con una ancho de 172.8px y altura heredada de 88px*/
+uno al lado del otro con una ancho de 172.8px y altura de 88px*/
 .headerPrincipal .headerPrincipal-logo-autor {
     display: flex;
     align-items: center;
@@ -88,7 +88,6 @@ radio del borde de 1.6px*/
     text-decoration: none;
     color: var(--font-color);
     transition: all 0.3s ease-out;
-
 }
 
 /*<--------------------------------------------------Fin Menú-------------------------------------------------->*/
@@ -109,12 +108,75 @@ radio del borde de 1.6px*/
     background-position: center;
     background-attachment: fixed;
 }
+
 /*<-------------------------------------------Fin Sección Bienvenida------------------------------------------->*/
 
 
 /*<--------------------------------------------Responsividad Tablet-------------------------------------------->*/
 @media only screen and (max-width: 768px) {
-    .headerPrincipal-logo-autor {
-        
+
+    /*Cambiando la dirección flex a columna del icono/nombre autor y menú nav*/
+    .container .headerPrincipal {
+        flex-direction: column;
+    }
+
+    /*Definiendo tamaño de 100%, y centrando horizontalmente los elementos*/
+    .headerPrincipal .headerPrincipal-logo-autor {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
+    .headerPrincipal .headerPrincipal-nav {
+        width: 100%;
+        justify-content: center;
     }
 }
+
+/*<-------------------------------------------Fin Responsividad Tablet------------------------------------------->*/
+
+/*<-------------------------------------------Responsividad Celulares-------------------------------------------->*/
+@media only screen and (max-width: 636px) {
+
+    /*Definiendo altura de 132.8px al .headerPrincipal*/
+    .container .headerPrincipal {
+        height: 8.3em;
+    }
+
+    /*
+    - Se desplazará el menú en bloque en lugar de flex a fin de evitar 
+    que otros links se oculten del scroll vertical dentro del nav.
+    - Definiendo altura del nav de 66.4px.
+    - Habilitando la propiedad overflow-y de tipo scroll para navegar horizontalmente
+      por los items del menú.
+    - Deshabilitando el scroll horizontal dentro del nav. 
+    */
+    .headerPrincipal .headerPrincipal-nav {
+        display: block;
+        height: 5.5em;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    /*
+    - Definiendo orientación en filas en los links del menú.
+    - Alineando elementos al centro horizontalmente.
+    - Estableciendo un margen de 0, esto debido a que en la versión tablet y escritorio se estableció
+      un margen a la izquierda de cata link
+    - Definiendo un espaciado interno superior e inferior de 6.4px.
+    - Definiendo un borde solido de 3px.
+    - Definiendo un ancho heredado del nav.
+    */
+    .headerPrincipal-nav .estiloLink-menu {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.4em 0 0.4em 0;
+        border-top: solid 0.2em #464646;
+        width: inherit;
+    }
+
+
+}
+
+/*<-----------------------------------------Fin Responsividad Celulares----------------------------------------->*/

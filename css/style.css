@@ -115,6 +115,18 @@ radio del borde de 1.6px*/
     background-attachment: fixed;
 }
 
+.seccionBienvenida .seccionBienvenida-presentacion {}
+
+.seccionBienvenida-presentacion .seccionBienvenida-presentacion-encabezado {}
+
+.seccionBienvenida-presentacion .seccionBienvenida-presentacion-encabezado-titulo {}
+
+.seccionBienvenida-presentacion .seccionBienvenida-presentacion-parrafo {}
+
+.seccionBienvenida-presentacion .seccionBienvenida-presentacion-contactoLinks {}
+
+.seccionBienvenida .seccionBienvenida-imagen {}
+
 /*<-------------------------------------------Fin Sección Bienvenida------------------------------------------->*/
 
 

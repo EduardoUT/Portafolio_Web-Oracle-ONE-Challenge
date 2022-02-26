@@ -1,4 +1,121 @@
+/*Definiendo propiedad general*/
+*, 
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/*Dwefiniendo variables*/
+:root {
+    --font-family: 'Raleway', sans-serif;
+    --font-color: #464646;
+    --font-color-two: #ffffff;
+    --color-fondo-primario: #F5F5F5;
+}
+
 /*Definiendo propiedad smooth-scroll*/
 html {
     scroll-behavior: smooth;
+}
+
+/*Estableciendo contenedor para todas las secciones con un ancho de 1136px y
+centrado*/
+.container {
+    margin: 0 auto;
+    width: 71em;
+}
+
+/*<--------------------------------------------------Menú-------------------------------------------------->*/
+
+/*Header estático con elementos alineados al centro verticalmente y con una altura
+de 88px*/
+.headerPrincipal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background-color: var(--color-fondo-primario);
+    width: inherit;
+    height: 5.5em;
+
+}
+
+/*Contenedor de logotipo y autor centralizados verticalmente posicionados
+uno al lado del otro con una ancho de 190px y altura heredada de 88px*/
+.headerPrincipal .headerPrincipal-logo-autor {
+    display: flex;
+    align-items: center;
+    width: 11.875em;
+    height: 5.5em;
+}
+
+/*Link envolvente del logotipo sin subrayado y altura de 88px*/
+.headerPrincipal-logo-autor .headerPrincipal-link-logo-autor {
+    text-decoration: none;
+    height: 5.5em;
+}
+
+/*Logotipo principal del header con un tamaño de 88px*/
+.headerPrincipal-link-logo-autor .headerPrincipal-logo-autor {
+    width: 5.5em;
+}
+
+/*Remarcando titulo en negrita del autor*/
+.headerPrincipal-logo-autor .headerPrincipal-titulo-autor {
+    font-weight: bold;
+}
+
+/*Menú principal con un ancho de 650.083px*/
+.headerPrincipal .headerPrincipal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5.5em;
+    width: 41.5em;
+}
+
+/*Links de secciones de la página con un padding de 3.2px, borde de 2px y 
+radio del borde de 1.6px*/
+.headerPrincipal-nav .estiloLink-menu {
+    text-decoration: none;
+    padding: 0.2em;
+    border: solid 2px var(--font-color);
+    border-radius: 0.1em;
+    color: var(--font-color);
+    transition: all 0.3s ease-out;
+}
+
+/*Cambiando el color de fondo acorde al color de letra y el color de letra
+acorde al color de fondo*/
+.headerPrincipal-nav .estiloLink-menu:hover {
+    color: var(--font-color-two);
+    background-color: var(--font-color);
+}
+
+/*<--------------------------------------------------Fin Menú-------------------------------------------------->*/
+
+
+/*<---------------------------------------------Sección Bienvenida--------------------------------------------->*/
+
+/*Definiendo sección de bienvenida con altura y fondo de imagen completa.*/
+.seccionBienvenida {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background-image: url("../img/fondo/fondouno.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*<-------------------------------------------Fin Sección Bienvenida------------------------------------------->*/
+
+
+/*<--------------------------------------------Responsividad Tablet-------------------------------------------->*/
+@media only screen and (max-width: 768px) {
+    
 }

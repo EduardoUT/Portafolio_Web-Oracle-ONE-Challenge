@@ -22,7 +22,8 @@ html {
 centrado*/
 .container {
     margin: 0 auto;
-    width: 71em;
+    max-width: 71rem;
+    width: 88%;
 }
 
 /*<--------------------------------------------------Menú-------------------------------------------------->*/
@@ -116,6 +117,6 @@ acorde al color de fondo*/
 
 
 /*<--------------------------------------------Responsividad Tablet-------------------------------------------->*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 971px) {
     
 }

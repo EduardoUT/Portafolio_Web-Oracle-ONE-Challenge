@@ -58,13 +58,14 @@ uno al lado del otro con una ancho de 172.8px y altura heredada de 88px*/
 /*Link envolvente del logotipo sin subrayado y altura de 88px*/
 .headerPrincipal-logo-autor .headerPrincipal-link-logo-autor {
     text-decoration: none;
-    height: 3em;
+    height: 3.7em;
+    width: 3.2em;
 }
 
 /*Logotipo principal del header con un tamaño de 88px*/
 .headerPrincipal-link-logo-autor .headerPrincipal-logo-autor {
-    width: 3em;
-    height: 3em;
+    height: inherit;
+    width: inherit;
 }
 
 /*Remarcando titulo en negrita del autor*/

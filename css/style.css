@@ -23,14 +23,14 @@ centrado*/
 .container {
     margin: 0 auto;
     max-width: 71rem;
-    width: 88%;
+    width: 100%;
 }
 
 /*<--------------------------------------------------Menú-------------------------------------------------->*/
 
 /*Header estático con elementos alineados al centro verticalmente y con una altura
 de 88px*/
-.headerPrincipal {
+.container .headerPrincipal {
     position: fixed;
     display: flex;
     align-items: center;
@@ -38,29 +38,33 @@ de 88px*/
     font-family: var(--font-family);
     color: var(--font-color);
     background-color: var(--color-fondo-primario);
-    width: inherit;
     height: 5.5em;
-
+    /*El tamaño es heredado de la clase .container, max-width permite evitar que se desborde
+    el contenido del contenedor al redimencionar la ventana del navegador de escritorio, width
+    permite que los items se desplacen através del espacio libre*/
+    max-width: inherit;
+    width: inherit;
 }
 
 /*Contenedor de logotipo y autor centralizados verticalmente posicionados
-uno al lado del otro con una ancho de 190px y altura heredada de 88px*/
+uno al lado del otro con una ancho de 172.8px y altura heredada de 88px*/
 .headerPrincipal .headerPrincipal-logo-autor {
     display: flex;
     align-items: center;
-    width: 11.875em;
+    width: 8.3em;
     height: 5.5em;
 }
 
 /*Link envolvente del logotipo sin subrayado y altura de 88px*/
 .headerPrincipal-logo-autor .headerPrincipal-link-logo-autor {
     text-decoration: none;
-    height: 5.5em;
+    height: 3em;
 }
 
 /*Logotipo principal del header con un tamaño de 88px*/
 .headerPrincipal-link-logo-autor .headerPrincipal-logo-autor {
-    width: 5.5em;
+    width: 3em;
+    height: 3em;
 }
 
 /*Remarcando titulo en negrita del autor*/
@@ -72,7 +76,6 @@ uno al lado del otro con una ancho de 190px y altura heredada de 88px*/
 .headerPrincipal .headerPrincipal-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 5.5em;
     width: 41.5em;
 }
@@ -80,19 +83,11 @@ uno al lado del otro con una ancho de 190px y altura heredada de 88px*/
 /*Links de secciones de la página con un padding de 3.2px, borde de 2px y 
 radio del borde de 1.6px*/
 .headerPrincipal-nav .estiloLink-menu {
+    margin-left: 0.5em;
     text-decoration: none;
-    padding: 0.2em;
-    border: solid 2px var(--font-color);
-    border-radius: 0.1em;
     color: var(--font-color);
     transition: all 0.3s ease-out;
-}
 
-/*Cambiando el color de fondo acorde al color de letra y el color de letra
-acorde al color de fondo*/
-.headerPrincipal-nav .estiloLink-menu:hover {
-    color: var(--font-color-two);
-    background-color: var(--font-color);
 }
 
 /*<--------------------------------------------------Fin Menú-------------------------------------------------->*/
@@ -117,6 +112,8 @@ acorde al color de fondo*/
 
 
 /*<--------------------------------------------Responsividad Tablet-------------------------------------------->*/
-@media only screen and (max-width: 971px) {
-    
+@media only screen and (max-width: 768px) {
+    .headerPrincipal-logo-autor {
+        
+    }
 }

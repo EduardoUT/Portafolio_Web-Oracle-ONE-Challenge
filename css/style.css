@@ -181,15 +181,18 @@ radio del borde de 1.6px*/
         padding: 0.4em 0 0.4em 0;
         border-top: solid 0.2em #464646;
         width: inherit;
-        transition: all 0.1s ease-out;
+        transition: all 0.2s ease-out;
     }
 
     /*
-    - Invirtiendo color de fondo con el de tipografía.
-    - Eliminando propiedad transform.
+    - Eliminando propiedad transform :hover.
+    - Invirtiendo color de fondo con el de tipografía :active.
     */
-    .headerPrincipal-nav .estiloLink-menu:active {
+    .headerPrincipal-nav .estiloLink-menu:hover {
         transform: none;
+    }
+
+    .headerPrincipal-nav .estiloLink-menu:active {
         background-color: var(--font-color);
         color: var(--color-fondo-primario);
     }

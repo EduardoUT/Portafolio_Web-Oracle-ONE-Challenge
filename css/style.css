@@ -103,7 +103,6 @@ radio del borde de 1.6px*/
 
 /*Definiendo sección de bienvenida con altura y fondo de imagen completa.*/
 .seccionBienvenida {
-    display: flex;
     width: 100%;
     height: 100vh;
     font-family: var(--font-family);
@@ -115,7 +114,11 @@ radio del borde de 1.6px*/
     background-attachment: fixed;
 }
 
-.seccionBienvenida .seccionBienvenida-presentacion {}
+.container .seccionBienvenida-presentacion {
+    /*display: flex;*/
+    position: relative;
+    top: 5.5em;
+}
 
 .seccionBienvenida-presentacion .seccionBienvenida-presentacion-encabezado {}
 
@@ -125,7 +128,13 @@ radio del borde de 1.6px*/
 
 .seccionBienvenida-presentacion .seccionBienvenida-presentacion-contactoLinks {}
 
-.seccionBienvenida .seccionBienvenida-imagen {}
+.seccionBienvenida-presentacion-contactoLinks .seccionBienvenida-presentacion-contactoLinks-link-li {}
+
+.seccionBienvenida-presentacion-contactoLinks-link-li .links-contacto {}
+
+.links-contacto .arrow {}
+
+.container .seccionBienvenida-imagen {}
 
 /*<-------------------------------------------Fin Sección Bienvenida------------------------------------------->*/
 

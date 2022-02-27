@@ -12,10 +12,14 @@
 </head>
 
 <body>
+    <!--El texto e imagen se desplazan flex
+    Este item padre tendrá el color de fondo blanco-->
 
-    <div class="container">
-        <header class="headerPrincipal">
 
+
+
+    <header class="headerPrincipal">
+        <div class="container">
             <div class="headerPrincipal-logo-autor">
                 <a class="headerPrincipal-link-logo-autor" href="#seccionBienvenida" title="Ir a Casa">
                     <img class="headerPrincipal-logo-autor" src="img/iconos/logo_personal.png"
@@ -26,7 +30,8 @@
 
             <!--Todos los links excepto el último se ocultarán en la versión tablet-->
             <nav class="headerPrincipal-nav">
-                <a class="headerPrincipal-nav-link estiloLink-menu" href="#" title="Ir a sección Sobre mi">Sobre mi</a>
+                <a class="headerPrincipal-nav-link estiloLink-menu" href="#" title="Ir a sección Sobre mi">Sobre
+                    mi</a>
                 <a class="headerPrincipal-nav-link estiloLink-menu" href="#" title="Ir a sección Skills">Skills</a>
                 <a class="headerPrincipal-nav-link estiloLink-menu" href="#" title="Ir a sección Hobbies">Hobbies</a>
                 <a class="headerPrincipal-nav-link estiloLink-menu" href="#"
@@ -36,45 +41,43 @@
                 <a class="headerPrincipal-correo-autor-link estiloLink-menu" href="#"
                     title="Correo: eduardoreyeshernandez98@gmail.com">eduardoreyeshernandez98@gmail.com</a>
             </nav>
-
-        </header>
-
-    </div>
-
-    <!--El texto e imagen se desplazan flex-->
-    <section class="seccionBienvenida" id="seccionBienvenida">
-        <div class="container">
-            <!--Los elementos hijos se desplazan en columna-->
-            <div class="seccionBienvenida-presentacion">
-                <header class="seccionBienvenida-presentacion-encabezado">
-                    <h1 class="seccionBienvenida-presentacion-encabezado-titulo">Hola, mi nombre es Eduardo Reyes
-                        Hernández, y construyo páginas web.</h1>
-                </header>
-                <p class="seccionBienvenida-presentacion-parrafo">Egresado de la Universidad Tecnológica Fidel
-                    Velázquez, actualmente soy estudiante del programa de Oracle Next Education en asociación con Altura
-                    LATAM, aprendiendo Javascript, HTML5 y CSS3.</p>
-                <!--Los siguientes elementos se desplazan en flex-->
-
-                <ul class="seccionBienvenida-presentacion-contactoLinks">
-                    <!--Al hacer hover sobre un li se desplazará hacá abajo-->
-                    <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
-                            href="">GitHub<img class="arrow" src=""></a></li>
-                    <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
-                            href="">LinkedIn<img class="arrow" src=""></a></li>
-                    <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
-                            href="">Instagram<img class="arrow" src=""></a></li>
-                    <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
-                            href="">Currículo<img class="arrow" src=""></a></li>
-                </ul>
-
-            </div>
-            <img class="seccionBienvenida-imagen" src="img/pic.jpg">
         </div>
-    </section>
-
-    <!--Crear un main con un container que le anteceda-->
+    </header>
 
 
+    <main class="seccionPrincipal">
+        <section class="seccionBienvenida">
+            <!--Los elementos hijos se desplazan en columna-->
+            <div class="container">
+                <article class="seccionBienvenida-presentacion">
+                    <header class="seccionBienvenida-presentacion-encabezado">
+                        <h1 class="seccionBienvenida-presentacion-encabezado-titulo">Hola, mi nombre es Eduardo Reyes
+                            Hernández, y construyo páginas web.</h1>
+                    </header>
+                    <p class="seccionBienvenida-presentacion-parrafo">Egresado de la Universidad Tecnológica Fidel
+                        Velázquez, actualmente soy estudiante del programa de Oracle Next Education en asociación con
+                        Altura
+                        LATAM, aprendiendo Javascript, HTML5 y CSS3.</p>
+                    <!--Los siguientes elementos se desplazan en flex-->
+
+                    <ul class="seccionBienvenida-presentacion-contactoLinks">
+                        <!--Al hacer hover sobre un li se desplazará hacá abajo-->
+                        <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
+                                href="">GitHub<img class="arrow" src=""></a></li>
+                        <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
+                                href="">LinkedIn<img class="arrow" src=""></a></li>
+                        <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
+                                href="">Instagram<img class="arrow" src=""></a></li>
+                        <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
+                                href="">Currículo<img class="arrow" src=""></a></li>
+                    </ul>
+
+                </article>
+                <img class="seccionBienvenida-imagen" src="img/pic.jpg">
+            </div>
+
+        </section>
+    </main>
 
 </body>
 

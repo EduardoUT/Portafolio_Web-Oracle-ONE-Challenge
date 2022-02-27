@@ -5,12 +5,37 @@
     box-sizing: border-box;
 }
 
-/*Dwefiniendo variables*/
+/*Dwefiniendo variables genéricas*/
 :root {
     --font-family: 'Raleway', sans-serif;
     --font-color: #464646;
     --font-color-two: #ffffff;
     --color-fondo-primario: #F5F5F5;
+
+    /*<------------------Tamaños de letra------------------*/
+    /*Los siguientes tamaños se usan dependiendo el tamaño del dispositivo en los
+    selectores*/
+    /*Escritorio*/
+    --tamañoLetraEscritorio-titulos: 3.25em;/*52px*/
+    --tamañoLetraEscritorio-subtitulosSeccion: 2em;/*32px*/
+    --tamañoLetraEscritorio-subtitulosDscImagen: 1.375em;/*22px*/
+    --tamañoLetraEscritorio-parrafos-links-descripciones: 1em;/*16px*/
+    /*Tablet*/
+    --tamañoLetraTablet-titulosYSubtitulos: 1.375em;/*22px*/
+    --tamañoLetraTablet-parrafosYLinks-dscBienvenida-formularioTexto-subtitulosDscImagen: 1em;/*16px*/
+    --tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones: 0.875em;/*14px*/
+    /*Móvil*/
+    --tamañoLetraCelular-tituloBienvenida-subtitulosSeccion: 1.375em;/*22px*/
+    --tamañoLetraCelular-subtituloDescripcionImagen-botones-formularioTexto: 1em;/*16px*/
+    --tamañoLetraCelular-parrafos-links-descripcionImagen: 0.875em; /*14px*/
+    /*<----------------Fin Tamaños de letra-----------------*/
+
+    /*<------------------Tamaño container-------------------*/
+    /*1136px Para evitar desbordamiento*/
+    --tamaño-container: 71em; 
+    /*<----------------Fin Tamaño container-----------------*/
+    --padding-tablet: 0 2em;
+    --padding-celular: 0 1em;
 }
 
 /*Definiendo propiedad smooth-scroll*/
@@ -22,10 +47,10 @@ html {
 /*<------------------------------------------Selectores Genéricos------------------------------------------>*/
 
 /*Estableciendo contenedor genérico para
-respetar un ancho de 1136px y centrado de elementos*/
+respetar un ancho de 1136px como máximo, un 100% al reducir la ventana y centrado*/
 .container {
     margin: 0 auto;
-    max-width: 71rem;
+    max-width: var(--tamaño-container);
     width: 100%;
 }
 
@@ -33,6 +58,7 @@ respetar un ancho de 1136px y centrado de elementos*/
     font-family: var(--font-family);
     color: var(--font-color);
 }
+
 /*<----------------------------------------Fin Selectores Genéricos---------------------------------------->*/
 
 

@@ -18,8 +18,9 @@ html {
     scroll-behavior: smooth;
 }
 
-/*Estableciendo contenedor para todas las secciones con un ancho de 1136px y
-centrado*/
+
+/*Estableciendo contenedor genérico para
+respetar un ancho de 1136px y centrado de elementos*/
 .container {
     margin: 0 auto;
     max-width: 71rem;
@@ -27,10 +28,14 @@ centrado*/
 }
 
 /*<--------------------------------------------------Menú-------------------------------------------------->*/
-
+.headerPrincipal{
+    margin: 0 auto;
+    max-width: 71rem;
+    width: 100%;
+}
 /*Header estático con elementos alineados al centro verticalmente y con una altura
 de 88px*/
-.container .headerPrincipal {
+.headerPrincipal .container{
     position: fixed;
     display: flex;
     align-items: center;
@@ -42,13 +47,11 @@ de 88px*/
     /*El tamaño es heredado de la clase .container, max-width permite evitar que se desborde
     el contenido del contenedor al redimencionar la ventana del navegador de escritorio, width
     permite que los items se desplacen através del espacio libre*/
-    max-width: inherit;
-    width: inherit;
 }
 
 /*Contenedor de logotipo y autor centralizados verticalmente posicionados
 uno al lado del otro con una ancho de 172.8px y altura de 88px*/
-.headerPrincipal .headerPrincipal-logo-autor {
+.container .headerPrincipal-logo-autor {
     display: flex;
     align-items: center;
     width: 8.3em;
@@ -101,6 +104,11 @@ radio del borde de 1.6px*/
 
 /*<---------------------------------------------Sección Bienvenida--------------------------------------------->*/
 
+.seccionPrincipal {
+    width: 100%;
+    background-color: red;
+}
+
 /*Definiendo sección de bienvenida con altura y fondo de imagen completa.*/
 .seccionBienvenida {
     width: 100%;
@@ -114,10 +122,9 @@ radio del borde de 1.6px*/
     background-attachment: fixed;
 }
 
-.container .seccionBienvenida-presentacion {
+.seccionBienvenida-presentacion {
     /*display: flex;*/
-    position: relative;
-    top: 5.5em;
+    
 }
 
 .seccionBienvenida-presentacion .seccionBienvenida-presentacion-encabezado {}
@@ -143,18 +150,18 @@ radio del borde de 1.6px*/
 @media only screen and (max-width: 768px) {
 
     /*Cambiando la dirección flex a columna del icono/nombre autor y menú nav*/
-    .container .headerPrincipal {
+    .headerPrincipal .container {
         flex-direction: column;
     }
 
     /*Definiendo tamaño de 100%, y centrando horizontalmente los elementos*/
-    .headerPrincipal .headerPrincipal-logo-autor {
+    .container .headerPrincipal-logo-autor {
         width: 100%;
         justify-content: center;
     }
 
     /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
-    .headerPrincipal .headerPrincipal-nav {
+    .container .headerPrincipal-nav {
         width: 100%;
         justify-content: center;
     }
@@ -166,7 +173,7 @@ radio del borde de 1.6px*/
 @media only screen and (max-width: 636px) {
 
     /*Definiendo altura de 132.8px al .headerPrincipal*/
-    .container .headerPrincipal {
+    .headerPrincipal .container {
         height: 8.3em;
     }
 
@@ -178,7 +185,7 @@ radio del borde de 1.6px*/
       por los items del menú.
     - Deshabilitando el scroll horizontal dentro del nav. 
     */
-    .headerPrincipal .headerPrincipal-nav {
+    .container .headerPrincipal-nav {
         display: block;
         height: 5.5em;
         overflow-y: scroll;

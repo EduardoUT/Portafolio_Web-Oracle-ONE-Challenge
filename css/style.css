@@ -106,7 +106,7 @@ radio del borde de 1.6px*/
 
 .seccionPrincipal {
     width: 100%;
-    background-color: red;
+    background-color: var(--color-fondo-primario);
 }
 
 /*Definiendo sección de bienvenida con altura y fondo de imagen completa.*/

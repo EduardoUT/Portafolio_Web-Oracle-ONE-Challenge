@@ -12,33 +12,30 @@
 </head>
 
 <body>
-    <!--El texto e imagen se desplazan flex
-    Este item padre tendrá el color de fondo blanco-->
-
-
-
-
-    <header class="headerPrincipal container font-style">
-        <div class="container">
-            <div class="headerPrincipal-logo-autor">
-                <a class="headerPrincipal-link-logo-autor" href="#seccionBienvenida" title="Ir a Casa">
-                    <img class="headerPrincipal-img-autor" src="img/iconos/logo_personal.png"
+    <header class="headerPrincipal font-style">
+        <div class="headerPrincipalFlex">
+            <div class="headerPrincipalFlex-seccionBanner">
+                <a class="headerPrincipalFlex-seccionBanner-link" href="#seccionPresentacion" title="Ir a Casa">
+                    <img class="headerPrincipalFlex-seccionBanner-link-imgAutor" src="img/iconos/logo_personal.png"
                         alt="Logo Personal de Eduardo">
                 </a>
-                <h1 class="headerPrincipal-titulo-autor">Eduardo Reyes Hernández</h1>
+                <h1 class="headerPrincipalFlex-seccionBanner-tituloAutor">Eduardo Reyes Hernández</h1>
             </div>
 
             <!--Todos los links excepto el último se ocultarán en la versión tablet-->
-            <nav class="headerPrincipal-nav">
-                <a class="headerPrincipal-nav-link estiloLink-menu font-style" href="#" title="Ir a sección Sobre mi">Sobre
+            <nav class="headerPrincipalFlex-nav">
+                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
+                    title="Ir a sección Sobre mi">Sobre
                     mi</a>
-                <a class="headerPrincipal-nav-link estiloLink-menu font-style" href="#" title="Ir a sección Skills">Skills</a>
-                <a class="headerPrincipal-nav-link estiloLink-menu font-style" href="#" title="Ir a sección Hobbies">Hobbies</a>
-                <a class="headerPrincipal-nav-link estiloLink-menu font-style" href="#"
+                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
+                    title="Ir a sección Skills">Skills</a>
+                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
+                    title="Ir a sección Hobbies">Hobbies</a>
+                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
                     title="Ir a sección Formación">Formación</a>
-                <a class="headerPrincipal-nav-link estiloLink-menu font-style" href="#"
+                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
                     title="Ir a sección Proyectos">Proyectos</a>
-                <a class="headerPrincipal-correo-autor-link estiloLink-menu font-style" href="#"
+                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
                     title="Correo: eduardoreyeshernandez98@gmail.com">eduardoreyeshernandez98@gmail.com</a>
             </nav>
         </div>
@@ -46,37 +43,72 @@
 
 
     <main class="seccionPrincipal font-style">
-        <section class="seccionBienvenida">
+
+        <section class="seccionPresentacion">
             <!--Los elementos hijos se desplazan en columna-->
-            <div class="container">
-                <article class="seccionBienvenida-presentacion">
-                    <header class="seccionBienvenida-presentacion-encabezado">
-                        <h1 class="seccionBienvenida-presentacion-encabezado-titulo">Hola, mi nombre es Eduardo Reyes
-                            Hernández, y construyo páginas web.</h1>
-                    </header>
-                    <p class="seccionBienvenida-presentacion-parrafo">Egresado de la Universidad Tecnológica Fidel
-                        Velázquez, actualmente soy estudiante del programa de Oracle Next Education en asociación con
-                        Altura
-                        LATAM, aprendiendo Javascript, HTML5 y CSS3.</p>
-                    <!--Los siguientes elementos se desplazan en flex-->
+            <div class="containerMaxWidth">
 
-                    <ul class="seccionBienvenida-presentacion-contactoLinks">
-                        <!--Al hacer hover sobre un li se desplazará hacá abajo-->
-                        <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
-                                href="">GitHub<img class="arrow" src=""></a></li>
-                        <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
-                                href="">LinkedIn<img class="arrow" src=""></a></li>
-                        <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
-                                href="">Instagram<img class="arrow" src=""></a></li>
-                        <li class="seccionBienvenida-presentacion-contactoLinks-link-li"><a class="links-contacto"
-                                href="">Currículo<img class="arrow" src=""></a></li>
-                    </ul>
+                <header class="seccionPresentacion-encabezado">
+                    <h1 class="seccionPresentacion-encabezado-titulo tamaño-titulos">Hola,
+                        mi nombre es Eduardo Reyes
+                        Hernández, y construyo páginas web.</h1>
+                </header>
+                <p class="seccionPresentacion-parrafo tamaño-parrafos">Egresado de la
+                    Universidad Tecnológica Fidel
+                    Velázquez, actualmente soy estudiante del programa de Oracle Next Education en asociación con
+                    Altura
+                    LATAM, aprendiendo Javascript, HTML5 y CSS3.</p>
+                <!--Los siguientes elementos se desplazan en flex-->
 
-                </article>
-                <img class="seccionBienvenida-imagen" src="img/pic.jpg">
+                <ul class="seccionPresentacion-contactoLinks">
+                    <!--Al hacer hover sobre un li se desplazará hacá abajo-->
+                    <li class="seccionPresentacion-contactoLinks-link-li"><a class="links-contacto" href="">GitHub<img
+                                class="arrow" src=""></a></li>
+                    <li class="seccionPresentacion-contactoLinks-link-li"><a class="links-contacto" href="">LinkedIn<img
+                                class="arrow" src=""></a></li>
+                    <li class="seccionPresentacion-contactoLinks-link-li"><a class="links-contacto"
+                            href="">Instagram<img class="arrow" src=""></a></li>
+                    <li class="seccionPresentacion-contactoLinks-link-li"><a class="links-contacto"
+                            href="">Currículo<img class="arrow" src=""></a></li>
+                </ul>
+
+                <img class="seccionPresentacion-imagen" src="img/pic.jpg">
+
             </div>
 
         </section>
+
+        <section class="seccionSobreMi layoutFlex font-style">
+
+            <div class="containerMaxWidth">
+
+                <header class="encabezado">
+                    <h2 class="encabezadoSubtitulo"></h2>
+                </header>
+                <p class="parrafo"></p>
+
+            </div>
+
+        </section>
+
+        <section class="seccionSkills">
+
+            <div class="containerMaxWidth">
+
+                <header class="encabezado">
+                    <h2 class="encabezadoSubtitulo"></h2>
+                </header>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+
+        </section>
+
     </main>
 
 </body>

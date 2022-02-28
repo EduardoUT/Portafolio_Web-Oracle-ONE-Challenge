@@ -13,29 +13,28 @@
 
 <body>
     <header class="headerPrincipal font-style">
-        <div class="headerPrincipalFlex">
-            <div class="headerPrincipalFlex-seccionBanner">
-                <a class="headerPrincipalFlex-seccionBanner-link" href="#seccionPresentacion" title="Ir a Casa">
-                    <img class="headerPrincipalFlex-seccionBanner-link-imgAutor" src="img/iconos/logo_personal.png"
-                        alt="Logo Personal de Eduardo">
+        <div class="headerPrincipal-bannerMenu">
+            <div class="headerPrincipal-bannerMenu-seccionBanner">
+                <a class="headerPrincipal-bannerMenu-seccionBanner-link" href="#seccionPresentacion" title="Ir a Casa">
+                    <img class="headerPrincipal-bannerMenu-seccionBanner-link-imgAutor"
+                        src="img/iconos/logo_personal.png" alt="Logo Personal de Eduardo">
                 </a>
-                <h1 class="headerPrincipalFlex-seccionBanner-tituloAutor">Eduardo Reyes Hernández</h1>
+                <h1 class="headerPrincipal-bannerMenu-seccionBanner-tituloAutor">Eduardo Reyes Hernández</h1>
             </div>
 
             <!--Todos los links excepto el último se ocultarán en la versión tablet-->
-            <nav class="headerPrincipalFlex-nav">
-                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
-                    title="Ir a sección Sobre mi">Sobre
-                    mi</a>
-                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
+            <nav class="headerPrincipal-bannerMenu-nav">
+                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
+                    title="Ir a sección Sobre mi">Sobre mi</a>
+                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
                     title="Ir a sección Skills">Skills</a>
-                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
+                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
                     title="Ir a sección Hobbies">Hobbies</a>
-                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
+                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
                     title="Ir a sección Formación">Formación</a>
-                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
+                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
                     title="Ir a sección Proyectos">Proyectos</a>
-                <a class="headerPrincipalFlex-nav-link link-style estiloLink-menuCelular font-style" href="#"
+                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
                     title="Correo: eduardoreyeshernandez98@gmail.com">eduardoreyeshernandez98@gmail.com</a>
             </nav>
         </div>
@@ -47,32 +46,49 @@
         <section class="seccionPresentacion">
             <!--Los elementos hijos se desplazan en columna-->
             <div class="containerMaxWidth">
+                <div class="seccionPresentacion-datosPersonales">
+                    <header class="seccionPresentacion-datosPersonales-encabezado">
+                        <h1 class="seccionPresentacion-datosPersonales-encabezado-titulo tamaño-titulos">Hola,
+                            mi nombre es Eduardo Reyes
+                            Hernández, y construyo páginas web.
+                        </h1>
+                    </header>
+                    <p class="seccionPresentacion-datosPersonales-parrafo tamaño-parrafos">
+                        Egresado de la Universidad Tecnológica Fidel Velázquez, actualmente soy estudiante del programa
+                        de
+                        Oracle Next Education en asociación con Altura
+                        LATAM, aprendiendo Javascript, HTML5 y CSS3.
+                    </p>
+                    <!--Los siguientes elementos se desplazan en flex-->
 
-                <header class="seccionPresentacion-encabezado">
-                    <h1 class="seccionPresentacion-encabezado-titulo tamaño-titulos">Hola,
-                        mi nombre es Eduardo Reyes
-                        Hernández, y construyo páginas web.</h1>
-                </header>
-                <p class="seccionPresentacion-parrafo tamaño-parrafos">Egresado de la
-                    Universidad Tecnológica Fidel
-                    Velázquez, actualmente soy estudiante del programa de Oracle Next Education en asociación con
-                    Altura
-                    LATAM, aprendiendo Javascript, HTML5 y CSS3.</p>
-                <!--Los siguientes elementos se desplazan en flex-->
+                    <ul class="seccionPresentacion-datosPersonales-contacto">
+                        <!--Al hacer hover sobre un li se desplazará hacá abajo-->
+                        <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
+                            <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">GitHub
+                                <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha" src="">
+                            </a>
+                        </li>
+                        <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
+                            <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">LinkedIn
+                                <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha" src="">
+                            </a>
+                        </li>
+                        <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
+                            <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">Instagram
+                                <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha" src="">
+                            </a>
+                        </li>
+                        <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
+                            <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">Currículo
+                                <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha" src="">
+                            </a>
+                        </li>
+                    </ul>
 
-                <ul class="seccionPresentacion-contactoLinks">
-                    <!--Al hacer hover sobre un li se desplazará hacá abajo-->
-                    <li class="seccionPresentacion-contactoLinks-link-li"><a class="links-contacto" href="">GitHub<img
-                                class="arrow" src=""></a></li>
-                    <li class="seccionPresentacion-contactoLinks-link-li"><a class="links-contacto" href="">LinkedIn<img
-                                class="arrow" src=""></a></li>
-                    <li class="seccionPresentacion-contactoLinks-link-li"><a class="links-contacto"
-                            href="">Instagram<img class="arrow" src=""></a></li>
-                    <li class="seccionPresentacion-contactoLinks-link-li"><a class="links-contacto"
-                            href="">Currículo<img class="arrow" src=""></a></li>
-                </ul>
+                    <img class="seccionPresentacion-datosPersonales-foto" src="img/pic.jpg">
+                </div>
 
-                <img class="seccionPresentacion-imagen" src="img/pic.jpg">
+
 
             </div>
 
@@ -82,11 +98,14 @@
 
             <div class="containerMaxWidth">
 
-                <!--Delante poner clase genérica referente al tamaño de cada letra-->
-                <header class="seccionSobreMi-encabezado">
-                    <h2 class="seccionSobreMi-encabezadoSubtitulo"></h2>
-                </header>
-                <p class="parrafo"></p>
+                <div class="seccionSobreMi-biografia">
+                    <!--Delante poner clase genérica referente al tamaño de cada letra-->
+                    <header class="seccionSobreMi-biografia-encabezado">
+                        <h2 class="seccionSobreMi-biografia-encabezado-subtitulo"></h2>
+                    </header>
+                    <p class="secccionSobreMi-biografia-parrafo"></p>
+
+                </div>
 
             </div>
 
@@ -96,19 +115,43 @@
 
             <div class="containerMaxWidth">
 
-                <header class="encabezado">
-                    <h2 class="encabezadoSubtitulo"></h2>
-                </header>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="seccionSkills-lenguajesProgramacion">
+                    <header class="seccionSkills-lenguajesProgramacion-encabezado">
+                        <h2 class="secccionSkills-lenguajesProgramacion-encabezado-subtitulo"></h2>
+                    </header>
+                    <ul class="seccionSkills-lenguajesProgramacion-lenguajes">
+                        <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
+                            <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
+                            <p class="font-style">
+
+                            </p>
+                        </li>
+                        <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
+                            <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
+                            <p class="font-style">
+                                
+                            </p>
+                        </li>
+                        <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
+                            <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
+                            <p class="font-style">
+                                
+                            </p>
+                        </li>
+                        <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
+                            <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
+                            <p class="font-style">
+                                
+                            </p>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
 
         </section>
+
+        <!--Descargar imagenes de proyectos o capturas-->
 
     </main>
 

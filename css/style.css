@@ -137,7 +137,7 @@ uno al lado del otro con una ancho de 172.8px y altura de 88px*/
 .headerPrincipalFlex-seccionBanner {
     display: flex;
     align-items: center;
-    width: 8.1em;
+    width: 7.5em;
     height: inherit;
 }
 
@@ -148,7 +148,7 @@ uno al lado del otro con una ancho de 172.8px y altura de 88px*/
 
 /*Logotipo principal del header con un tamaño de 88px*/
 .headerPrincipalFlex-seccionBanner-link-imgAutor {
-    width: 2.8em;
+    width: 2.2em;
 }
 
 /*Remarcando titulo en negrita del autor*/
@@ -160,6 +160,7 @@ uno al lado del otro con una ancho de 172.8px y altura de 88px*/
 .headerPrincipalFlex-nav {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     height: 5.5em;
     width: 41.5em;
 }
@@ -220,14 +221,13 @@ radio del borde de 1.6px*/
 
     /*Definiendo tamaño de 100%, y centrando horizontalmente los elementos*/
     .headerPrincipalFlex-seccionBanner {
-        width: 100%;
         justify-content: center;
+        width: 100%;
     }
 
     /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
     .headerPrincipalFlex-nav {
         width: 100%;
-        justify-content: center;
     }
 }
 

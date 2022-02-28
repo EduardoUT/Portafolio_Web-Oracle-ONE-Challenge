@@ -62,7 +62,6 @@ en el modo responsive exceptuando al header*/
 }
 
 .link-style {
-    margin-left: 0.5em;
     text-decoration: none;
     /*Estableciendo tiempo de desplazamiento al pasar el mouse*/
     transition: all 0.5s ease-out;
@@ -121,7 +120,7 @@ de max-width y margin que ambos poseen para alinearse al centro de la página*/
 
 /*Header posicionado fijamente arriba con elementos alineados al centro verticalmente, con una altura
 de 88px y un ancho acorde a la variable --tamaño-containerMaxWidth*/
-.headerPrincipal .headerPrincipalFlex {
+.headerPrincipal .headerPrincipal-bannerMenu {
     position: fixed;
     display: flex;
     align-items: center;
@@ -134,7 +133,7 @@ de 88px y un ancho acorde a la variable --tamaño-containerMaxWidth*/
 
 /*Contenedor de logotipo y autor centralizados verticalmente posicionados
 uno al lado del otro con una ancho de 172.8px y altura de 88px*/
-.headerPrincipalFlex-seccionBanner {
+.headerPrincipal-bannerMenu-seccionBanner {
     display: flex;
     align-items: center;
     width: 7.5em;
@@ -142,27 +141,31 @@ uno al lado del otro con una ancho de 172.8px y altura de 88px*/
 }
 
 /*Link envolvente del logotipo sin subrayado y altura de 88px*/
-.headerPrincipalFlex-seccionBanner-link {
+.headerPrincipal-bannerMenu-seccionBanner-link {
     text-decoration: none;
 }
 
 /*Logotipo principal del header con un tamaño de 88px*/
-.headerPrincipalFlex-seccionBanner-link-imgAutor {
+.headerPrincipal-bannerMenu-seccionBanner-link-imgAutor {
     width: 2.2em;
 }
 
 /*Remarcando titulo en negrita del autor*/
-.headerPrincipalFlex-seccionBanner-tituloAutor{
+.headerPrincipal-bannerMenu-seccionBanner-tituloAutor{
     font-weight: bold;
 }
 
 /*Menú principal con un ancho de 650.083px*/
-.headerPrincipalFlex-nav {
+.headerPrincipal-bannerMenu-nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 5.5em;
     width: 41.5em;
+}
+
+.headerPrincipal-bannerMenu-nav-link {
+    text-decoration: none;
 }
 
 /*Links de secciones de la página con un padding de 3.2px, borde de 2px y 
@@ -174,7 +177,7 @@ radio del borde de 1.6px*/
 /*<--------------------------------------------------Fin Menú-------------------------------------------------->*/
 
 
-/*<---------------------------------------------Sección Bienvenida--------------------------------------------->*/
+/*<--------------------------------------------Sección Presentación-------------------------------------------->*/
 
 .seccionPrincipal {
     width: 100%;
@@ -192,41 +195,42 @@ radio del borde de 1.6px*/
     background-attachment: fixed;
 }
 
-.seccionPresentacion-encabezado {}
 
-.seccionPresentacion-encabezado-titulo {}
+.seccionPresentacion-datosPersonales-encabezado {}
 
-.seccionPresentacion-parrafo {}
+.seccionPresentacion-datosPersonales-encabezado-titulo {}
 
-.seccionPresentacion-contactoLinks {}
+.seccionPresentacion-datosPersonales-parrafo {}
 
-.seccionPresentacion-contactoLinks-link-li {}
+.seccionPresentacion-datosPersonales-contacto {}
 
-.seccionPresentacion-contactoLinks-link-li .links-contacto {}
+.seccionPresentacion-datosPersonales-contacto-elementoLi {}
 
-.links-contacto .arrow {}
+.seccionPresentacion-datosPersonales-contacto-elementoLi-link .links-contacto {}
 
-.seccionPresentacion-imagen {}
+.seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha {}
 
-/*<-------------------------------------------Fin Sección Bienvenida------------------------------------------->*/
+.seccionPresentacion-datosPersonales-foto {}
+
+/*<------------------------------------------Fin Sección Presentación------------------------------------------>*/
 
 
 /*<--------------------------------------------Responsividad Tablet-------------------------------------------->*/
 @media only screen and (max-width: 768px) {
 
     /*Cambiando la dirección flex a columna del icono/nombre autor y menú nav*/
-    .headerPrincipalFlex {
+    .headerPrincipal-bannerMenu {
         flex-direction: column;
     }
 
     /*Definiendo tamaño de 100%, y centrando horizontalmente los elementos*/
-    .headerPrincipalFlex-seccionBanner {
+    .headerPrincipal-bannerMenu-seccionBanner {
         justify-content: center;
         width: 100%;
     }
 
     /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
-    .headerPrincipalFlex-nav {
+    .headerPrincipal-bannerMenu-nav {
         width: 100%;
     }
 }
@@ -237,7 +241,7 @@ radio del borde de 1.6px*/
 @media only screen and (max-width: 636px) {
 
     /*Definiendo altura de 132.8px al .headerPrincipal*/
-    .headerPrincipal .headerPrincipalFlex {
+    .headerPrincipal .headerPrincipal-bannerMenu {
         height: 8.3em;
     }
 
@@ -249,7 +253,7 @@ radio del borde de 1.6px*/
       por los items del menú.
     - Deshabilitando el scroll horizontal dentro del nav. 
     */
-    .headerPrincipalFlex-nav {
+    .headerPrincipal-bannerMenu-nav {
         display: block;
         height: 8.5em;
         overflow-y: scroll;
@@ -266,7 +270,7 @@ radio del borde de 1.6px*/
     - Definiendo un ancho heredado del nav.
     - Definiendo tiempo de transición al dar click.
     */
-    .headerPrincipalFlex-nav .estiloLink-menuCelular {
+    .headerPrincipal-bannerMenu-nav .estiloLink-menuCelular {
         display: flex;
         justify-content: center;
         margin: 0;
@@ -280,11 +284,11 @@ radio del borde de 1.6px*/
     - Eliminando propiedad transform :hover.
     - Invirtiendo color de fondo con el de tipografía :active.
     */
-    .headerPrincipalFlex-nav .estiloLink-menuCelular:hover {
+    .headerPrincipal-bannerMenu-nav .estiloLink-menuCelular:hover {
         transform: none;
     }
 
-    .headerPrincipalFlex-nav .estiloLink-menuCelular:active {
+    .headerPrincipal-bannerMenu-nav .estiloLink-menuCelular:active {
         background-color: var(--font-color);
         color: var(--color-fondo-primario);
     }

@@ -42,6 +42,8 @@
 /*Definiendo propiedad smooth-scroll*/
 html {
     scroll-behavior: smooth;
+    font-family: var(--font-family);
+    color: var(--font-color);
 }
 
 

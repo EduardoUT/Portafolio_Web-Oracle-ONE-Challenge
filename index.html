@@ -2,162 +2,434 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X.UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/iconos/logo_personal.png">
-    <title>Portafolio | Eduardo Reyes Hernández</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X.UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="img/iconos/logo_personal.png">
+   <title>Portafolio | Eduardo Reyes Hernández</title>
 </head>
 
 <body>
-    <header class="headerPrincipal font-style">
-        <div class="headerPrincipal-bannerMenu">
-            <div class="headerPrincipal-bannerMenu-seccionBanner">
-                <a class="headerPrincipal-bannerMenu-seccionBanner-link" href="#seccionPresentacion" title="Ir a Casa">
-                    <img class="headerPrincipal-bannerMenu-seccionBanner-link-imgAutor"
-                        src="img/iconos/logo_personal.png" alt="Logo Personal de Eduardo">
-                </a>
-                <h1 class="headerPrincipal-bannerMenu-seccionBanner-tituloAutor">Eduardo Reyes Hernández</h1>
+   <header class="headerPrincipal font-style">
+      <div class="headerPrincipal-bannerMenu">
+         <div class="headerPrincipal-bannerMenu-seccionBanner">
+            <a class="headerPrincipal-bannerMenu-seccionBanner-link" href="#seccionPresentacion" title="Ir a Casa">
+               <img class="headerPrincipal-bannerMenu-seccionBanner-link-imgAutor" src="img/iconos/logo_personal.png"
+                  alt="Logo Personal de Eduardo">
+            </a>
+            <h1 class="headerPrincipal-bannerMenu-seccionBanner-tituloAutor">Eduardo Reyes Hernández</h1>
+         </div>
+
+         <!--Todos los links excepto el último se ocultarán en la versión tablet-->
+         <nav class="headerPrincipal-bannerMenu-nav">
+            <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
+               title="Ir a sección Sobre mi">Sobre mi</a>
+            <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
+               title="Ir a sección Skills">Skills</a>
+            <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
+               title="Ir a sección Hobbies">Hobbies</a>
+            <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
+               title="Ir a sección Formación">Formación</a>
+            <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
+               title="Ir a sección Proyectos">Proyectos</a>
+            <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
+               title="Correo: eduardoreyeshernandez98@gmail.com">eduardoreyeshernandez98@gmail.com</a>
+         </nav>
+      </div>
+   </header>
+
+
+   <main class="seccionPrincipal font-style">
+
+      <section class="seccionPresentacion">
+         <!--Los elementos hijos se desplazan en columna-->
+         <div class="containerMaxWidth">
+            <div class="seccionPresentacion-datosPersonales">
+               <header class="seccionPresentacion-datosPersonales-encabezado">
+                  <h1 class="seccionPresentacion-datosPersonales-encabezado-titulo tamaño-titulos">Hola,
+                     mi nombre es Eduardo Reyes
+                     Hernández, y construyo páginas web.
+                  </h1>
+               </header>
+               <p class="seccionPresentacion-datosPersonales-parrafo tamaño-parrafos">
+                  Egresado de la Universidad Tecnológica Fidel Velázquez, actualmente soy estudiante del programa
+                  de
+                  Oracle Next Education en asociación con Altura
+                  LATAM, aprendiendo Javascript, HTML5 y CSS3.
+               </p>
+               <!--Los siguientes elementos se desplazan en flex-->
+
+               <ul class="seccionPresentacion-datosPersonales-contacto">
+                  <!--Al hacer hover sobre un li se desplazará hacá abajo-->
+                  <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
+                     <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">GitHub
+                        <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha" src="">
+                     </a>
+                  </li>
+                  <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
+                     <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">LinkedIn
+                        <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha" src="">
+                     </a>
+                  </li>
+                  <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
+                     <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">Instagram
+                        <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha" src="">
+                     </a>
+                  </li>
+                  <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
+                     <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">Currículo
+                        <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha" src="">
+                     </a>
+                  </li>
+               </ul>
+
+               <img class="seccionPresentacion-datosPersonales-foto" src="img/pic.jpg">
             </div>
 
-            <!--Todos los links excepto el último se ocultarán en la versión tablet-->
-            <nav class="headerPrincipal-bannerMenu-nav">
-                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
-                    title="Ir a sección Sobre mi">Sobre mi</a>
-                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
-                    title="Ir a sección Skills">Skills</a>
-                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
-                    title="Ir a sección Hobbies">Hobbies</a>
-                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
-                    title="Ir a sección Formación">Formación</a>
-                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
-                    title="Ir a sección Proyectos">Proyectos</a>
-                <a class="headerPrincipal-bannerMenu-nav-link link-style estiloLink-menuCelular font-style" href="#"
-                    title="Correo: eduardoreyeshernandez98@gmail.com">eduardoreyeshernandez98@gmail.com</a>
-            </nav>
-        </div>
-    </header>
+         </div>
 
+      </section>
 
-    <main class="seccionPrincipal font-style">
+      <section class="seccionSobreMi font-style">
 
-        <section class="seccionPresentacion">
-            <!--Los elementos hijos se desplazan en columna-->
-            <div class="containerMaxWidth">
-                <div class="seccionPresentacion-datosPersonales">
-                    <header class="seccionPresentacion-datosPersonales-encabezado">
-                        <h1 class="seccionPresentacion-datosPersonales-encabezado-titulo tamaño-titulos">Hola,
-                            mi nombre es Eduardo Reyes
-                            Hernández, y construyo páginas web.
-                        </h1>
-                    </header>
-                    <p class="seccionPresentacion-datosPersonales-parrafo tamaño-parrafos">
-                        Egresado de la Universidad Tecnológica Fidel Velázquez, actualmente soy estudiante del programa
-                        de
-                        Oracle Next Education en asociación con Altura
-                        LATAM, aprendiendo Javascript, HTML5 y CSS3.
-                    </p>
-                    <!--Los siguientes elementos se desplazan en flex-->
+         <div class="containerMaxWidth">
 
-                    <ul class="seccionPresentacion-datosPersonales-contacto">
-                        <!--Al hacer hover sobre un li se desplazará hacá abajo-->
-                        <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
-                            <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">GitHub
-                                <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha"
-                                    src="">
-                            </a>
-                        </li>
-                        <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
-                            <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">LinkedIn
-                                <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha"
-                                    src="">
-                            </a>
-                        </li>
-                        <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
-                            <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">Instagram
-                                <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha"
-                                    src="">
-                            </a>
-                        </li>
-                        <li class="seccionPresentacion-datosPersonales-contacto-elementoLi">
-                            <a class="seccionPresentacion-datosPersonales-contacto-elementoLi-link" href="">Currículo
-                                <img class="seccionPresentacion-datosPersonales-contacto-elementoLi-link-iconoFlecha"
-                                    src="">
-                            </a>
-                        </li>
-                    </ul>
-
-                    <img class="seccionPresentacion-datosPersonales-foto" src="img/pic.jpg">
-                </div>
-
-
-
-            </div>
-
-        </section>
-
-        <section class="seccionSobreMi layoutFlex font-style">
-
-            <div class="containerMaxWidth">
-
-                <div class="seccionSobreMi-biografia">
-                    <!--Delante poner clase genérica referente al tamaño de cada letra-->
-                    <header class="seccionSobreMi-biografia-encabezado">
-                        <h2 class="seccionSobreMi-biografia-encabezado-subtitulo"></h2>
-                    </header>
-                    <p class="secccionSobreMi-biografia-parrafo"></p>
-
-                </div>
+            <div class="seccionSobreMi-biografia">
+               <!--Delante poner clase genérica referente al tamaño de cada letra-->
+               <header class="seccionSobreMi-biografia-encabezado">
+                  <h2 class="seccionSobreMi-biografia-encabezado-subtitulo">Sobre mi</h2>
+               </header>
+               <p class="secccionSobreMi-biografia-parrafo"></p>
 
             </div>
 
-        </section>
+         </div>
 
-        <section class="seccionSkills">
+      </section>
 
-            <div class="containerMaxWidth">
+      <section class="seccionSkillsHobbiesExperiencia">
 
-                <div class="seccionSkills-lenguajesProgramacion">
-                    <header class="seccionSkills-lenguajesProgramacion-encabezado">
-                        <h2 class="secccionSkills-lenguajesProgramacion-encabezado-subtitulo"></h2>
-                    </header>
-                    <ul class="seccionSkills-lenguajesProgramacion-lenguajes">
-                        <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
-                            <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
-                            <p class="font-style">
+         <div class="containerMaxWidth">
 
-                            </p>
-                        </li>
-                        <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
-                            <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
-                            <p class="font-style">
+            <div class="seccionSkills flexLayout">
+               <header class="seccionSkills-lenguajesProgramacion-encabezado">
+                  <h2 class="secccionSkills-lenguajesProgramacion-encabezado-subtitulo">Skills</h2>
+               </header>
+               <ul class="seccionSkills-lenguajesProgramacion-lenguajes flexGridSkillsAndHobbies">
+                  <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
+                     <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
+                     <p class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-parrafo font-style">
+                        HTML5
+                     </p>
+                  </li>
+                  <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
+                     <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
+                     <p class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-parrafo font-style">
+                        JavaScript
+                     </p>
+                  </li>
+                  <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
+                     <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
+                     <p class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-parrafo font-style">
+                        CSS3
+                     </p>
+                  </li>
+                  <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
+                     <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
+                     <p class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-parrafo font-style">
+                        Java
+                     </p>
+                  </li>
+                  <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
+                     <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
+                     <p class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-parrafo font-style">
+                        MySQL
+                     </p>
+                  </li>
+               </ul>
+            </div>
 
-                            </p>
-                        </li>
-                        <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
-                            <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
-                            <p class="font-style">
+            <div class="seccionHobbies flexLayout">
 
-                            </p>
-                        </li>
-                        <li class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi">
-                            <img class="seccionSkills-lenguajesProgramacion-lenguajes-elementoLi-icono" src="">
-                            <p class="font-style">
+               <header class="seccionHobbies-encabezado">
+                  <h2 class="secccionHobbies-encabezado-subtitulo">Hobbies</h2>
+               </header>
 
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+               <ul class="seccionHobbies-hobbies-elementoUl flexGridSkillsAndHobbies">
+                  <li class="seccionHobbies-hobbies-elementoUl-elementoLi">
+                     <img class="seccionHobbies-hobbies-elementoUl-elementoLi-icono" src="">
+                     <p class="seccionHobbies-hobbies-elementoUl-elementoLi-parrafo font-style">
+                        Oir Música
+                     </p>
+                  </li>
+                  <li class="seccionHobbies-lenguajesProgramacion-lenguajes-elementoLi">
+                     <img class="seccionHobbies-hobbies-elementoUl-elementoLi-icono" src="">
+                     <p class="seccionHobbies-hobbies-elementoUl-elementoLi-parrafo font-style">
+                        Ver Series
+                     </p>
+                  </li>
+                  <li class="seccionHobbies-lenguajesProgramacion-lenguajes-elementoLi">
+                     <img class="seccionSkills-hobbies-elementoUl-elementoLi-icono" src="">
+                     <p class="seccionHobbies-hobbies-elementoUl-elementoLi-parrafo font-style">
+                        Leer
+                     </p>
+                  </li>
+                  <li class="seccionHobbies-lenguajesProgramacion-lenguajes-elementoLi">
+                     <img class="seccionSkills-hobbies-elementoUl-elementoLi-icono" src="">
+                     <p class="seccionHobbies-hobbies-elementoUl-elementoLi-parrafo font-style">
+                        Ver Películas
+                     </p>
+                  </li>
+               </ul>
 
             </div>
 
-        </section>
+            <!--Se usará order column en flexLayout el column en las secciones
+                flex en los items del ul-->
+            <div class="seccionFormacionAcademica flexLayout">
 
-        <!--Descargar imagenes de proyectos o capturas-->
+               <header class="seccionFormacionAcademica-encabezado">
+                  <h2 class="seccionFormacionAcademica-encabezado-subtitulo">Formación Académica</h2>
+               </header>
 
-    </main>
+               <ul class="seccionFormacionAcademica-instituciones">
+
+                  <li class="seccionFormacionAcademica-instituciones-institucion">
+                     <img class="seccionFormacionAcademica-instituciones-institucion-imagenInstitucion">
+                     <p
+                        class="seccionFormacionAcademica-instituciones-institucion-parrafo tamañoLetraSubtituloDescripcionImagen font-style">
+                        Ingeniería en Tecnologías de la información: Área Sistemas Informáticos.</p>
+                     <p
+                        class="seccionFormacionAcademica-instituciones-institucion-parrafo tamañoLetraDescripcionImagen font-style">
+                        2020 - UTFV</p>
+                  </li>
+                  <li class="seccionFormacionAcademica-instituciones-institucion">
+                     <img class="seccionFormacionAcademica-instituciones-institucion-imagenInstitucion">
+                     <p
+                        class="seccionFormacionAcademica-instituciones-institucion-parrafo tamañoLetraSubtituloDescripcionImagen font-style">
+                        Diseño Web Responsivo</p>
+                     <p
+                        class="seccionFormacionAcademica-instituciones-institucion-parrafo tamañoLetraDescripcionImagen font-style">
+                        2021 - freeCodeCamp.org</p>
+                  </li>
+                  <li class="seccionFormacionAcademica-instituciones-institucion">
+                     <img class="seccionFormacionAcademica-instituciones-institucion-imagenInstitucion">
+                     <p
+                        class="seccionFormacionAcademica-instituciones-institucion-parrafo tamañoLetraSubtituloDescripcionImagen font-style">
+                        Formación en UX Design</p>
+                     <p
+                        class="seccionFormacionAcademica-instituciones-institucion-parrafo tamañoLetraDescripcionImagen font-style">
+                        2022 - Alura Latam</p>
+                  </li>
+
+               </ul>
+
+            </div>
+
+         </div>
+
+      </section>
+
+      <section class="seccionExperienciaProfesional">
+
+         <div class="containerMaxWidth">
+            <!--column-->
+            <div class="seccionExperienciaProfesional-experienciasArea">
+
+               <header class="seccionExperienciaProfesional-experienciasArea-encabezado">
+                  <h2 class="seccionExperienciaProfesional-experienciasArea-encabezado-subtitulo">Experiencia
+                     Profesional</h2>
+               </header>
+               <!--column-->
+               <div class="seccionExperienciaProfesional-experienciasArea-elementos">
+                  <!--Iniciará Row con propiedad en imagen order: 0 y info order: 1, después
+                        se irá inviertiendo al siguiente-->
+                  <!--1-->
+                  <div class="seccionExperienciaProfesional-experienciasArea-elementos-item">
+                     <img class="seccionExperienciaProfesional-experienciasArea-elementos-imagen orderItem">
+                     <div class="seccionExperienciaProfesional-experienciasArea-elementos-info orderItem">
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-subtituloImagen">
+                           Encriptador de Texto.
+                        </p>
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-descripcionImagen">
+                           Challenge Oracle ONE y Alura.
+                        </p>
+                        <a
+                           class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonWhite">Repositorio</a>
+                        <a class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonBlue">Ver
+                           demo</a>
+                     </div>
+                  </div>
+
+                  <!--2-->
+                  <div class="seccionExperienciaProfesional-experienciasArea-elementos-item">
+                     <img class="seccionExperienciaProfesional-experienciasArea-elementos-imagen orderItem">
+                     <div class="seccionExperienciaProfesional-experienciasArea-elementos-info orderItem">
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-subtituloImagen">
+                           Juego del ahorcado con HTML5, CSS3 y Javascript.
+                        </p>
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-descripcionImagen">
+                           Challenge Oracle ONE y Alura.
+                        </p>
+                        <a
+                           class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonWhite">Repositorio</a>
+                        <a class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonBlue">Ver
+                           demo</a>
+                     </div>
+                  </div>
+
+                  <!--3-->
+                  <div class="seccionExperienciaProfesional-experienciasArea-elementos-item">
+                     <img class="seccionExperienciaProfesional-experienciasArea-elementos-imagen orderItem">
+                     <div class="seccionExperienciaProfesional-experienciasArea-elementos-info orderItem">
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-subtituloImagen">
+                           Construir un Formulario de Encuesta (Sólo Diseño Web Responsivo), con HTML5 y CSS3.
+                        </p>
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-descripcionImagen">
+                           Formación Diseño Web Responsivo freeCodeCamp.org
+                        </p>
+                        <a
+                           class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonWhite">Repositorio</a>
+                        <a class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonBlue">Ver
+                           demo</a>
+                     </div>
+                  </div>
+
+                  <!--4-->
+                  <div class="seccionExperienciaProfesional-experienciasArea-elementos-item">
+                     <img class="seccionExperienciaProfesional-experienciasArea-elementos-imagen orderItem">
+                     <div class="seccionExperienciaProfesional-experienciasArea-elementos-info orderItem">
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-subtituloImagen">
+                           Construir una Página de Tributo (Sólo Diseño Web Responsivo), con HTML5 y CSS3.
+                        </p>
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-descripcionImagen">
+                           Formación Diseño Web Responsivo freeCodeCamp.org
+                        </p>
+                        <a
+                           class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonWhite">Repositorio</a>
+                        <a class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonBlue">Ver
+                           demo</a>
+                     </div>
+                  </div>
+
+                  <!--5-->
+                  <div class="seccionExperienciaProfesional-experienciasArea-elementos-item">
+                     <img class="seccionExperienciaProfesional-experienciasArea-elementos-imagen orderItem">
+                     <div class="seccionExperienciaProfesional-experienciasArea-elementos-info orderItem">
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-subtituloImagen">
+                           Construir una Página de Documentación Técnica (Sólo Diseño Web Responsivo), con
+                           HTML5 y CSS3.
+                        </p>
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-descripcionImagen">
+                           Formación Diseño Web Responsivo freeCodeCamp.org
+                        </p>
+                        <a
+                           class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonWhite">Repositorio</a>
+                        <a class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonBlue">Ver
+                           demo</a>
+                     </div>
+                  </div>
+
+                  <!--6-->
+                  <div class="seccionExperienciaProfesional-experienciasArea-elementos-item">
+                     <img class="seccionExperienciaProfesional-experienciasArea-elementos-imagen orderItem">
+                     <div class="seccionExperienciaProfesional-experienciasArea-elementos-info orderItem">
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-subtituloImagen">
+                           Contruir una Landing Page de Productos (Sólo Diseño Web Responsivo), con HTML5 y
+                           CSS3.
+                        </p>
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-descripcionImagen">
+                           Formación Diseño Web Responsivo freeCodeCamp.org
+                        </p>
+                        <a
+                           class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonWhite">Repositorio</a>
+                        <a class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonBlue">Ver
+                           demo</a>
+                     </div>
+                  </div>
+
+                  <!--7-->
+                  <div class="seccionExperienciaProfesional-experienciasArea-elementos-item">
+                     <img class="seccionExperienciaProfesional-experienciasArea-elementos-imagen orderItem">
+                     <div class="seccionExperienciaProfesional-experienciasArea-elementos-info orderItem">
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-subtituloImagen">
+                           Construir un Portafolio Web Personal (Sólo Diseño Web Responsivo), con HTML5 y CSS3.
+                        </p>
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-descripcionImagen">
+                           Formación Diseño Web Responsivo freeCodeCamp.org
+                        </p>
+                        <a
+                           class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonWhite">Repositorio</a>
+                        <a class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonBlue">Ver
+                           demo</a>
+                     </div>
+                  </div>
+
+                  <div class="seccionExperienciaProfesional-experienciasArea-elementos-item">
+                     <img class="seccionExperienciaProfesional-experienciasArea-elementos-imagen orderItem">
+                     <div class="seccionExperienciaProfesional-experienciasArea-elementos-info orderItem">
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-subtituloImagen">
+                           Sistema Interno de Gestión de información para Gateway Telecomunicaciones S.A. de
+                           C.V.
+                        </p>
+                        <p class="seccionExperienciaProfesional-experienciasArea-elementos-info-descripcionImagen">
+                           Práctica Profesional de Estadía en Gateway Telecomunicaciones S.A. de C.V.
+                        </p>
+                        <a
+                           class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonWhite">Repositorio</a>
+                        <a class="seccionExperienciaProfesional-experienciasArea-elementos-info-button styleButtonBlue">Ver
+                           demo</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+
+      </section>
+
+      <section class="seccionFormularioContacto">
+         <div class="containerMaxWidth">
+            <div class="seccionFormularioContacto-items">
+               <img class="seccionFormularioContacto-items-imagen" src="">
+               <div class="seccionFormularioContacto-items-contacto">
+                  <header class="seccionFormularioContacto-items-contacto-encabezado">
+                     <h2 class="seccionFormularioContacto-items-contacto-encabezado">Contacto</h2>
+                  </header>
+                  <form class="seccionFormularioContacto-items-contacto-formulario">
+                     <input class="seccionFormularioContacto-items-contacto-formulario-inputStyle" type="text"
+                        placeholder="Nombre">
+                     <input class="seccionFormularioContacto-items-contacto-formulario-inputStyle" type="email"
+                        placeholder="E-mail">
+                     <input class="seccionFormularioContacto-items-contacto-formulario-inputStyleTwo" type="text"
+                        placeholder="Asunto">
+                     <textarea class="seccionFormularioContacto-items-contacto-formulario-textAreaStyle"
+                        placeholder="Mensaje"></textarea>
+                     <input class="seccionFormularioContacto-items-contacto-formulario-boton styleButtonBlue"
+                        type="submit" value="Enviar mensaje">
+                  </form>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <!--Descargar imagenes de proyectos o capturas-->
+
+   </main>
+
+   <!--Como extra podría colocarse aquí la insignia de w3Consortium inspector y menciones a los
+   autores de los iconos y links de referencia-->
+   <footer class="seccionFooter">
+      <div class="containerMaxWidth">
+         <div class="seccionFooter-copyright">
+            <p class="seccionFooter-copyright-autor">Desarrollado por Eduardo Reyes Hernández 2022</p>
+         </div>
+      </div>
+   </footer>
 
 </body>
 

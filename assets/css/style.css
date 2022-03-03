@@ -108,59 +108,6 @@ en el modo responsive exceptuando al header*/
 }
 /*<----------------------------------------Fin Selectores Genéricos---------------------------------------->*/
 
-
-/*<--------------------------------------------------Menú-------------------------------------------------->*/
-
-
-
-
-
-/*Contenedor de logotipo y autor centralizados verticalmente posicionados
-uno al lado del otro con una ancho de 172.8px y altura de 88px*/
-.headerPrincipal-bannerMenu-seccionBanner {
-    display: flex;
-    align-items: center;
-    width: 7.5em;
-    height: inherit;
-}
-
-/*Link envolvente del logotipo sin subrayado y altura de 88px*/
-.headerPrincipal-bannerMenu-seccionBanner-link {
-    text-decoration: none;
-}
-
-/*Logotipo principal del header con un tamaño de 88px*/
-.headerPrincipal-bannerMenu-seccionBanner-link-imgAutor {
-    width: 2.2em;
-}
-
-/*Remarcando titulo en negrita del autor*/
-.headerPrincipal-bannerMenu-seccionBanner-tituloAutor{
-    font-weight: bold;
-}
-
-/*Menú principal con un ancho de 650.083px*/
-.headerPrincipal-bannerMenu-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 5.5em;
-    width: 41.5em;
-}
-
-.headerPrincipal-bannerMenu-nav-link {
-    text-decoration: none;
-}
-
-/*Links de secciones de la página con un padding de 3.2px, borde de 2px y 
-radio del borde de 1.6px*/
-
-/*Desplazando links hacía abajo al pasar el mouse*/
-
-
-/*<--------------------------------------------------Fin Menú-------------------------------------------------->*/
-
-
 /*<--------------------------------------------Sección Presentación-------------------------------------------->*/
 
 .seccionPrincipal {

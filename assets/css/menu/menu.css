@@ -1,0 +1,8 @@
+/*Menú principal con un ancho de 650.083px*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5.5em;
+    width: 41.5em;
+}

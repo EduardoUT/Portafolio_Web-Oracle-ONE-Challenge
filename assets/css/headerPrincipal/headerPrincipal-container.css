@@ -1,6 +1,6 @@
 /*Header posicionado fijamente arriba con elementos alineados al centro verticalmente, con una altura
 de 88px y un ancho acorde a la variable --tamaño-containerMaxWidth*/
-.headerPrincipal__container {
+.header-principal__container {
     position: fixed;
     display: flex;
     align-items: center;

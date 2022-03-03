@@ -8,5 +8,6 @@
     /*Cambiando la dirección flex a columna del icono/nombre autor y menú nav*/
     .logo-container__logo {
         flex-direction: column;
+        width: 2.5em;
     }
 }

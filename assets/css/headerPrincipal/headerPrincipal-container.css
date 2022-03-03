@@ -9,4 +9,5 @@ de 88px y un ancho acorde a la variable --tamaño-containerMaxWidth*/
     height: 5.5em;
     max-width: inherit;
     width: inherit;
+    top: 0;
 }

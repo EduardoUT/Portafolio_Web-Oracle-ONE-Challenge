@@ -111,27 +111,9 @@ en el modo responsive exceptuando al header*/
 
 /*<--------------------------------------------------Menú-------------------------------------------------->*/
 
-/*Al ser un menú personalizado por su servidor, este no se verá afectado por la propiedad
-padding aplicada en el selector .containerMaxWidth genérico, perso si poseerá los valores
-de max-width y margin que ambos poseen para alinearse al centro de la página*/
-.headerPrincipal {
-    margin: var(--centrar-con-margin);
-    max-width: var(--tamaño-containerMaxWidth);
-    width: 100%;
-}
 
-/*Header posicionado fijamente arriba con elementos alineados al centro verticalmente, con una altura
-de 88px y un ancho acorde a la variable --tamaño-containerMaxWidth*/
-.headerPrincipal .headerPrincipal-bannerMenu {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-fondo-primario);
-    height: 5.5em;
-    max-width: inherit;
-    width: inherit;
-}
+
+
 
 /*Contenedor de logotipo y autor centralizados verticalmente posicionados
 uno al lado del otro con una ancho de 172.8px y altura de 88px*/

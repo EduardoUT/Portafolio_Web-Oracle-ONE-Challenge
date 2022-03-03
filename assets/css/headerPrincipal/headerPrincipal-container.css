@@ -1,0 +1,12 @@
+/*Header posicionado fijamente arriba con elementos alineados al centro verticalmente, con una altura
+de 88px y un ancho acorde a la variable --tamaño-containerMaxWidth*/
+.headerPrincipal__container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-fondo-primario);
+    height: 5.5em;
+    max-width: inherit;
+    width: inherit;
+}

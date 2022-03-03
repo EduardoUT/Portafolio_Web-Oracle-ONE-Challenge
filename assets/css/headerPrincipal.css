@@ -1,8 +1,20 @@
-/*Al ser un menú personalizado por su servidor, este no se verá afectado por la propiedad
-padding aplicada en el selector .containerMaxWidth genérico, perso si poseerá los valores
-de max-width y margin que ambos poseen para alinearse al centro de la página*/
+/*
+Header posicionado fijamente en la parte superior, con altura de 88px
+y un ancho de 100%
+*/
 .header-principal {
-    margin: var(--centrar-con-margin);
-    max-width: var(--tamaño-containerMaxWidth);
+    background-color: var(--color-fondo-primario);
+    height: 5.5em;
+    position: fixed;
+    top: 0;
     width: 100%;
+}
+
+/*Celular*/
+@media only screen and (max-width: 624px) {
+    /*El header aumentará de tamaño*/
+    .header-principal {
+        height: 8.3em;
+    }
+
 }

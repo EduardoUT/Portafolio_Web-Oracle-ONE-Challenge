@@ -65,22 +65,22 @@ html {
     transform: translate(0, 0.3em);
 }
 
+.titulo-primario {
+    font-size: var(--tamañoLetraEscritorio-titulos);
+}
+
+.subtitulos {
+    font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
+}
+
 /*----[Tamaños de Letra con variables genéricas para párrafos, botones, títulos, subtitulos, descripciones y links]----*/
 /*-Cambiarán en el media query responive-*/
 .tamañoLetraLinks{
     font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
 }
 
-.tamañotLetraTituloPresentacion {
-    font-size: var(--tamañoLetraEscritorio-titulos);
-}
-
 .tamañoLetraParrafoPresentacion {
     font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
-}
-
-.tamañoLetraSubtituloSecciones {
-    font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
 }
 
 .tamañoLetraParrafoSeccionSobreMi {
@@ -103,9 +103,9 @@ html {
 /*<--------------------------------------------Sección Presentación-------------------------------------------->*/
 
 
-.seccionPresentacion-datosPersonales-encabezado {}
+.datos-personales {}
 
-.seccionPresentacion-datosPersonales-encabezado-titulo {}
+.presentacion_titulo {}
 
 .seccionPresentacion-datosPersonales-parrafo {}
 

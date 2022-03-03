@@ -1,8 +1,18 @@
 /*Contenedor de logotipo y autor centralizados verticalmente posicionados
 uno al lado del otro con una ancho de 172.8px y altura de 88px*/
-.logoContainer {
+.logo-container {
     display: flex;
     align-items: center;
-    width: 7.5em;
+    justify-content: center;
+    width: 3.5em;
     height: inherit;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+    
+    /*Cambiando la dirección flex a columna del icono/nombre autor y menú nav*/
+    .logo-container {
+        flex-direction: column;
+    }
 }

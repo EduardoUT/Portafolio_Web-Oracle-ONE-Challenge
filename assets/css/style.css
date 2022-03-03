@@ -49,15 +49,6 @@ html {
 
 /*<------------------------------------------Selectores Genéricos------------------------------------------>*/
 
-/*Estableciendo contenedor genérico para
-respetar un ancho de 1136px como máximo, un 100% al reducir la ventana y centrado, se agregará un padding
-en el modo responsive exceptuando al header*/
-.containerMaxWidth {
-    margin: var(--centrar-con-margin);
-    max-width: var(--tamaño-containerMaxWidth);
-    width: 100%;
-}
-
 .font-style {
     font-family: var(--font-family);
     color: var(--font-color);
@@ -110,22 +101,6 @@ en el modo responsive exceptuando al header*/
 
 /*<--------------------------------------------Sección Presentación-------------------------------------------->*/
 
-.seccionPrincipal {
-    width: 100%;
-    background-color: var(--color-fondo-primario);
-}
-
-/*Definiendo sección de bienvenida con altura y fondo de imagen completa.*/
-.seccionPresentacion {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../img/fondo/fondodosdos.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 
 .seccionPresentacion-datosPersonales-encabezado {}
 
@@ -150,7 +125,7 @@ en el modo responsive exceptuando al header*/
 @media only screen and (max-width: 768px) {
 
     /*Cambiando la dirección flex a columna del icono/nombre autor y menú nav*/
-    .headerPrincipal-bannerMenu {
+    .logoContainer {
         flex-direction: column;
     }
 

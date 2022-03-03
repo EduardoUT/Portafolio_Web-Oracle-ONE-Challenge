@@ -1,8 +1,0 @@
-/*Al ser un menú personalizado por su servidor, este no se verá afectado por la propiedad
-padding aplicada en el selector .containerMaxWidth genérico, perso si poseerá los valores
-de max-width y margin que ambos poseen para alinearse al centro de la página*/
-.header-principal {
-    margin: var(--centrar-con-margin);
-    max-width: var(--tamaño-containerMaxWidth);
-    width: 100%;
-}

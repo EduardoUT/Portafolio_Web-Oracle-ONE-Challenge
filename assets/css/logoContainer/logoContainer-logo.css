@@ -5,7 +5,8 @@
 
 /*Tablet*/
 @media only screen and (max-width: 768px) {
-    /*Cambiando la dirección flex a columna del icono/nombre autor y menú nav*/
+    /*Cambiando la dirección flex a columna y disminuyendo
+    el tamaño del logo*/
     .logo-container__logo {
         flex-direction: column;
         width: 2.5em;

@@ -10,9 +10,8 @@ uno al lado del otro con una ancho de 172.8px y altura de 88px*/
 
 /*Tablet*/
 @media only screen and (max-width: 768px) {
-    /*Cambiando la dirección flex a columna del icono/nombre autor y menú nav*/
+    /*Aumentando la altura del container y ancho completo*/
     .logo-container {
-        justify-content: center;
         height: 4.2em;
         width: 100%;
     }

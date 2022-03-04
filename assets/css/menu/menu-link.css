@@ -13,12 +13,12 @@
     - Transición al hacer click o touch de 0.2 segundos
     */
     .menu__link {
-        display: inherit;
-        width: inherit;
-        text-align: center;
-        padding: 0.2em 0 0.2em 0;
         border-top: solid 0.2em var(--font-color);
+        display: inherit;
+        text-align: center;
         transition: 0.2s ease-out;
+        padding: 0.2em 0 0.2em 0;
+        width: inherit;
     }
 
     /*Eliminando traslado hacía abajo de links*/

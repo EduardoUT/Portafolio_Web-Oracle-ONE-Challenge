@@ -1,1 +1,5 @@
-.datos-personales__titulo {}
+/*Estableciendo color de letra acorde al color de fondo claro y tamaño*/
+.datos-personales__titulo {
+    color: var(--color-fondo-primario);
+    font-size: var(--tamañoLetraEscritorio-titulos);
+}

@@ -4,7 +4,7 @@ y un ancho de 100%
 */
 .header-principal {
     background-color: var(--color-fondo-primario);
-    height: 5.5em;
+    height: var(--altura-header-EscritoriotTablet);
     position: fixed;
     top: 0;
     width: 100%;
@@ -12,8 +12,8 @@ y un ancho de 100%
 
 /*Celular*/
 @media only screen and (max-width: 624px) {
-    /*El header aumentará de altura*/
+    /*El header aumentará de altura */
     .header-principal {
-        height: 9.1em;
+        height: var(--altura-header-Celular); /*145.6px*/
     }
 }

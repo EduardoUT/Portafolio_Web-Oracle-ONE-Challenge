@@ -6,3 +6,21 @@
     height: 5.5em;
     width: 41.5em;
 }
+
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+    /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
+    .menu {
+        width: inherit;
+    }
+}
+
+/*Celular*/
+@media only screen and (max-width: 624px) {
+    .menu {
+        display: block;
+        height: 9.5em;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}

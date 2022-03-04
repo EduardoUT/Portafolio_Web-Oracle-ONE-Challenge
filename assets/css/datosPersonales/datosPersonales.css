@@ -1,1 +1,13 @@
-.datos-personales {}
+/*Ajustando sección datos-personales acorde a la altura del menú de escritorio*/
+.datos-personales {
+    margin-top: var(--altura-header-EscritoriotTablet);
+    width: inherit;
+}
+
+/*Celular*/
+@media only screen and (max-width: 624px) {
+    /*Ajustando sección datos-personales acorde a la altura del menú de celular*/
+    .datos-personales {
+        margin-top: var(--altura-header-Celular);
+    }
+}

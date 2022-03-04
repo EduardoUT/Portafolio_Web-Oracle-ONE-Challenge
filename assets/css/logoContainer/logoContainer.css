@@ -1,11 +1,11 @@
 /*Contenedor de logotipo y autor centralizados verticalmente posicionados
 uno al lado del otro con una ancho de 172.8px y altura de 88px*/
 .logo-container {
-    display: flex;
     align-items: center;
+    display: flex;
+    height: inherit;
     justify-content: center;
     width: 3.5em;
-    height: inherit;
 }
 
 /*Tablet*/

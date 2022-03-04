@@ -13,3 +13,11 @@ subiendo parrafo un poco*/
         font-size: var(--tamañoLetraTablet-parrafosYLinks-dscBienvenida-subtitulosDscImagen);
     }
 }
+
+/*Celular*/
+@media only screen and (max-width: 624px) {
+    /*Estableciendo tamaño de letra 14px*/
+    .datos-personales__parrafo {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+    }
+}

@@ -1,6 +1,16 @@
-/*Fondo de sección presentación de tamaño completo*/
+/*Fondo de sección presentación de tamaño completo acorde a la altura del header
+de escritorio*/
 .seccion-presentacion {
     background: url('../img/fondo/fondo-banner.png') no-repeat center / cover fixed;
-    height: calc(100vh);
+    height: calc(100vh - var(--altura-header-EscritoriotTablet));
     width: 100%;
+}
+
+/*Celular*/
+@media only screen and (max-width: 624px) {
+    /*Fondo de sección presentación de tamaño completo acorde a la altura del header
+    movil*/
+    .seccion-presentacion {
+        height: calc(100vh - var(--altura-header-Celular));
+    }
 }

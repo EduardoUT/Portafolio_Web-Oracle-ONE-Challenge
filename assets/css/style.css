@@ -51,6 +51,11 @@ html {
     color: var(--font-color);
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /*<------------------------------------------Selectores Genéricos------------------------------------------>*/
 

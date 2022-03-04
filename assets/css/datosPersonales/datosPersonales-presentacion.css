@@ -5,5 +5,5 @@ del contenedor acorde a la del header de escritorio*/
     flex-direction: column;
     height: calc(100vh - var(--altura-header-EscritoriotTablet));
     justify-content: center;
-    width: 31.1em; /*497.6px*/
+    width: 66.2%; /*752.017px*/
 }

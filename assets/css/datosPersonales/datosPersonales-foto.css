@@ -1,4 +1,4 @@
-/*Estableciendo tamaño de foto*/
+/*Estableciendo tamaño de foto y radio circular*/
 .datos-personales__foto {
     border-radius: 100%;
     width: var(--ancho-alto-foto-Escritorio);

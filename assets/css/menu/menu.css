@@ -1,9 +1,10 @@
-/*Menú principal con un ancho de 650.083px*/
+/*Menú principal con un ancho de 650.083px, con espaciado
+entre items y alineados al centro*/
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 5.5em;
+    height: inherit;
     width: 41.5em;
 }
 
@@ -17,6 +18,8 @@
 
 /*Celular*/
 @media only screen and (max-width: 624px) {
+    /*Desplazando menú en bloque, con altura de 76.3167px, 
+    habilitado el modo scroll vertical*/
     .menu {
         display: block;
         height: 9.5em;

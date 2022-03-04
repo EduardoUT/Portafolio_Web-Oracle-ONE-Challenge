@@ -102,89 +102,12 @@ html {
 
 /*<--------------------------------------------Sección Presentación-------------------------------------------->*/
 
+/*
+/*Tablets/
+@media only screen and (max-width: 768px) {}
 
+/*Celular/
+@media only screen and (max-width: 624px) {}
+*/
 
 /*<------------------------------------------Fin Sección Presentación------------------------------------------>*/
-
-
-/*<--------------------------------------------Responsividad Tablet-------------------------------------------->*/
-@media only screen and (max-width: 768px) {
-
-    /*Cambiando la dirección flex a columna del icono/nombre autor y menú nav*/
-    .logoContainer {
-        flex-direction: column;
-    }
-
-    /*Definiendo tamaño de 100%, y centrando horizontalmente los elementos*/
-    .headerPrincipal-bannerMenu-seccionBanner {
-        justify-content: center;
-        width: 100%;
-    }
-
-    /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
-    .headerPrincipal-bannerMenu-nav {
-        width: 100%;
-    }
-}
-
-/*<-------------------------------------------Fin Responsividad Tablet------------------------------------------->*/
-
-/*<-------------------------------------------Responsividad Celulares-------------------------------------------->*/
-@media only screen and (max-width: 636px) {
-
-    /*Definiendo altura de 132.8px al .headerPrincipal*/
-    .headerPrincipal .headerPrincipal-bannerMenu {
-        height: 8.3em;
-    }
-
-    /*
-    - Se desplazará el menú en bloque en lugar de flex a fin de evitar 
-    que otros links se oculten del scroll vertical dentro del nav.
-    - Definiendo altura del nav de 67.1833px.
-    - Habilitando la propiedad overflow-y de tipo scroll para navegar horizontalmente
-      por los items del menú.
-    - Deshabilitando el scroll horizontal dentro del nav. 
-    */
-    .headerPrincipal-bannerMenu-nav {
-        display: block;
-        height: 8.5em;
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-
-    /*
-    - Definiendo orientación en filas en los links del menú.
-    - Alineando elementos al centro horizontalmente.
-    - Estableciendo un margen de 0, esto debido a que en la versión tablet y escritorio se estableció
-      un margen a la izquierda de cata link
-    - Definiendo un espaciado interno superior e inferior de 6.4px.
-    - Definiendo un borde solido de 3px.
-    - Definiendo un ancho heredado del nav.
-    - Definiendo tiempo de transición al dar click.
-    */
-    .headerPrincipal-bannerMenu-nav .estiloLink-menuCelular {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0.4em 0 0.4em 0;
-        border-top: solid 0.2em #464646;
-        width: inherit;
-        transition: all 0.2s ease-out;
-    }
-
-    /*
-    - Eliminando propiedad transform :hover.
-    - Invirtiendo color de fondo con el de tipografía :active.
-    */
-    .headerPrincipal-bannerMenu-nav .estiloLink-menuCelular:hover {
-        transform: none;
-    }
-
-    .headerPrincipal-bannerMenu-nav .estiloLink-menuCelular:active {
-        background-color: var(--font-color);
-        color: var(--color-fondo-primario);
-    }
-
-}
-
-/*<-----------------------------------------Fin Responsividad Celulares----------------------------------------->*/

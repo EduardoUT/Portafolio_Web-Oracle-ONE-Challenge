@@ -1,10 +1,10 @@
 /*Menú principal con un ancho de 650.083px, con espaciado
 entre items y alineados al centro*/
 .menu {
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    display: flex;
     height: inherit;
+    justify-content: space-evenly;
     width: 41.5em;
 }
 

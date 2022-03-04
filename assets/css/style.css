@@ -70,10 +70,6 @@ html {
     transform: translate(0, 0.3em);
 }
 
-.titulo-primario {
-    font-size: var(--tamañoLetraEscritorio-titulos);
-}
-
 .subtitulos {
     font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
 }

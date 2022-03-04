@@ -1,6 +1,5 @@
 /*Eliminando subrayado y colocando transición*/
 .datos-personales__contacto {
-    text-decoration: none;
     /*Estableciendo tiempo de desplazamiento al pasar el mouse*/
     transition: all 0.5s ease-out;
 }

@@ -3,5 +3,5 @@ subiendo parrafo un poco*/
 .datos-personales__parrafo {
     color: var(--color-fondo-primario);
     font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
-    margin-top: 0.5em;
+    margin: 0.5em 0 0 0;
 }

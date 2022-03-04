@@ -12,7 +12,7 @@ y un ancho de 100%
 
 /*Celular*/
 @media only screen and (max-width: 624px) {
-    /*El header aumentará de tamaño*/
+    /*El header aumentará de altura*/
     .header-principal {
         height: 8.5em;
     }

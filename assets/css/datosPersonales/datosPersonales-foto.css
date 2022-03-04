@@ -4,3 +4,12 @@
     width: var(--ancho-alto-foto-Escritorio);
     height: var(--ancho-alto-foto-Escritorio);
 }
+
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+    /*Estableciendo tamaño de foto para tablet*/
+    .datos-personales__foto {
+        width: var(--ancho-alto-foto-Tablet);
+        height: var(--ancho-alto-foto-Tablet);
+    }
+}

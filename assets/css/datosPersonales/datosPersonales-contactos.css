@@ -5,6 +5,5 @@ filas, el ancho es heredado de .datos-personales__presentacion*/
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    background-color: cornflowerblue;
-    width: 27.1em; /*433.6px*/
+    width: 25.1em; /*401.6px*/
 }

@@ -12,3 +12,11 @@
         font-size: var(--tamañoLetraTablet-titulosYSubtitulos);
     }
 }
+
+/*Celular*/
+@media only screen and (max-width: 624px) {
+    /*Estableciendo tamaño de letra 22px*/
+    .datos-personales__titulo {
+        font-size: var(--tamañoLetraCelular-tituloBienvenida-subtitulosSeccion);
+    }
+}

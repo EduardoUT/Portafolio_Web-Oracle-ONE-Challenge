@@ -4,6 +4,7 @@ espaciado entre ellos*/
 .datos-personales {
     align-items: center;
     display: flex;
+    height: calc(100vh - var(--altura-header-EscritoriotTablet));
     justify-content: space-between;
     margin-top: var(--altura-header-EscritoriotTablet);
     width: inherit;

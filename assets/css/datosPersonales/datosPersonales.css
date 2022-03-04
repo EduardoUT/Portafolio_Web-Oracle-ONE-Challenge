@@ -1,8 +1,10 @@
 /*Ajustando sección datos-personales acorde a la altura del menú de escritorio,
-alineando texto e imagen verticalmente centrados uno al lado del otro*/
+alineando texto e imagen verticalmente centrados uno al lado del otro con un
+espaciado entre ellos*/
 .datos-personales {
     align-items: center;
     display: flex;
+    justify-content: space-between;
     margin-top: var(--altura-header-EscritoriotTablet);
     width: inherit;
 }

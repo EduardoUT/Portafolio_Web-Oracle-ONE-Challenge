@@ -11,13 +11,15 @@
     - Padding de 3.2px
     - Borde superior de 3.2px
     - Transición al hacer click o touch de 0.2 segundos
+    - Tamaño de fuente: 14px
     */
     .menu__link {
         border-top: solid 0.2em var(--font-color);
         display: inherit;
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+        padding: 0.2em 0 0.2em 0;
         text-align: center;
         transition: 0.2s ease-out;
-        padding: 0.2em 0 0.2em 0;
         width: inherit;
     }
 

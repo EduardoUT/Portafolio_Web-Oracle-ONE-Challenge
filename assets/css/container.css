@@ -5,4 +5,21 @@ en el modo responsive exceptuando al header*/
     margin: var(--centrar-con-margin);
     max-width: var(--tamaño-containerMaxWidth);
     width: 100%;
+    /*heigth: inherit*/
+}
+
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+    /*Creando padding dentro del container de 32 px*/
+    .container {
+        padding: 0 2em;
+    }
+}
+
+/*Celular*/
+@media only screen and (max-width: 624px) {
+    /*Creando padding dentro del container de 16 px*/
+    .container {
+        padding: 0 1em;
+    }
 }

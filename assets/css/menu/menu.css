@@ -22,7 +22,7 @@ entre items y alineados al centro*/
     habilitado el modo scroll vertical*/
     .menu {
         display: block;
-        height: 9.5em;
+        height: var(--altura-header-Celular);
         overflow-y: scroll;
         overflow-x: hidden;
     }

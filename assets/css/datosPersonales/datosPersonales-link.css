@@ -1,1 +1,5 @@
-.datos-personales__link {}
+/*Agregando color y eliminando subrayado*/
+.datos-personales__link {
+    color: var(--color-fondo-primario);
+    text-decoration: none;
+}

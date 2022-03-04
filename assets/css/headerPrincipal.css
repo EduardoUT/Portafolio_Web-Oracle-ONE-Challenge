@@ -14,7 +14,6 @@ y un ancho de 100%
 @media only screen and (max-width: 624px) {
     /*El header aumentará de altura*/
     .header-principal {
-        height: 8.5em;
+        height: 9.1em;
     }
-
 }

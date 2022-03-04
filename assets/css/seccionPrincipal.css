@@ -1,3 +1,4 @@
+/*Despegando main-content del header*/
 .seccion-principal {
     margin-top: var(--altura-header-EscritoriotTablet);
     width: 100%;

@@ -4,3 +4,11 @@
     font-size: var(--tamañoLetraEscritorio-titulos);
     margin-bottom: 0;
 }
+
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+    /*Estableciendo tamaño de letra 22px*/
+    .datos-personales__titulo {
+        font-size: var(--tamañoLetraTablet-titulosYSubtitulos);
+    }
+}

@@ -10,7 +10,7 @@ entre items y alineados al centro*/
 
 /*Tablet*/
 @media only screen and (max-width: 768px) {
-    /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
+    /*Ancho de 100% heredado de .header-principal*/
     .menu {
         width: inherit;
     }

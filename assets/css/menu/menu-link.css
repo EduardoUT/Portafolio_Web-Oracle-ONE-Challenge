@@ -5,12 +5,19 @@
 
 /*Celular*/
 @media only screen and (max-width: 624px) {
+    /*
+    - Links display heredado en bloque de .menu
+    - Ancho heredado de .header-principal
+    - Padding de 3.2px
+    - Borde superior de 3.2px
+    - Transición al hacer click o touch de 0.2 segundos
+    */
     .menu__link {
         display: inherit;
-        width: 100%;
+        width: inherit;
         text-align: center;
         padding: 0.2em 0 0.2em 0;
-        border-top: solid 0.2em #464646;
+        border-top: solid 0.2em var(--font-color);
         transition: 0.2s ease-out;
     }
 

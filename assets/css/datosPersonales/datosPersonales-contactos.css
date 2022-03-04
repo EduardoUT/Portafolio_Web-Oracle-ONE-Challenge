@@ -1,1 +1,10 @@
-.datos-personales__contactos {}
+/*Limpiando configuraciones de lista por defecto y alineando en 
+filas, el ancho es heredado de .datos-personales__presentacion*/
+.datos-personales__contactos {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    background-color: cornflowerblue;
+    width: inherit;
+}

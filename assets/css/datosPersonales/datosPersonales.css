@@ -1,4 +1,5 @@
-/*Ajustando sección datos-personales acorde a la altura del menú de escritorio*/
+/*Ajustando sección datos-personales acorde a la altura del menú de escritorio,
+alineando texto e imagen verticalmente centrados uno al lado del otro*/
 .datos-personales {
     align-items: center;
     display: flex;

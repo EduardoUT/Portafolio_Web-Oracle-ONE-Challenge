@@ -13,6 +13,9 @@
     --color-fondo-primario: #F5F5F5;
     --altura-header-EscritoriotTablet: 5.5em;/*88px*/
     --altura-header-Celular: 9.1em; /*145.6px*/
+    --ancho-alto-foto-Escritorio: 23em; /*368px*/
+    --ancho-alto-foto-Tablet: 9.125em; /*146px*/
+    --ancho-alto-foto-Celular: 6.125em; /*98px*/
 
     /*<------------------Tamaños de letra------------------*/
     /*Los siguientes tamaños se usan dependiendo el tamaño del dispositivo en los

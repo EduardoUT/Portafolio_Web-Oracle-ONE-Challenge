@@ -1,5 +1,6 @@
+/*Fondo de sección presentación de tamaño completo*/
 .seccion-presentacion {
     background: url('../img/fondo/fondo-banner.png') no-repeat center / cover fixed;
-    width: 100%;
     height: calc(100vh);
+    width: 100%;
 }

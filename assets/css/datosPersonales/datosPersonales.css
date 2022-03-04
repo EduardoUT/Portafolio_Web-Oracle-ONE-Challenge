@@ -1,7 +1,7 @@
 /*Ajustando sección datos-personales acorde a la altura del menú de escritorio*/
 .datos-personales {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-top: var(--altura-header-EscritoriotTablet);
     width: inherit;
 }

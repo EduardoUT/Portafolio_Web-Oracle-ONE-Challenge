@@ -1,1 +1,6 @@
-.datos-personales__foto {}
+/*Estableciendo tamaño de foto*/
+.datos-personales__foto {
+    border-radius: 100%;
+    width: var(--ancho-alto-foto-Escritorio);
+    height: var(--ancho-alto-foto-Escritorio);
+}

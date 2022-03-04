@@ -6,9 +6,9 @@ Establecido un ancho máximo acorde al container genérico.
 Centrado con margin.
 */
 .header-principal__container {
+    align-items: center;
     display: flex;
     height: inherit;
-    align-items: center;
     justify-content: space-between;
     margin: var(--centrar-con-margin);
     max-width: var(--tamaño-containerMaxWidth);

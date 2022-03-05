@@ -10,9 +10,11 @@ del contenedor acorde a la del header de escritorio*/
 
 /*Celular*/
 @media only screen and (max-width: 624px) {
-    /*Ajustando sección acorde a la altura del menú de celular*/
+    /*Ajustando texto con una altura automática y un 
+    ancho completo*/
     .datos-personales__presentacion {
-        height: calc(100vh - var(--altura-header-Celular));
-        background-color: blueviolet;
+        height: auto;
+        order: 1;
+        width: 100%;
     }
 }

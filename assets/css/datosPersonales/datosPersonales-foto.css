@@ -19,6 +19,7 @@
     /*Estableciendo tamaño de foto para Celulares*/
     .datos-personales__foto {
         height: var(--ancho-alto-foto-Celular);
+        order: 0;
         width: var(--ancho-alto-foto-Celular);
     }
 }

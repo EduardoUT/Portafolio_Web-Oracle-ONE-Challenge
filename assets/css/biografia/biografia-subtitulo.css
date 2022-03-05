@@ -1,1 +1,4 @@
-.biografia__subtitulo {}
+/*Eliminando margenes*/
+.biografia__subtitulo {
+    margin: 0;
+}

@@ -14,7 +14,7 @@ espaciado entre ellos*/
 @media only screen and (max-width: 624px) {
     /*Ajustando sección datos-personales acorde a la altura del menú de celular*/
     .datos-personales {
-        height: calc(100v - var(----altura-header-Celular));
+        height: calc(100v - var(--altura-header-Celular));
         margin-top: var(--altura-header-Celular);
     }
 }

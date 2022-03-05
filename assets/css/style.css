@@ -17,10 +17,16 @@
     --color-fondo-primario: #F5F5F5;
     /*Color de fuente secundario*/
     --color-fondo-secundario: #EAF2FD;
+    /*
+    
+    <----Alturas de header para Escritorio, Tablet y Celular---->
+    */
     /*88px*/
     --altura-header-EscritoriotTablet: 5.5em;
     /*64.8px*/
     --altura-header-Celular: 7.78em;
+    /*<----Alturas de header para Escritorio, Tablet y Celular---->*/
+
     /*368px*/
     --ancho-alto-foto-Escritorio: 23em;
     /*146px*/

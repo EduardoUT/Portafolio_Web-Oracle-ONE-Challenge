@@ -3,8 +3,18 @@
     width: 3.2em; /*2.2 movil - tablet*/
 }
 
-/*Tablet*/
-@media only screen and (max-width: 768px) {
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 481px) and (max-width: 1080px) {
+    /*Cambiando la dirección flex a columna y disminuyendo
+    el tamaño del logo*/
+    .logo-container__logo {
+        flex-direction: column;
+        width: 2.5em;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     /*Cambiando la dirección flex a columna y disminuyendo
     el tamaño del logo*/
     .logo-container__logo {

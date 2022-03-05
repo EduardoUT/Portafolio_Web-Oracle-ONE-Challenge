@@ -5,8 +5,8 @@
     width: var(--ancho-alto-foto-Escritorio);
 }
 
-/*Tablet*/
-@media only screen and (max-width: 768px) {
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 481px) and (max-width: 1080px) {
     /*Estableciendo tamaño de foto para tablet*/
     .datos-personales__foto {
         height: var(--ancho-alto-foto-Tablet);
@@ -14,8 +14,8 @@
     }
 }
 
-/*Celular*/
-@media only screen and (max-width: 624px) {
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     /*Estableciendo tamaño de foto para Celulares*/
     .datos-personales__foto {
         height: var(--ancho-alto-foto-Celular);

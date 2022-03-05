@@ -10,9 +10,10 @@ espaciado entre ellos*/
     width: inherit;
 }
 
-/*Celular*/
-@media only screen and (max-width: 624px) {
-    /*Ajustando sección datos-personales acorde a la altura del menú de celular*/
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    /*Ajustando sección datos-personales acorde a la altura del menú de celular
+    alineando contenido al centro horizontalmente y estableciendo items en columna*/
     .datos-personales {
         flex-direction: column;
         height: var(--altura-seccionPresentacion-Celular);

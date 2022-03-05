@@ -2,8 +2,8 @@
 a la altura del header de escritorio y tablet, con un ancho máximo de 751px
 y de 100% al reducirse*/
 .biografia {
-    padding:var(--altura-header-EscritoriotTablet) 0;
     max-width: 46.937em;
+    padding:var(--altura-header-EscritoriotTablet) 0;
     width: 100%;
 }
 

@@ -2,7 +2,7 @@
 de escritorio*/
 .seccion-presentacion {
     background: url('../img/fondo/fondo-banner.png') no-repeat center / cover fixed;
-    height: calc(100vh - var(--altura-header-EscritoriotTablet));
+    height: var(--altura-seccionPresentacion);
     width: 100%;
 }
 
@@ -11,6 +11,6 @@ de escritorio*/
     /*Fondo de sección presentación de tamaño completo acorde a la altura del header
     movil*/
     .seccion-presentacion {
-        height: calc(100vh - var(--altura-header-Celular));
+        height: var(--altura-seccionPresentacion-Celular);
     }
 }

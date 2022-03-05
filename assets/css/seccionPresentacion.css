@@ -6,10 +6,9 @@ de escritorio*/
     width: 100%;
 }
 
-/*Celular*/
-@media only screen and (max-width: 624px) {
-    /*Fondo de sección presentación de tamaño completo acorde a la altura del header
-    movil*/
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    /*Estableciendo altura*/
     .seccion-presentacion {
         height: var(--altura-seccionPresentacion-Celular);
     }

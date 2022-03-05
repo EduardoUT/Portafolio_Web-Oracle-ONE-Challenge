@@ -7,56 +7,106 @@
 
 /*Dwefiniendo variables genéricas*/
 :root {
+    /*Tipografía*/
     --font-family: 'Raleway', sans-serif;
+    /*Color de fuente*/
     --font-color: #464646;
+    /*Color de fuente secundaria*/
     --font-color-two: #ffffff;
+    /*Color de fondo principal*/
     --color-fondo-primario: #F5F5F5;
+    /*Color de fuente secundario*/
     --color-fondo-secundario: #EAF2FD;
-    --altura-header-EscritoriotTablet: 5.5em;/*88px*/
-    --altura-header-Celular: 7.78em; /*64.8px*/
-    --ancho-alto-foto-Escritorio: 23em; /*368px*/
-    --ancho-alto-foto-Tablet: 9.125em; /*146px*/
-    --ancho-alto-foto-Celular: 6.125em; /*98px*/
+    /*88px*/
+    --altura-header-EscritoriotTablet: 5.5em;
+    /*64.8px*/
+    --altura-header-Celular: 7.78em;
+    /*368px*/
+    --ancho-alto-foto-Escritorio: 23em;
+    /*146px*/
+    --ancho-alto-foto-Tablet: 9.125em;
+    /*98px*/
+    --ancho-alto-foto-Celular: 6.125em;
+    /*
+    Formula para calcular la altura total de la seccionPresentación en Escritorio y Tablet
+    */
+    --altura-seccionPresentacion: calc(100vh - var(--altura-header-EscritoriotTablet));
+    /*
+    --Formula para eliminar espacio en blanco entre la seccionPresentación y
+    --la siguiente sección.
+    
+    -----¡Atención!-----
+    --Solo aplicar al margin-top del siguiente elemento a seccionPresentación.
+    */
+    --margin-top-Formula: calc(var(--altura-seccionPresentacion) - var(--altura-seccionPresentacion) - 20px);
+    /*
+    --Se sigue la misma lógica que las formulas anteriores, solo variando la altura
+    --del header del celular, la cual aumenta.
+    */
+    --altura-seccionPresentacion-Celular: calc(100vh - var(--altura-header-Celular));
+    --margin-top-FormulaCelular: calc(100vh - var(var(--altura-header-Celular)) - var(--altura-header-Celular) - 20px);
 
     /*<------------------Tamaños de letra------------------*/
-    /*Los siguientes tamaños se usan dependiendo el tamaño del dispositivo en los
-    selectores*/
-    /*Escritorio*/
-    --tamañoLetraEscritorio-titulos: 3.25em;/*52px*/
-    --tamañoLetraEscritorio-subtitulosSeccion: 2em;/*32px*/
-    --tamañoLetraEscritorio-subtitulosDscImagen: 1.375em;/*22px*/
-    --tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones: 1em;/*16px*/
-    /*Tablet*/
-    --tamañoLetraTablet-titulosYSubtitulos: 1.375em;/*22px*/
-    --tamañoLetraTablet-parrafosYLinks-dscBienvenida-subtitulosDscImagen: 1em;/*16px*/
-    --tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones: 0.875em;/*14px*/
-    /*Móvil*/
-    --tamañoLetraCelular-tituloBienvenida-subtitulosSeccion: 1.375em;/*22px*/
-    --tamañoLetraCelular-subtituloDescripcionImagen: 1em;/*16px*/
-    --tamañoLetraCelular-parrafosYLinks-descripcionImagen: 0.875em; /*14px*/
+    /*
+    --Los siguientes tamaños se usan dependiendo el tamaño del dispositivo en los
+    --selectores
+    */
+
+    /*<----Escritorio---->*/
+    /*52px*/
+    --tamañoLetraEscritorio-titulos: 3.25em;
+    /*32px*/
+    --tamañoLetraEscritorio-subtitulosSeccion: 2em;
+    /*22px*/
+    --tamañoLetraEscritorio-subtitulosDscImagen: 1.375em;
+    /*16px*/
+    --tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones: 1em;
+
+    /*<----Tablet---->*/
+    /*22px*/
+    --tamañoLetraTablet-titulosYSubtitulos: 1.375em;
+    /*16px*/
+    --tamañoLetraTablet-parrafosYLinks-dscBienvenida-subtitulosDscImagen: 1em;
+    /*14px*/
+    --tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones: 0.875em;
+
+    /*<----Móvil---->*/
+    /*22px*/
+    --tamañoLetraCelular-tituloBienvenida-subtitulosSeccion: 1.375em;
+    /*16px*/
+    --tamañoLetraCelular-subtituloDescripcionImagen: 1em;
+    /*14px*/
+    --tamañoLetraCelular-parrafosYLinks-descripcionImagen: 0.875em;
     /*<----------------Fin Tamaños de letra-----------------*/
 
     /*<------------------Tamaño container-------------------*/
-    /*1136px Para evitar desbordamiento*/
-    --tamaño-containerMaxWidth: 71em; 
-    /*<----------------Fin Tamaño container-----------------*/
+    /*
+    --1136px Para evitar desbordamiento. 
+    --Valor aplicado en el container.css
+    */
+    --tamaño-containerMaxWidth: 71em;
+    /*Padding aplicado al container en media queries*/
     --padding-tablet: 0 2em;
     --padding-celular: 0 1em;
+    /*<----------------Fin Tamaño container-----------------*/
+
+    /*Variable para centrar elementos horizontalmente*/
     --centrar-con-margin: 0 auto;
 }
 
-/*Definiendo propiedad smooth-scroll*/
+/*Definiendo propiedad smooth-scroll, tipografía y color de fuente global*/
 html {
     scroll-behavior: smooth;
     font-family: var(--font-family);
     color: var(--font-color);
 }
 
+/*Desplazando contenidos principales como main, header, etc en columna
+a fin de colorcar la sección principal con 0 margen arriba*/
 body {
     display: flex;
     flex-direction: column;
 }
-
 
 /*<------------------------------------------Selectores Genéricos------------------------------------------>*/
 
@@ -80,35 +130,7 @@ body {
     font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
 }
 
-/*----[Tamaños de Letra con variables genéricas para párrafos, botones, títulos, subtitulos, descripciones y links]----*/
-/*-Cambiarán en el media query responive-*/
-.tamañoLetraLinks{
-    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
-}
-
-.tamañoLetraParrafoPresentacion {
-    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
-}
-
-.tamañoLetraParrafoSeccionSobreMi {
-    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
-}
-
-.tamañoLetraSubtituloDescripcionImagen {
-    font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
-}
-
-.tamañoLetraDescripcionImagen {
-    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
-}
-
-.tamañoLetraBotones {
-    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
-}
 /*<----------------------------------------Fin Selectores Genéricos---------------------------------------->*/
-
-/*<--------------------------------------------Sección Presentación-------------------------------------------->*/
-
 /*
 /*Tablets/
 @media only screen and (max-width: 768px) {}
@@ -116,5 +138,3 @@ body {
 /*Celular/
 @media only screen and (max-width: 624px) {}
 */
-
-/*<------------------------------------------Fin Sección Presentación------------------------------------------>*/

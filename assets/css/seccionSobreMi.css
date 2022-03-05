@@ -1,3 +1,6 @@
+/*Alineando items al inicio y estableciendo color de fondo secundario*/
 .seccion-sobre-mi {
+    align-items: flex-start;
     background-color: var(--color-fondo-secundario);
+    display: flex;
 }

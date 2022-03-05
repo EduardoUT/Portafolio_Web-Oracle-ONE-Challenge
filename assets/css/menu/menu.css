@@ -5,19 +5,20 @@ entre items y alineados al centro*/
     display: flex;
     height: inherit;
     justify-content: space-evenly;
-    width: 41.5em;
+    max-width: 41.5em;
+    width: 100%;
 }
 
-/*Tablet*/
-@media only screen and (max-width: 768px) {
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 481px) and (max-width: 1080px) {
     /*Ancho de 100% heredado de .header-principal*/
     .menu {
         width: inherit;
     }
 }
 
-/*Celular*/
-@media only screen and (max-width: 624px) {
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     /*Desplazando menú en bloque, con altura de 76.3167px, 
     habilitado el modo scroll vertical*/
     .menu {

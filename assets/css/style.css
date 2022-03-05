@@ -134,6 +134,7 @@ body {
 }
 
 .subtitulos {
+    margin: 0;
     font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
 }
 

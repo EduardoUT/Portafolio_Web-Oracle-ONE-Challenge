@@ -8,18 +8,16 @@ en el modo responsive exceptuando al header*/
     /*heigth: inherit*/
 }
 
-/*Tablet*/
-@media only screen and (max-width: 768px) {
-    /*Creando padding dentro del container de 32 px*/
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 481px) and (max-width: 1080px) {
     .container {
-        padding: 0 2em;
+        padding: var(--padding-tablet-celularHorizontal);
     }
 }
 
-/*Celular*/
-@media only screen and (max-width: 624px) {
-    /*Creando padding dentro del container de 16 px*/
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     .container {
-        padding: 0 1em;
+        padding:  var(--padding-celularVertical);
     }
 }

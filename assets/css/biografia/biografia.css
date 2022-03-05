@@ -1,1 +1,5 @@
-.biografia {}
+/*Estableciendo padding superior e inferior equivalente 
+a la altura del header de escritorio y tablet, margen derecho de 368px*/
+.biografia {
+    padding:var(--altura-header-EscritoriotTablet) 23em var(--altura-header-EscritoriotTablet) 0;
+}

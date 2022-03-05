@@ -8,8 +8,8 @@ filas, el ancho es heredado de .datos-personales__presentacion*/
     width: 25.1em; /*401.6px*/
 }
 
-/*Celular*/
-@media only screen and (max-width: 624px) {
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     /*Ajustando sección de contactos a 100%*/
     .datos-personales__contactos {
         width: 100%;

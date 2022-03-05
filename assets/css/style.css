@@ -39,20 +39,10 @@
     */
     --altura-seccionPresentacion: calc(100vh - var(--altura-header-EscritoriotTablet));
     /*
-    --Formula para eliminar espacio en blanco entre la seccionPresentación y
-    --la siguiente sección.
-    
-    -----¡Atención!-----
-    --Solo aplicar al margin-top del siguiente elemento a seccionPresentación.
-    */
-    --margin-top-Formula: calc(var(--altura-seccionPresentacion) - var(--altura-seccionPresentacion) - 20px);
-    /*
     --Se sigue la misma lógica que las formulas anteriores, solo variando la altura
     --del header del celular, la cual aumenta.
     */
     --altura-seccionPresentacion-Celular: calc(100vh - var(--altura-header-Celular));
-    --margin-top-FormulaCelular: calc(100vh - var(var(--altura-header-Celular)) - var(--altura-header-Celular) - 20px);
-
     /*<------------------Tamaños de letra------------------*/
     /*
     --Los siguientes tamaños se usan dependiendo el tamaño del dispositivo en los

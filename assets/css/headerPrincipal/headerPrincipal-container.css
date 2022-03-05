@@ -14,8 +14,17 @@ Centrado con margin.
     max-width: var(--tamaño-containerMaxWidth);
 }
 
-/*Tablet*/
-@media only screen and (max-width: 768px) {
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 481px) and (max-width: 1080px) {
+    /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
+    .header-principal__container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
     .header-principal__container {
         flex-direction: column;

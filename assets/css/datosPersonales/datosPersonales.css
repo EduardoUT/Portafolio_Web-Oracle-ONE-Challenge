@@ -4,7 +4,7 @@ espaciado entre ellos*/
 .datos-personales {
     align-items: center;
     display: flex;
-    height: calc(100vh - var(--altura-header-EscritoriotTablet));
+    height: var(--altura-seccionPresentacion);
     justify-content: space-between;
     margin-top: var(--altura-header-EscritoriotTablet);
     width: inherit;
@@ -15,7 +15,7 @@ espaciado entre ellos*/
     /*Ajustando sección datos-personales acorde a la altura del menú de celular*/
     .datos-personales {
         flex-direction: column;
-        height: calc(100vh - var(--altura-header-Celular));
+        height: var(--altura-seccionPresentacion-Celular);
         justify-content: center;
         margin-top: var(--altura-header-Celular);
     }

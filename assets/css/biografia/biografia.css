@@ -1,5 +1,17 @@
 /*Estableciendo padding superior e inferior equivalente 
-a la altura del header de escritorio y tablet, margen derecho de 368px*/
+a la altura del header de escritorio y tablet, con un ancho máximo de 751px
+y de 100% al reducirse*/
 .biografia {
-    padding:var(--altura-header-EscritoriotTablet) 23em var(--altura-header-EscritoriotTablet) 0;
+    padding:var(--altura-header-EscritoriotTablet) 0;
+    max-width: 46.937em;
+    width: 100%;
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    .biografia {
+        /*Asignando margen superior e inferior
+        acorde al tamaño del header del celular y estableciendo un ancho completo*/
+        padding: var(--altura-header-Celular) 0;
+    }
 }

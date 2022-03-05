@@ -1,1 +1,4 @@
-.seccion-sobre-mi {}
+.seccion-sobre-mi {
+    margin-top: var(--margin-top-Formula);
+    background-color: burlywood;
+}

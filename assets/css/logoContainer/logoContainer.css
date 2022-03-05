@@ -8,8 +8,17 @@ uno al lado del otro con una ancho de 172.8px y altura de 88px*/
     width: 3.5em;
 }
 
-/*Tablet*/
-@media only screen and (max-width: 768px) {
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 481px) and (max-width: 1080px) {
+    /*Aumentando la altura del container y ancho completo*/
+    .logo-container {
+        height: 4.2em;
+        width: 100%;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     /*Aumentando la altura del container y ancho completo*/
     .logo-container {
         height: 4.2em;

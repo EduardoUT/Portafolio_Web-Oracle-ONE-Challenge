@@ -1,1 +1,5 @@
-.seccion-skills__lenguajes {}
+/*Limpiando pripiedades default de lista*/
+.seccion-skills__lenguajes {
+    list-style: none;
+    padding: 0;
+}

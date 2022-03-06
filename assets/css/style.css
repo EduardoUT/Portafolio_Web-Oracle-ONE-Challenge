@@ -130,8 +130,8 @@ body {
 }
 
 .subtitulos {
-    margin: 0;
     font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
+    margin: 0;
     text-align: center;
 }
 

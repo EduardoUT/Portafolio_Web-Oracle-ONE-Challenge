@@ -15,7 +15,7 @@ Centrado con margin.
 }
 
 /*Tablets y celulares grandes u horizontales*/
-@media only screen and (min-width: 481px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
     /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
     .header-principal__container {
         flex-direction: column;
@@ -24,7 +24,7 @@ Centrado con margin.
 }
 
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
     .header-principal__container {
         flex-direction: column;

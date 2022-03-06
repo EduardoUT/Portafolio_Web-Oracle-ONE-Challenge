@@ -4,14 +4,21 @@ y un ancho de 100%
 */
 .header-principal {
     background-color: var(--color-fondo-primario);
-    height: var(--altura-header-EscritoriotTablet);
+    height: var(--altura-header-Escritorio);
     position: fixed;
     top: 0;
     width: 100%;
 }
 
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .header-principal {
+        height: var(--altura-header-Tablet);
+    }    
+}
+
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     /*El header aumentará de altura */
     .header-principal {
         height: var(--altura-header-Celular); /*145.6px*/

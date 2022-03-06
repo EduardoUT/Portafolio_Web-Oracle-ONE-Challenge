@@ -29,20 +29,26 @@
 
     /*<----Alturas de header para Escritorio, Tablet y Celular---->*/
     /*88px*/
-    --altura-header-EscritoriotTablet: 5.5em;
-    /*64.8px*/
-    --altura-header-Celular: 7.78em;
+    --altura-header-Escritorio: 5.5em;
+    /*80px*/
+    --altura-header-Tablet: 5em;
+    /*32px*/
+    --altura-menu-Tablet: 2em;
+    /*124.483pxpx*/
+    --altura-header-Celular: 7.1em;
     /*<----Alturas de header para Escritorio, Tablet y Celular---->*/
 
     /*
-    Formula para calcular la altura total de la seccionPresentación en Escritorio y Tablet
+    Formula para calcular la altura total de la seccionPresentación en Escritorio
     */
-    --altura-seccionPresentacion: calc(100vh - var(--altura-header-EscritoriotTablet));
+    --altura-seccionPresentacion: calc(100vh - var(--altura-header-Escritorio));
     /*
     --Se sigue la misma lógica que las formulas anteriores, solo variando la altura
     --del header del celular, la cual aumenta.
     */
     --altura-seccionPresentacion-Celular: calc(100vh - var(--altura-header-Celular));
+    /*Para tablet*/
+    --altura-seccionPresentacion-Tablet: calc(100vh - var(--altura-header-Tablet));
     /*<------------------Tamaños de letra------------------*/
     /*
     --Los siguientes tamaños se usan dependiendo el tamaño del dispositivo en los
@@ -130,11 +136,11 @@ body {
 
 /*<----------------------------------------Fin Selectores Genéricos---------------------------------------->*/
 /*Tablets y celulares grandes u horizontales*/
-@media only screen and (min-width: 481px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
     
 }
 
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     
 }

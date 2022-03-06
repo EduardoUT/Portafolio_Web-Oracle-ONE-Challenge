@@ -9,19 +9,19 @@ uno al lado del otro con una ancho de 172.8px y altura de 88px*/
 }
 
 /*Tablets y celulares grandes u horizontales*/
-@media only screen and (min-width: 481px) and (max-width: 1080px) {
-    /*Aumentando la altura del container y ancho completo*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    /*Aumentando la altura del container y ancho completo 48px*/
     .logo-container {
-        height: 4.2em;
+        height: 3em;
         width: 100%;
     }
 }
 
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-    /*Aumentando la altura del container y ancho completo*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    /*Aumentando la altura del container y ancho completo 48px*/
     .logo-container {
-        height: 4.2em;
+        height: 3em;
         width: 100%;
     }
 }

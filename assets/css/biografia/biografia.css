@@ -9,7 +9,8 @@ y de 100% al reducirse*/
 
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
-    /*Estableciendo tamaño de letra para parrafo de 14px*/
+    /*Estableciendo padding superior e inferior acorde al alto
+    del header de tablt*/
     .biografia {
         padding: var(--altura-header-Tablet) 0;
     }

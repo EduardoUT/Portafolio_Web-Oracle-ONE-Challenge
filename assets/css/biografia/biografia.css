@@ -3,12 +3,20 @@ a la altura del header de escritorio y tablet, con un ancho máximo de 751px
 y de 100% al reducirse*/
 .biografia {
     max-width: 46.937em;
-    padding:var(--altura-header-EscritoriotTablet) 0;
+    padding:var(--altura-header-Escritorio) 0;
     width: 100%;
 }
 
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    /*Estableciendo tamaño de letra para parrafo de 14px*/
+    .biografia {
+        padding: var(--altura-header-Tablet) 0;
+    }
+}
+
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     .biografia {
         /*Asignando margen superior e inferior
         acorde al tamaño del header del celular y estableciendo un ancho completo*/

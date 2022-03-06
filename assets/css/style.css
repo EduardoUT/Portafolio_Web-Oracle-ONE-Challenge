@@ -132,15 +132,20 @@ body {
 .subtitulos {
     margin: 0;
     font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
+    text-align: center;
 }
 
 /*<----------------------------------------Fin Selectores Genéricos---------------------------------------->*/
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
-    
+    .subtitulos {
+        font-size: var(--tamañoLetraTablet-titulosYSubtitulos);
+    }
 }
 
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    
+    .subtitulos {
+        font-size: var(--tamañoLetraCelular-tituloBienvenida-subtitulosSeccion);
+    }
 }

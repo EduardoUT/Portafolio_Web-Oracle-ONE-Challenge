@@ -4,7 +4,7 @@
 }
 
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     /*
     - Links display heredado en bloque de .menu
     - Ancho heredado de .header-principal
@@ -20,7 +20,6 @@
         padding: 0.1em 0;
         text-align: center;
         transition: 0.2s ease-out;
-        width: inherit;
     }
 
     /*Eliminando traslado hacía abajo de links*/

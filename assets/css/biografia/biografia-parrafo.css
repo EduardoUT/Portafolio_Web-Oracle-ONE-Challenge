@@ -4,7 +4,7 @@
 }
 
 /*Tablets y celulares grandes u horizontales*/
-@media only screen and (min-width: 481px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
     /*Estableciendo tamaño de letra para parrafo de 14px*/
     .biografia__parrafo {
         font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
@@ -12,7 +12,7 @@
 }
 
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     /*Estableciendo tamaño de letra para parrafo de 14px*/
     .biografia__parrafo {
         font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);

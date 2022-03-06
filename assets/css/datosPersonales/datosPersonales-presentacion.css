@@ -8,8 +8,15 @@ del contenedor acorde a la del header de escritorio*/
     width: 66.2%; /*752.017px*/
 }
 
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .datos-personales__presentacion {
+        height: auto;
+    }    
+}
+
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     /*Ajustando texto con una altura automática y un 
     ancho completo*/
     .datos-personales__presentacion {

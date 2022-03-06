@@ -4,21 +4,22 @@
 }
 
 /*Tablets y celulares grandes u horizontales*/
-@media only screen and (min-width: 481px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
     /*Cambiando la dirección flex a columna y disminuyendo
     el tamaño del logo*/
     .logo-container__logo {
         flex-direction: column;
-        width: 2.5em;
+        /*25.8px*/
+        width: 2.2em;
     }
 }
 
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     /*Cambiando la dirección flex a columna y disminuyendo
     el tamaño del logo*/
     .logo-container__logo {
         flex-direction: column;
-        width: 2.5em;
+        width: 2.2em;
     }
 }

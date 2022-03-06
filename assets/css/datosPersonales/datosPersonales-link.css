@@ -5,7 +5,7 @@
 }
 
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     /*Estableciendo tamaño de letra 14px*/
     .datos-personales__link {
         font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);

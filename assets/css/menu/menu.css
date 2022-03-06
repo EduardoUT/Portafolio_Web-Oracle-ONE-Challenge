@@ -10,20 +10,23 @@ entre items y alineados al centro*/
 }
 
 /*Tablets y celulares grandes u horizontales*/
-@media only screen and (min-width: 481px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
     /*Ancho de 100% heredado de .header-principal*/
     .menu {
+        height: var(--altura-header-Tablet);
         width: inherit;
+        
     }
 }
 
 /*Celulares verticales*/
-@media only screen and (min-width: 0px) and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
     /*Desplazando menú en bloque, con altura de 76.3167px, 
     habilitado el modo scroll vertical*/
     .menu {
         display: block;
         height: var(--altura-header-Celular);
+        max-width: 100%;
         overflow-y: scroll;
         overflow-x: hidden;
     }

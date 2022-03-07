@@ -1,0 +1,29 @@
+/*Limpiando pripiedades default de lista ancho de 176px con un 
+espaciado(gap) en filas de 32px y 16 px en columnas, se configuró
+solo una sola fila con grid-template-rows*/
+.lista-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+    grid-template-rows: 1fr;
+    gap: 2em 1em;
+    list-style: none;
+    padding: 0;
+}
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .lista-grid {
+        /*Tamaño de items de minmax de 224px, con 3 columnas*/
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .lista-grid {
+        /*Tamaño de items de minmax de 156px, con 2 columnas*/
+        grid-template-columns: repeat(auto-fit, minmax(9.75em, 1fr));
+        grid-template-columns: 1fr 1fr;
+    }
+}

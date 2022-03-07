@@ -1,6 +1,5 @@
 /*Estableciendo padding superior e inferior acorde al header*/
 .seccion-skills {
-    background-color: black;
     padding: var(--altura-header-Escritorio) 0;
 }
 

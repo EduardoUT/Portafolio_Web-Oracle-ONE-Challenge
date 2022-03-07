@@ -1,1 +1,4 @@
-.seccion-skills__descripcion {}
+/*Aplicando ancho completo al texto*/
+.seccion-skills__descripcion {
+    width: 100%;
+}

@@ -1,1 +1,3 @@
-.seccion-formacion-academica {}
+.seccion-formacion-academica {
+    background: var(--color-fondo-secundario);
+}

@@ -1,1 +1,5 @@
-.seccion-hobbies__parrafo {}
+/*Texto con ancho completo y fuente en negritas*/
+.seccion-hobbies__parrafo {
+    font-weight: bold;
+    width: 100%;
+}

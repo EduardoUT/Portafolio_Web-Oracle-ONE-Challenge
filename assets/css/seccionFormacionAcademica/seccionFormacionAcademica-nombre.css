@@ -1,4 +1,19 @@
-/*Limpiando margen*/
+/*Limpiando margen y estableciendo tamaño de letra*/
 .seccion-formacion-academica__nombre {
+    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
     margin: 0;
+}
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .seccion-formacion-academica__nombre {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .seccion-formacion-academica__nombre {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+    }
 }

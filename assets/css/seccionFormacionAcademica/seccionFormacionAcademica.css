@@ -6,14 +6,14 @@
 
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
-    .seccion-hobbies {
+    .seccion-formacion-academica {
         padding: var(--altura-header-Tablet) 0;
     }
 }
 
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .seccion-hobbies {
+    .seccion-formacion-academica {
         padding: var(--altura-header-Celular) 0;
     }
 }

@@ -21,5 +21,10 @@ de una sola fila*/
 
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .seccion-formacion-academica__institucion {}
+    .seccion-formacion-academica__institucion {
+        /*Ancho máximo de: 18.5em 296px
+        Ancho al reducir 100%*/
+        max-width: 18.5em;
+        width: 100%;
+    }
 }

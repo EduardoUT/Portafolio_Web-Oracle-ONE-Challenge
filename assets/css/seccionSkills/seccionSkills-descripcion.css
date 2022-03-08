@@ -1,4 +1,6 @@
-/*Aplicando ancho completo al texto*/
+/*Aplicando ancho completo al texto y texto en 
+negritas*/
 .seccion-skills__descripcion {
+    font-weight: bold;
     width: 100%;
 }

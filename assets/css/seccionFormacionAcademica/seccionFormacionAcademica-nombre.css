@@ -5,7 +5,7 @@
 }
 
 /*Tablets y celulares grandes u horizontales*/
-@media only screen and (min-width: 768px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) and (max-width: 1135px) {
     .seccion-formacion-academica__nombre {
         font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
     }

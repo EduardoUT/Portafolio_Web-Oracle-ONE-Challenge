@@ -1,1 +1,4 @@
-.seccion-formacion-academica__formacion {}
+/*Margen inferior de 8px*/
+.seccion-formacion-academica__formacion {
+    margin: 0 0 0.5em 0;
+}

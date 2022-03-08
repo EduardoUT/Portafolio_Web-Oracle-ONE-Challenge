@@ -8,9 +8,9 @@
 El rango es de 1135px para evitar que los items no pasen
 de una sola fila*/
 @media only screen and (min-width: 768px) and (max-width: 1135px) {
-    /*Altura: 7.375em 118px ancho heredado del contenedor ul*/
+    /*Altura: 10.375em 166px ancho heredado del contenedor ul*/
     .seccion-formacion-academica__imagen {
-        height: 7.375em;
+        height: 10.375em;
         width: inherit;
     }
 }
@@ -18,6 +18,8 @@ de una sola fila*/
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .seccion-formacion-academica__imagen {
-
+        /*Alto: 10.375em 166px*/
+        height: 10.375em;
+        width: inherit;
     }
 }

@@ -1,1 +1,4 @@
-.seccion-formacion-academica__nombre {}
+/*Limpiando margen*/
+.seccion-formacion-academica__nombre {
+    margin: 0;
+}

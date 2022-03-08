@@ -25,6 +25,8 @@ de una sola fila*/
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .seccion-formacion-academica__instituciones {
-
+        /*Estableciendo items en dirección vertical y centrados horizontalmente*/
+        grid-template-columns: 1fr;
+        justify-items: center;
     }
 }

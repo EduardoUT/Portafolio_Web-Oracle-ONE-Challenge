@@ -1,11 +1,12 @@
 /*Contenedor grid con items de 368px de ancho, gap de 16px y eliminando
-formato por default de lista, ancho de 100%*/
+formato por default de lista, ancho de 100%, margen superior de 32px*/
 .seccion-formacion-academica__instituciones {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
     grid-template-rows: 1fr;
     gap: 2em 1em;
     list-style: none;
+    margin: 2em 0 0 0;
     padding: 0;
     width: 100%;
 }

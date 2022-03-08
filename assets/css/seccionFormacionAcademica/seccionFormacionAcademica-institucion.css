@@ -2,7 +2,6 @@
 ancho heredado del contenedor ul, contenedor flex con espacio entre
 imagen y div de textos*/
 .seccion-formacion-academica__institucion {
-    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

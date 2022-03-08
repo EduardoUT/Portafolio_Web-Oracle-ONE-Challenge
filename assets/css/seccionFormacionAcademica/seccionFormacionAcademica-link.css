@@ -1,1 +1,4 @@
-.seccion-formacion-academica__link {}
+.seccion-formacion-academica__link {
+    display: inline-block;
+    width: inherit;
+}

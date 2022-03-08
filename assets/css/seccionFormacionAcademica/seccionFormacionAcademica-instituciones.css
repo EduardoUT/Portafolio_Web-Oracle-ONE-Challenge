@@ -6,7 +6,6 @@ formato por default de lista, ancho de 100%, margen superior de 32px*/
     grid-template-rows: 1fr;
     gap: 2em 1em;
     list-style: none;
-    margin: 2em 0 0 0;
     padding: 0;
     width: 100%;
 }

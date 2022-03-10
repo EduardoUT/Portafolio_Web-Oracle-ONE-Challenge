@@ -1,7 +1,9 @@
-/*Configurando tipografía y fuente en negritas*/
+/*Configurando tipografía, fuente en negritas y 
+eliminando margenes*/
 .experiencias-area__proyecto {
     font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
     font-weight: bold;
+    margin: 0;
 }
 
 /*Tablets y celulares grandes u horizontales*/

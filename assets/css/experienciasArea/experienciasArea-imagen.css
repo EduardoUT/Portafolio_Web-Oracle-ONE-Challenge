@@ -1,1 +1,4 @@
-.experiencias-area__imagen {}
+/*Configurando margen inferior de 16px*/
+.experiencias-area__imagen {
+    margin: 0 0 1em 0;
+}

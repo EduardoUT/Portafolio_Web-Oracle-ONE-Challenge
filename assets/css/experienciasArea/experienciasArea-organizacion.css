@@ -1,6 +1,8 @@
-/*Configurando tamaños de fuente*/
+/*Configurando tamaños de fuente y margenes superior
+e inferior de 8px*/
 .experiencias-area__organizacion {
     font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
+    margin: 0.5em 0;
 }
 
 /*Tablets y celulares grandes u horizontales*/

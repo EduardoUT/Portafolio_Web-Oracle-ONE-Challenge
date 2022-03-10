@@ -26,3 +26,39 @@ descripciones-area__imagen--orderSegundo*/
 .experiencias-area__descripciones--orderPrimero {
     order: 0;
 }
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    /*Ancho: 704px Alto: 384px*/
+    .experiencias-area__descripciones {
+        margin: 0.5em 0 0 0;
+        width: 100%;
+    }
+
+    /*Eliminando orden de items*/
+    .experiencias-area__descripciones--orderSegundo {
+        order: 0;
+    }
+    
+    .experiencias-area__descripciones--orderPrimero {
+        order: 0;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    /*Ancho: 296px Alto: 144px*/
+    .experiencias-area__descripciones {
+        margin: 0.5em 0 0 0;
+        width: 100%;
+    }
+
+    /*Eliminando orden de items*/
+    .experiencias-area__descripciones--orderSegundo {
+        order: 1;
+    }
+    
+    .experiencias-area__descripciones--orderPrimero {
+        order: 0;
+    }
+}

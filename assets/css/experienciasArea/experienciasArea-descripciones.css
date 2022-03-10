@@ -55,7 +55,7 @@ descripciones-area__imagen--orderSegundo*/
 
     /*Eliminando orden de items*/
     .experiencias-area__descripciones--orderSegundo {
-        order: 1;
+        order: 0;
     }
     
     .experiencias-area__descripciones--orderPrimero {

@@ -6,6 +6,24 @@ Alto: 406px Ancho: 752px*/
     width: 47em;
 }
 
+/*Estableciendo selectores flag de estado para orden
+de aparición visual de item.
+
+Nota: Seguir orden de imagen primero y descripción segundo y invertir orden en 
+el html al siguiente proyecto sucesivamente
+
+Colocar en el html cuando imagen tenga la clase flag
+experiencias-area__descripciones--orderSegundo*/
+.experiencias-area__imagen--orderPrimero {
+    order: 0;
+}
+
+/*Colocar en el html cuando imagen tenga la clase flag
+experiencias-area__descripciones--orderPrimero*/
+.experiencias-area__imagen--orderSegundo {
+    order: 1;
+}
+
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     /*Ancho: 704px Alto: 384px*/

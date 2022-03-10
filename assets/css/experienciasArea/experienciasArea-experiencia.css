@@ -2,5 +2,6 @@
 de 64px*/
 .experiencias-area__experiencia {
     display: flex;
+    justify-content: space-between;
     margin: 0 0 4em 0;
 }

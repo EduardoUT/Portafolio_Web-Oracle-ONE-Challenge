@@ -1,0 +1,18 @@
+/*Estableciendo padding superior e inferior acorde al header*/
+.formacion-academica {
+    padding: var(--altura-header-Escritorio) 0;
+}
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .formacion-academica {
+        padding: var(--altura-header-Tablet) 0;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formacion-academica {
+        padding: var(--altura-header-Celular) 0;
+    }
+}

@@ -1,0 +1,32 @@
+/*Contenedor grid con items de 368px de ancho, gap de 16px y eliminando
+formato por default de lista, ancho de 100%, margen superior de 32px*/
+.formacion-academica__instituciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23em, 1fr));
+    grid-template-rows: 1fr;
+    gap: 2em 1em;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+/*Tablets y celulares grandes u horizontales
+El rango es de 1135px para evitar que los items no pasen
+de una sola fila*/
+@media only screen and (min-width: 768px) and (max-width: 1135px) {
+    .formacion-academica__instituciones {
+        /*Estableciendo items de un ancho acorde al espacio disponible
+        alineados en una fila un ancho minmax de 224px*/
+        grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
+        grid-template-rows: 1fr;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formacion-academica__instituciones {
+        /*Estableciendo items en dirección vertical y centrados horizontalmente*/
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}

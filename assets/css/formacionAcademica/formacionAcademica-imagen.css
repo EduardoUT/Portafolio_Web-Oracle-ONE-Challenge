@@ -1,0 +1,25 @@
+/*Alto: 256px Ancho: 368px*/
+.formacion-academica__imagen {
+    height: 16em;
+    width: inherit;
+}
+
+/*Tablets y celulares grandes u horizontales
+El rango es de 1135px para evitar que los items no pasen
+de una sola fila*/
+@media only screen and (min-width: 768px) and (max-width: 1135px) {
+    /*Altura: 10.375em 166px ancho heredado del contenedor ul*/
+    .formacion-academica__imagen {
+        height: 10.375em;
+        width: inherit;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formacion-academica__imagen {
+        /*Alto: 10.375em 166px*/
+        height: 10.375em;
+        width: inherit;
+    }
+}

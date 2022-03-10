@@ -1,0 +1,33 @@
+/*Altura automática, esta aumenta con el texto que se agregue,
+ancho heredado del contenedor ul, contenedor flex con espacio entre
+imagen y div de textos*/
+.formacion-academica__institucion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: inherit;
+}
+
+
+/*Tablets y celulares grandes u horizontales
+El rango es de 1135px para evitar que los items no pasen
+de una sola fila*/
+@media only screen and (min-width: 768px) and (max-width: 1135px) {
+    .formacion-academica__institucion {
+        /*Altura automática, esta aumenta con el texto que se agregue,
+        ancho heredado del contenedor ul*/
+        height: auto;
+        width: inherit;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formacion-academica__institucion {
+        /*Ancho máximo de: 18.5em 296px
+        Ancho al reducir 100%*/
+        max-width: 18.5em;
+        width: 100%;
+    }
+}

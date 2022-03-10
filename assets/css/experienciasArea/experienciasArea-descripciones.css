@@ -1,1 +1,5 @@
-.experiencias-area__descripciones {}
+/*Estableciendo contenedor flex en el área de descripciones*/
+.experiencias-area__descripciones {
+    display: flex;
+    flex-direction: column;
+}

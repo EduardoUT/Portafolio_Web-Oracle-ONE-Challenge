@@ -1,1 +1,7 @@
-.experiencias-area__experiencia {}
+/*Configurando container flex con padding superior e inferior
+de 16px*/
+.experiencias-area__experiencia {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+}

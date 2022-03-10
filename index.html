@@ -40,14 +40,15 @@
    <link rel="stylesheet" href="./assets/css/seccionHobbies/seccionHobbies.css">
    <link rel="stylesheet" href="./assets/css/seccionHobbies/seccionHobbies-icono.css">
    <link rel="stylesheet" href="./assets/css/seccionHobbies/seccionHobbies-parrafo.css">
-   <link rel="stylesheet" href="./assets/css/seccionFormacionAcademica/seccionFormacionAcademica.css">
-   <link rel="stylesheet" href="./assets/css/seccionFormacionAcademica/seccionFormacionAcademica-info.css">
-   <link rel="stylesheet" href="./assets/css/seccionFormacionAcademica/seccionFormacionAcademica-instituciones.css">
-   <link rel="stylesheet" href="./assets/css/seccionFormacionAcademica/seccionFormacionAcademica-institucion.css">
-   <link rel="stylesheet" href="./assets/css/seccionFormacionAcademica/seccionFormacionAcademica-link.css">
-   <link rel="stylesheet" href="./assets/css/seccionFormacionAcademica/seccionFormacionAcademica-imagen.css">
-   <link rel="stylesheet" href="./assets/css/seccionFormacionAcademica/seccionFormacionAcademica-formacion.css">
-   <link rel="stylesheet" href="./assets/css/seccionFormacionAcademica/seccionFormacionAcademica-nombre.css">
+   <link rel="stylesheet" href="./assets/css/formacionAcademica/formacionAcademica.css">
+   <link rel="stylesheet" href="./assets/css/formacionAcademica/formacionAcademica-info.css">
+   <link rel="stylesheet" href="./assets/css/formacionAcademica/formacionAcademica-instituciones.css">
+   <link rel="stylesheet" href="./assets/css/formacionAcademica/formacionAcademica-institucion.css">
+   <link rel="stylesheet" href="./assets/css/formacionAcademica/formacionAcademica-link.css">
+   <link rel="stylesheet" href="./assets/css/formacionAcademica/formacionAcademica-imagen.css">
+   <link rel="stylesheet" href="./assets/css/formacionAcademica/formacionAcademica-formacion.css">
+   <link rel="stylesheet" href="./assets/css/formacionAcademica/formacionAcademica-nombre.css">
+   <link rel="stylesheet" href="./assets/css/formacionAcademica.css">
    <link rel="stylesheet" href="./assets/css/seccionExperienciaProfesional.css">
    <link rel="stylesheet" href="./assets/css/experienciasArea/experienciasArea.css">
    <link rel="stylesheet" href="./assets/css/experienciasArea/experienciasArea-experiencia.css">
@@ -173,7 +174,7 @@
          </div>
       </section>
 
-      <section class="seccion-experiencias-academicas">
+      <section class="seccion-skills-hobbies">
 
          <div class="container">
             <div class="seccion-skills" id="seccionSkills" tabindex="15">
@@ -267,55 +268,59 @@
 
             <!--Se usará order column en flexLayout el column en las secciones
                 flex en los items del ul-->
-            <div class="seccion-formacion-academica" id="seccionFormacion" tabindex="26">
 
+         </div>
+      </section>
+
+      <section class="seccion-formacion-academica" tabindex="26">
+         <div class="formacion-academica" id="seccionFormacion">
+            <div class="container">
                <h2 class="subtitulos">Formación Académica</h2>
 
-               <ul class="seccion-formacion-academica__instituciones">
-                  <li class="seccion-formacion-academica__institucion">
-                     <a class="seccion-formacion-academica__link" href="https://utfv.edomex.gob.mx/" target="_blank"
+               <ul class="formacion-academica__instituciones">
+                  <li class="formacion-academica__institucion">
+                     <a class="formacion-academica__link" href="https://utfv.edomex.gob.mx/" target="_blank"
                         title="Ir a UTFV">
-                        <img class="seccion-formacion-academica__imagen" src="./assets/img/educacion/logo_utfv.jpg"
+                        <img class="formacion-academica__imagen" src="./assets/img/educacion/logo_utfv.jpg"
                            alt="Logotipo de la Universidad Tecnológica Fidel Velázquez">
                      </a>
-                     <div class="seccion-formacion-academica__info">
-                        <p class="seccion-formacion-academica__formacion font-style" tabindex="27">
+                     <div class="formacion-academica__info">
+                        <p class="formacion-academica__formacion font-style" tabindex="27">
                            Ingeniería en Tecnologías de la Información: Área Sistemas Informáticos.</p>
-                        <p class="seccion-formacion-academica__nombre tamañoLetraDescripcionImagen font-style"
+                        <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style"
                            tabindex="28">
                            2018 - 2020 - UTFV</p>
                      </div>
                   </li>
-                  <li class="seccion-formacion-academica__institucion">
-                     <a class="seccion-formacion-academica__link" href="https://www.freecodecamp.org/espanol/"
+                  <li class="formacion-academica__institucion">
+                     <a class="formacion-academica__link" href="https://www.freecodecamp.org/espanol/"
                         target="_blank" title="Ir a freeCodeCamp.org">
-                        <img class="seccion-formacion-academica__imagen"
+                        <img class="formacion-academica__imagen"
                            src="./assets/img/educacion/freeCodeCamp.org.png" alt="Logotipo de freeCodeCamp.org">
                      </a>
-                     <div class="seccion-formacion-academica__info">
-                        <p class="seccion-formacion-academica__formacion font-style" tabindex="29">
+                     <div class="formacion-academica__info">
+                        <p class="formacion-academica__formacion font-style" tabindex="29">
                            Diseño Web Responsivo</p>
-                        <p class="seccion-formacion-academica__nombre tamañoLetraDescripcionImagen font-style"
+                        <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style"
                            tabindex="30">
                            2021 - freeCodeCamp.org</p>
                      </div>
                   </li>
-                  <li class="seccion-formacion-academica__institucion">
-                     <a class="seccion-formacion-academica__link" href="https://www.aluracursos.com/" target="_blank"
+                  <li class="formacion-academica__institucion">
+                     <a class="formacion-academica__link" href="https://www.aluracursos.com/" target="_blank"
                         title="Ir a Alura">
-                        <img class="seccion-formacion-academica__imagen" src="./assets/img/educacion/aluraoracle.jpg"
+                        <img class="formacion-academica__imagen" src="./assets/img/educacion/aluraoracle.jpg"
                            alt="Logotipo de Alura">
                      </a>
-                     <div class="seccion-formacion-academica__info">
-                        <p class="seccion-formacion-academica__formacion font-style" tabindex="31">
+                     <div class="formacion-academica__info">
+                        <p class="formacion-academica__formacion font-style" tabindex="31">
                            Formación en UX Design</p>
-                        <p class="seccion-formacion-academica__nombre tamañoLetraDescripcionImagen font-style"
+                        <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style"
                            tabindex="32">
                            2022 - Alura Latam</p>
                      </div>
                   </li>
                </ul>
-
             </div>
          </div>
 
@@ -334,8 +339,8 @@
                         se irá inviertiendo al siguiente-->
                <!--1-->
                <div class="experiencias-area__experiencia">
-                  <img class="experiencias-area__imagen experiencias-area__imagen--orderPrimero" src="./assets/img/proyectos/encriptador.PNG"
-                     alt="Vista previa del Encriptador de Texto">
+                  <img class="experiencias-area__imagen experiencias-area__imagen--orderPrimero"
+                     src="./assets/img/proyectos/encriptador.PNG" alt="Vista previa del Encriptador de Texto">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderSegundo">
                      <p class="experiencias-area__proyecto" tabindex="34">
                         Encriptador de Texto.
@@ -355,8 +360,8 @@
 
                <!--2-->
                <div class="experiencias-area__experiencia">
-                  <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo" src="./assets/img/proyectos/ahorcado.PNG"
-                     alt="Vista previa del Juego del Ahorcado">
+                  <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo"
+                     src="./assets/img/proyectos/ahorcado.PNG" alt="Vista previa del Juego del Ahorcado">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
                      <p class="experiencias-area__proyecto" tabindex="38">
                         Juego del ahorcado con HTML5, CSS3 y Javascript.
@@ -399,8 +404,8 @@
 
                <!--4-->
                <div class="experiencias-area__experiencia" tabindex="47">
-                  <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo" src="./assets/img/proyectos/Tributo_freeCodeCamp.PNG"
-                     alt="Vista previa de la Página Tributo">
+                  <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo"
+                     src="./assets/img/proyectos/Tributo_freeCodeCamp.PNG" alt="Vista previa de la Página Tributo">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
                      <p class="experiencias-area__proyecto" tabindex="48">
                         Construir una Página de Tributo (Sólo Diseño Web Responsivo), con HTML5 y CSS3.
@@ -488,7 +493,8 @@
 
                <!--8-->
                <div class="experiencias-area__experiencia" tabindex="67">
-                  <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo" src="./assets/img/proyectos/Login.PNG" alt="Vista previa del Sistema Interno de Gestión de información para Gateway Telecomunicaciones S.A. de
+                  <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo"
+                     src="./assets/img/proyectos/Login.PNG" alt="Vista previa del Sistema Interno de Gestión de información para Gateway Telecomunicaciones S.A. de
                      C.V.">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
                      <p class="experiencias-area__proyecto" tabindex="68">

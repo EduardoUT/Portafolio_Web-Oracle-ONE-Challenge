@@ -17,6 +17,8 @@
     --color-fondo-primario: #F5F5F5;
     /*Color de fuente secundario*/
     --color-fondo-secundario: #EAF2FD;
+    /*Color primario boton*/
+    --color-botones-primario: #2A7AE4;
 
     /*<----Alncho y alto de foto---->*/
     /*368px*/
@@ -99,9 +101,9 @@
 
 /*Definiendo propiedad smooth-scroll, tipografía y color de fuente global*/
 html {
-    scroll-behavior: smooth;
-    font-family: var(--font-family);
     color: var(--font-color);
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
 }
 
 /*Desplazando contenidos principales como main, header, etc en columna
@@ -114,8 +116,8 @@ body {
 /*<------------------------------------------Selectores Genéricos------------------------------------------>*/
 
 .font-style {
-    font-family: var(--font-family);
     color: var(--font-color);
+    font-family: var(--font-family);
 }
 
 .link-style {
@@ -135,11 +137,47 @@ body {
     text-align: center;
 }
 
+.btn {
+    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.btn--blanco {
+    color: var(--color-botones-primario);
+    background: var(--color-fondo-primario);
+    border: solid 0.1em var(--color-botones-primario);
+    padding: 1em;
+    transition: all 0.5s ease-out;
+}
+
+.btn--blanco:hover {
+    background-color: #02182b;
+    color: var(--color-fondo-primario);
+}
+
+.btn--azul {
+    color: var(--color-fondo-primario);
+    background: var(--color-botones-primario);
+    border: solid 0.1em var(--color-botones-primario);
+    padding: 1em;
+    transition: all 0.5s ease-out;
+}
+
+.btn--azul:hover {
+    background-color: var(--color-fondo-primario);
+    color: var(--color-botones-primario);
+}
+
 /*<----------------------------------------Fin Selectores Genéricos---------------------------------------->*/
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     .subtitulos {
         font-size: var(--tamañoLetraTablet-titulosYSubtitulos);
+    }
+
+    .btn {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
     }
 }
 
@@ -147,5 +185,9 @@ body {
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .subtitulos {
         font-size: var(--tamañoLetraCelular-tituloBienvenida-subtitulosSeccion);
+    }
+
+    .btn {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
     }
 }

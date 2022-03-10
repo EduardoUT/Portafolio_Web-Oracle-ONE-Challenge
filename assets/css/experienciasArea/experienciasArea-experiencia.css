@@ -1,6 +1,6 @@
-/*Configurando container flex con padding superior e inferior
-de 16px*/
+/*Configurando container flex con margin inferior
+de 64px*/
 .experiencias-area__experiencia {
     display: flex;
-    padding: 1em 0;
+    margin: 0 0 4em 0;
 }

@@ -1,7 +1,12 @@
-/*Estableciendo contenedor flex en el área de descripciones*/
+/*Estableciendo contenedor flex en el área de descripciones
+en columna, con items centrados verticalmente y un
+ancho de 100%*/
 .experiencias-area__descripciones {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
 }
 
 /*Estableciendo selectores flag de estado para orden

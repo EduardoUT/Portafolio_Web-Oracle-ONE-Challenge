@@ -3,3 +3,21 @@
     display: flex;
     flex-direction: column;
 }
+
+/*Estableciendo selectores flag de estado para orden
+de aparición visual de item.
+
+Nota: Seguir orden de imagen primero y descripción segundo y invertir orden en 
+el html al siguiente proyecto sucesivamente
+
+Colocar en el html cuando imagen tenga la clase flag
+experiencias-area__descripciones--orderPrimero*/
+.experiencias-area__descripciones--orderSegundo {
+    order: 1;
+}
+
+/*Colocar en el html cuando imagen tenga la clase flag
+descripciones-area__imagen--orderSegundo*/
+.experiencias-area__descripciones--orderPrimero {
+    order: 0;
+}

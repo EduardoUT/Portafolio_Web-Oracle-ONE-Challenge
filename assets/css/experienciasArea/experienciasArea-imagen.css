@@ -1,4 +1,25 @@
-/*Configurando margen inferior de 16px*/
+/*Configurando margen inferior de 16px
+Alto: 406px Ancho: 752px*/
 .experiencias-area__imagen {
+    height: 25.375em;
     margin: 0 0 1em 0;
+    width: 47em;
+}
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    /*Ancho: 704px Alto: 384px*/
+    .experiencias-area__imagen {
+        height: 24em;
+        width: 44em;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    /*Ancho: 296px Alto: 144px*/
+    .experiencias-area__imagen {
+        height: 9em;
+        width: 18.5em;
+    }
 }

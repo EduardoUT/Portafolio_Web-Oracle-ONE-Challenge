@@ -1,3 +1,6 @@
+/*Configurando container flex para botones con ancho
+de 100%*/
 .experiencias-area__btns {
-    
+    display: flex;
+    width: 100%;
 }

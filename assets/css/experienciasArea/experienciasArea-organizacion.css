@@ -1,1 +1,18 @@
-.experiencias-area__organizacion {}
+/*Configurando tamaños de fuente*/
+.experiencias-area__organizacion {
+    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
+}
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .experiencias-area__organizacion {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .experiencias-area__organizacion {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+    }
+}

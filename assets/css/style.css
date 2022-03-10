@@ -114,12 +114,14 @@ body {
 }
 
 /*<------------------------------------------Selectores Genéricos------------------------------------------>*/
-
+/*Configurando tipografía y color de tipografía*/
 .font-style {
     color: var(--font-color);
     font-family: var(--font-family);
 }
 
+/*Configurando color de links, eliminando subrayado y 
+colocando una transición*/
 .link-style {
     color: var(--font-color);
     text-decoration: none;
@@ -127,22 +129,33 @@ body {
     transition: all 0.5s ease-out;
 }
 
+/*Configurando desplazamiento hacia abajo al pasar 
+el puntero sobre el link*/
 .link-style:hover {
     transform: translate(0, 0.3em);
 }
 
+/*Configurando subtitulos h2 con margen inferior de 32 px
+y alineados al centro*/
 .subtitulos {
     font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
     margin: 0 0 2em 0;;
     text-align: center;
 }
 
+/*Configurando estilos para botones con un tamaño de letra, peso de fuente de 400,
+margen derecho de 16px sin subrayado en caso de ser links y con un ancho acorde al contenido*/
 .btn {
     font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
     font-weight: 400;
+    margin: 0 1em 0 0;
     text-decoration: none;
+    width: fit-content;
 }
 
+/*Configurado selector flag para boton normal con color de fondo acorde al
+fondo primario, color de letra acorde al color de boton primario azul, borde solido
+con color azul, padding de 16px y transición*/
 .btn--blanco {
     color: var(--color-botones-primario);
     background: var(--color-fondo-primario);
@@ -151,11 +164,16 @@ body {
     transition: all 0.5s ease-out;
 }
 
+/*Configurando estilos para selector flag para boton normal con color de fondo al 
+pasar el mouse*/
 .btn--blanco:hover {
     background-color: #02182b;
     color: var(--color-fondo-primario);
 }
 
+/*Configurando selector flag para botón normal con color de fondo azul,
+color de letra acorde al color de fondo primario, borde azul, padding de 16px
+y transición*/
 .btn--azul {
     color: var(--color-fondo-primario);
     background: var(--color-botones-primario);
@@ -164,6 +182,9 @@ body {
     transition: all 0.5s ease-out;
 }
 
+/*Color de fondo acorde al fondo primario y color de letras azul al
+pasar el puntero
+*/
 .btn--azul:hover {
     background-color: var(--color-fondo-primario);
     color: var(--color-botones-primario);

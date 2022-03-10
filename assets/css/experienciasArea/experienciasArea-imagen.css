@@ -26,10 +26,19 @@ experiencias-area__descripciones--orderPrimero*/
 
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
-    /*Ancho: 704px Alto: 384px*/
+    /*Ancho: 100% Alto: 400px*/
     .experiencias-area__imagen {
-        height: 24em;
-        width: 44em;
+        height: 25em;
+        width: 100%;
+    }
+
+    /*Eliminando orden de items*/
+    .experiencias-area__imagen--orderPrimero {
+        order: 0;
+    }
+    
+    .experiencias-area__imagen--orderSegundo {
+        order: 0;
     }
 }
 
@@ -39,5 +48,14 @@ experiencias-area__descripciones--orderPrimero*/
     .experiencias-area__imagen {
         height: 9em;
         width: 18.5em;
+    }
+
+    /*Eliminando orden de items*/
+    .experiencias-area__imagen--orderPrimero {
+        order: 0;
+    }
+    
+    .experiencias-area__imagen--orderSegundo {
+        order: 0;
     }
 }

@@ -1,4 +1,11 @@
-/*Despegando icono de texto*/
+/*Despegando icono de texto y asignando ancho y alto de 13px*/
 .datos-personales__icono {
-    margin-left: 0.5em;
+    height: 0.812em;
+    margin: 0 0 0 0.5em;
+    width: 0.812em;
+}
+
+/*Configurando selector flag para iconos de flecha*/
+.datos-personales__icono--flecha {
+    background: url("../../img/iconos/flecha.png") no-repeat center / cover;
 }

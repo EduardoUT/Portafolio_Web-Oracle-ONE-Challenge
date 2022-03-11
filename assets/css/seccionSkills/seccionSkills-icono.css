@@ -1,1 +1,30 @@
-.seccion-skills__icono {}
+/*Container con ancho y alto de 30px*/
+.seccion-skills__icono {
+    width: 1.875em;
+    height: 1.875em;
+}
+
+/*Selectores flag para iconos*/
+.seccion-skills__icono--html5 {
+    background: url("../../img/iconos/skills/html5.png") no-repeat center / contain;
+}
+
+.seccion-skills__icono--javascript {
+    background: url("../../img/iconos/skills/javascript.png") no-repeat center / contain;
+}
+
+.seccion-skills__icono--css3 {
+    background: url("../../img/iconos/skills/css3.png") no-repeat center / contain;
+}
+
+.seccion-skills__icono--java {
+    background: url("../../img/iconos/skills/java.png") no-repeat center / contain;
+}
+
+.seccion-skills__icono--mysql {
+    background: url("../../img/iconos/skills/mysql.png") no-repeat center / contain;
+}
+
+.seccion-skills__icono--git {
+    background: url("../../img/iconos/skills/git.png") no-repeat center / contain;
+}

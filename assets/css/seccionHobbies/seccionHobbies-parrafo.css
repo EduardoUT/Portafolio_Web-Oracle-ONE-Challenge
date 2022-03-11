@@ -1,5 +1,7 @@
-/*Texto con ancho completo y fuente en negritas*/
+/*Texto con ancho completo, fuente en negritas y margen superior
+de 8px*/
 .seccion-hobbies__parrafo {
     font-weight: bold;
+    margin: 0.5em 0 0 0;
     width: 100%;
 }

@@ -1,6 +1,8 @@
 /*Agregando color y eliminando subrayado*/
 .datos-personales__link {
+    align-items: center;
     color: var(--color-fondo-primario);
+    display: flex;
     text-decoration: none;
 }
 

@@ -7,7 +7,6 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="./assets/css/normalize.css">
    <link rel="stylesheet" href="./assets/css/style.css">
-   <!--<link rel="stylesheet" href="./assets/">-->
    <link rel="stylesheet" href="./assets/css/container.css">
    <link rel="stylesheet" href="./assets/css/headerPrincipal.css">
    <link rel="stylesheet" href="./assets/css/headerPrincipal/headerPrincipal-container.css">
@@ -66,8 +65,7 @@
    <link rel="stylesheet" href="./assets/css/seccionFooter/seccionFooter.css">
    <link rel="stylesheet" href="./assets/css/seccionFooter/seccionFooter-copyright.css">
    <link rel="stylesheet" href="./assets/css/seccionFooter/seccionFooter-autor.css">
-
-   <link rel="icon" href="img/iconos/logo_personal.png">
+   <link rel="icon" href="./assets/img/iconos/logo_personal.png">
    <title>Portafolio | Eduardo Reyes Hernández</title>
 </head>
 
@@ -92,7 +90,7 @@
             <a class="menu__link link-style" href="#seccionProyectos" title="Ir a sección Proyectos"
                tabindex="6">Proyectos</a>
             <a class="menu__link link-style" href="#seccionFormulario" title="Correo: eduardoreyeshernandez98@gmail.com"
-               tabindex="6">eduardoreyeshernandez98@gmail.com</a>
+               tabindex="7">eduardoreyeshernandez98@gmail.com</a>
          </nav>
       </div>
    </header>
@@ -102,14 +100,14 @@
       <section class="seccion-presentacion">
 
          <div class="container">
-            <div class="datos-personales" tabindex="7">
+            <div class="datos-personales" tabindex="8">
 
 
                <div class="datos-personales__presentacion">
-                  <h1 class="datos-personales__titulo">Hola,
+                  <h1 class="datos-personales__titulo" tabindex="9">Hola,
                      soy Eduardo Reyes Hernández, y construyo páginas web.
                   </h1>
-                  <p class="datos-personales__parrafo tamaño-parrafos" tabindex="8">
+                  <p class="datos-personales__parrafo tamaño-parrafos" tabindex="10">
                      Soy egresado de la Universidad Tecnológica Fidel Velázquez, actualmente soy parte del programa
                      Oracle Next Education y Alura LATAM, aprendiendo Javascript, HTML5 y CSS3.
                   </p>
@@ -117,29 +115,27 @@
                      <!--Al hacer hover sobre un li se desplazará hacá abajo-->
                      <li class="datos-personales__contacto">
                         <a class="datos-personales__link" href="https://github.com/EduardoUT" target="_blank"
-                           tabindex="9">GitHub
-                           <img class="datos-personales__icono" src="./assets/img/iconos/flecha.png"
-                              alt="Ir a GitHub de Eduardo">
+                           title="Ir a GitHub de Eduardo" tabindex="11">GitHub
+                           <div class="datos-personales__icono datos-personales__icono--flecha"></div>
                         </a>
                      </li>
                      <li class="datos-personales__contacto">
                         <a class="datos-personales__link"
                            href="https://www.linkedin.com/in/eduardo-reyes-hern%C3%A1ndez-3040471aa/" target="_blank"
-                           tabindex="10">LinkedIn
-                           <img class="datos-personales__icono" src="./assets/img/iconos/flecha.png"
-                              alt="Ir a LinkedIn de Eduardo">
+                           title="Ir a LinkedIn de Eduardo" tabindex="12">LinkedIn
+                           <div class="datos-personales__icono datos-personales__icono--flecha"></div>
                         </a>
                      </li>
                      <li class="datos-personales__contacto">
                         <a class="datos-personales__link" href="https://www.instagram.com/rockerogalactic/"
-                           target="_blank" tabindex="11">Instagram
-                           <img class="datos-personales__icono" src="./assets/img/iconos/flecha.png"
-                              alt="Ir a Instagram de Eduardo">
+                           target="_blank" title="Ir a Instagram de Eduardo" tabindex="13">Instagram
+                           <div class="datos-personales__icono datos-personales__icono--flecha"></div>
                         </a>
                      </li>
                      <li class="datos-personales__contacto">
-                        <a class="datos-personales__link" href="#" tabindex="12">Currículo
-                           <img class="datos-personales__icono" src="./assets/img/iconos/flecha.png">
+                        <a class="datos-personales__link" href="#" target="_blank" title="Ver Currículum Vitae" 
+                        tabindex="14">Currículo
+                           <div class="datos-personales__icono datos-personales__icono--flecha"></div>
                         </a>
                      </li>
                   </ul>
@@ -147,17 +143,17 @@
                <!--Los siguientes elementos se desplazan en flex-->
                <img class="datos-personales__foto" src="./assets/img/foto/pic.jpg" alt="Foto de Eduardo">
 
-            </div>
+            </img>
          </div>
 
       </section>
 
       <section class="seccion-sobre-mi font-style">
          <div class="container">
-            <div class="biografia" id="seccionSobreMi" tabindex="13">
+            <div class="biografia" id="seccionSobreMi" tabindex="15">
                <!--Delante poner clase genérica referente al tamaño de cada letra-->
                <h2 class="biografia__subtitulo">Sobre mi</h2>
-               <p class="biografia__parrafo" tabindex="14">
+               <p class="biografia__parrafo" tabindex="16">
                   Hola, mi nombre es Eduardo Reyes Hernández, soy de México,
                   tengo 23 años y actualmente me encuentro en busca de una oportunidad de
                   empleo como desarrollador front-end junior.
@@ -177,45 +173,44 @@
       <section class="seccion-skills-hobbies">
 
          <div class="container">
-            <div class="seccion-skills" id="seccionSkills" tabindex="15">
+            <div class="seccion-skills" id="seccionSkills" tabindex="17">
 
                <h2 class="subtitulos">Skills</h2>
 
                <ul class="lista-grid">
                   <li class="lista-grid__item">
-                     <img class="seccion-skills__icono" src="./assets/img/iconos/skills/html5.png" alt="Icono de HTML5">
-                     <p class="seccion-skills__descripcion" tabindex="16">
+                     <div class="seccion-skills__icono seccion-skills__icono--html5"></div>
+                     <p class="seccion-skills__descripcion" tabindex="18">
                         HTML5
                      </p>
                   </li>
                   <li class="lista-grid__item">
-                     <img class="seccion-skills__icono" src="./assets/img/iconos/skills/javascript.png"
-                        alt="Icono de JavaScript">
-                     <p class="seccion-skills__descripcion" tabindex="17">
+                     <div class="seccion-skills__icono seccion-skills__icono--javascript"></div>
+                     <p class="seccion-skills__descripcion" tabindex="19">
                         JavaScript
                      </p>
                   </li>
                   <li class="lista-grid__item">
-                     <img class="seccion-skills__icono" src="./assets/img/iconos/skills/css3.png" alt="Icono de CSS3">
-                     <p class="seccion-skills__descripcion" tabindex="18">
+                     <div class="seccion-skills__icono seccion-skills__icono--css3"></div>
+                     <p class="seccion-skills__descripcion" tabindex="20">
                         CSS3
                      </p>
                   </li>
                   <li class="lista-grid__item">
-                     <img class="seccion-skills__icono" src="./assets/img/iconos/skills/java.png" alt="Icono de Java">
-                     <p class="seccion-skills__descripcion" tabindex="19">
+                     <div class="seccion-skills__icono seccion-skills__icono--java"></div>
+                     <p class="seccion-skills__descripcion" tabindex="21">
                         Java
                      </p>
                   </li>
                   <li class="lista-grid__item">
-                     <img class="seccion-skills__icono" src="./assets/img/iconos/skills/mysql.png" alt="Icono de MySQL">
-                     <p class="seccion-skills__descripcion" tabindex="20">
+                     <div class="seccion-skills__icono seccion-skills__icono--mysql"></div>
+                     <p class="seccion-skills__descripcion" tabindex="22">
                         MySQL
                      </p>
                   </li>
                   <li class="lista-grid__item">
-                     <img class="seccion-skills__icono" src="./assets/img/iconos/skills/git.png" alt="Icono de Git">
-                     <p class="seccion-skills__descripcion" tabindex="">
+                     <div class="seccion-skills__icono seccion-skills__icono--git"></div>
+                     <p class="seccion-skills__descripcion" tabindex="23">
                         Git
                      </p>
                   </li>
@@ -223,42 +218,38 @@
 
             </div>
 
-            <div class="seccion-hobbies" id="seccionHobbies" tabindex="21">
+            <div class="seccion-hobbies" id="seccionHobbies" tabindex="24">
 
                <h2 class="subtitulos">Hobbies</h2>
 
                <ul class="lista-grid">
                   <li class="lista-grid__item">
-                     <img class="seccion-hobbies__icono" src="./assets/img/iconos/hobbies/musica.png"
-                        alt="Icono de Audifonos">
-                     <p class="seccion-hobbies__parrafo font-style" tabindex="22">
+                     <div class="seccion-hobbies__icono seccion-hobbies__icono--audifonos"></div>
+                     <p class="seccion-hobbies__parrafo font-style" tabindex="25">
                         Oir Música
                      </p>
                   </li>
                   <li class="lista-grid__item">
-                     <img class="seccion-hobbies__icono" src="./assets/img/iconos/hobbies/pantalla.png"
-                        alt="Icono de Pantalla">
-                     <p class="seccion-hobbies__parrafo font-style" tabindex="23">
+                     <div class="seccion-hobbies__icono seccion-hobbies__icono--pantalla"></div>
+                     <p class="seccion-hobbies__parrafo font-style" tabindex="26">
                         Ver Series
                      </p>
                   </li>
                   <li class="lista-grid__item">
-                     <img class="seccion-hobbies__icono" src="./assets/img/iconos/hobbies/libro-abierto.png"
-                        alt="Icono de Libro">
-                     <p class="seccion-hobbies__parrafo font-style" tabindex="24">
+                     <div class="seccion-hobbies__icono seccion-hobbies__icono--libro"></div>
+                     <p class="seccion-hobbies__parrafo font-style" tabindex="27">
                         Leer
                      </p>
                   </li>
                   <li class="lista-grid__item">
-                     <img class="seccion-hobbies__icono" src="./assets/img/iconos/hobbies/rollo-de-pelicula.png"
-                        alt="Icono de Cintas de Cine">
-                     <p class="seccion-hobbies__parrafo font-style" tabindex="25">
+                     <div class="seccion-hobbies__icono seccion-hobbies__icono--cine"></div>
+                     <p class="seccion-hobbies__parrafo font-style" tabindex="28">
                         Ver Películas
                      </p>
                   </li>
                   <li class="lista-grid__item">
-                     <img class="seccion-hobbies__icono" src="./assets/img/iconos/hobbies/ojo.png" alt="Icono de Ojo">
-                     <p class="seccion-hobbies__parrafo font-style" tabindex="25">
+                     <div class="seccion-hobbies__icono seccion-hobbies__icono--ojo"></div>
+                     <p class="seccion-hobbies__parrafo font-style" tabindex="29">
                         Ver Fútbol
                      </p>
                   </li>
@@ -272,7 +263,7 @@
          </div>
       </section>
 
-      <section class="seccion-experiencias-academicas" tabindex="26">
+      <section class="seccion-experiencias-academicas" tabindex="30">
          <div class="formacion-academica" id="seccionFormacion">
             <div class="container">
                <h2 class="subtitulos">Formación Académica</h2>
@@ -285,9 +276,9 @@
                            alt="Logotipo de la Universidad Tecnológica Fidel Velázquez">
                      </a>
                      <div class="formacion-academica__info">
-                        <p class="formacion-academica__formacion font-style" tabindex="27">
+                        <p class="formacion-academica__formacion font-style" tabindex="31">
                            Ingeniería en Tecnologías de la Información: Área Sistemas Informáticos.</p>
-                        <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style" tabindex="28">
+                        <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style" tabindex="32">
                            2018 - 2020 - UTFV</p>
                      </div>
                   </li>
@@ -298,9 +289,9 @@
                            alt="Logotipo de freeCodeCamp.org">
                      </a>
                      <div class="formacion-academica__info">
-                        <p class="formacion-academica__formacion font-style" tabindex="29">
+                        <p class="formacion-academica__formacion font-style" tabindex="33">
                            Diseño Web Responsivo</p>
-                        <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style" tabindex="30">
+                        <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style" tabindex="34">
                            2021 - freeCodeCamp.org</p>
                      </div>
                   </li>
@@ -311,9 +302,9 @@
                            alt="Logotipo de Alura">
                      </a>
                      <div class="formacion-academica__info">
-                        <p class="formacion-academica__formacion font-style" tabindex="31">
+                        <p class="formacion-academica__formacion font-style" tabindex="35">
                            Formación en UX Design</p>
-                        <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style" tabindex="32">
+                        <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style" tabindex="36">
                            2022 - Alura Latam</p>
                      </div>
                   </li>
@@ -327,7 +318,7 @@
 
          <div class="container">
             <!--column-->
-            <div class="experiencias-area" tabindex="33">
+            <div class="experiencias-area" tabindex="37">
 
                <h2 class="subtitulos">Experiencia Profesional</h2>
                <!--column-->
@@ -339,17 +330,17 @@
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderPrimero"
                      src="./assets/img/proyectos/encriptador.PNG" alt="Vista previa del Encriptador de Texto">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderSegundo">
-                     <p class="experiencias-area__proyecto" tabindex="34">
+                     <p class="experiencias-area__proyecto" tabindex="38">
                         Encriptador de Texto.
                      </p>
-                     <p class="experiencias-area__organizacion" tabindex="35">
+                     <p class="experiencias-area__organizacion" tabindex="39">
                         Challenge Oracle ONE y Alura.
                      </p>
                      <div class="experiencias-area__btns">
                         <a class="btn btn--blanco" href="https://github.com/EduardoUT/Encriptador-Oracle-ONE-Challenge"
-                           tabindex="36">Repositorio</a>
+                           tabindex="40">Repositorio</a>
                         <a class="btn btn--azul" href="https://eduardout.github.io/Encriptador-Oracle-ONE-Challenge/"
-                           tabindex="37">Ver
+                           tabindex="41">Ver
                            demo</a>
                      </div>
                   </div>
@@ -360,17 +351,17 @@
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo"
                      src="./assets/img/proyectos/ahorcado.PNG" alt="Vista previa del Juego del Ahorcado">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
-                     <p class="experiencias-area__proyecto" tabindex="38">
+                     <p class="experiencias-area__proyecto" tabindex="42">
                         Juego del ahorcado con HTML5, CSS3 y Javascript.
                      </p>
-                     <p class="experiencias-area__organizacion" tabindex="39">
+                     <p class="experiencias-area__organizacion" tabindex="43">
                         Challenge Oracle ONE y Alura.
                      </p>
                      <div class="experiencias-area__btns">
                         <a class="btn btn--blanco" href="https://github.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge"
-                           tabindex="40">Repositorio</a>
+                           tabindex="44">Repositorio</a>
                         <a class="btn btn--azul" href="https://eduardout.github.io/Ahorcado-Oracle-ONE-Challenge/"
-                           tabindex="41">Ver
+                           tabindex="45">Ver
                            demo</a>
                      </div>
 
@@ -378,132 +369,132 @@
                </div>
 
                <!--3-->
-               <div class="experiencias-area__experiencia" tabindex="42">
+               <div class="experiencias-area__experiencia" tabindex="46">
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderPrimero"
                      src="./assets/img/proyectos/Formulario_freeCodeCamp.PNG"
                      alt="Vista previa del Formulario de Encuesta">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderSegundo">
-                     <p class="experiencias-area__proyecto" tabindex="43">
+                     <p class="experiencias-area__proyecto" tabindex="47">
                         Construir un Formulario de Encuesta (Sólo Diseño Web Responsivo), con HTML5 y CSS3.
                      </p>
-                     <p class="experiencias-area__organizacion" tabindex="44">
+                     <p class="experiencias-area__organizacion" tabindex="48">
                         Formación Diseño Web Responsivo freeCodeCamp.org
                      </p>
                      <div class="experiencias-area__btns">
                         <a class="btn btn--blanco" href="https://github.com/EduardoUT/fCCProyectos-FormularioEncuesta"
-                           tabindex="45">Repositorio</a>
+                           tabindex="49">Repositorio</a>
                         <a class="btn btn--azul" href="https://eduardout.github.io/fCCProyectos-FormularioEncuesta/"
-                           tabindex="46">Ver
+                           tabindex="50">Ver
                            demo</a>
                      </div>
                   </div>
                </div>
 
                <!--4-->
-               <div class="experiencias-area__experiencia" tabindex="47">
+               <div class="experiencias-area__experiencia" tabindex="51">
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo"
                      src="./assets/img/proyectos/Tributo_freeCodeCamp.PNG" alt="Vista previa de la Página Tributo">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
-                     <p class="experiencias-area__proyecto" tabindex="48">
+                     <p class="experiencias-area__proyecto" tabindex="52">
                         Construir una Página de Tributo (Sólo Diseño Web Responsivo), con HTML5 y CSS3.
                      </p>
-                     <p class="experiencias-area__organizacion" tabindex="49">
+                     <p class="experiencias-area__organizacion" tabindex="53">
                         Formación Diseño Web Responsivo freeCodeCamp.org
                      </p>
                      <div class="experiencias-area__btns">
                         <a class="btn btn--blanco" href="https://github.com/EduardoUT/fCCProyectos-PaginaTributo"
-                           tabindex="50">Repositorio</a>
+                           tabindex="54">Repositorio</a>
                         <a class="btn btn--azul" href="https://eduardout.github.io/fCCProyectos-PaginaTributo/"
-                           tabindex="51">Ver
+                           tabindex="55">Ver
                            demo</a>
                      </div>
                   </div>
                </div>
 
                <!--5-->
-               <div class="experiencias-area__experiencia" tabindex="52">
+               <div class="experiencias-area__experiencia" tabindex="56">
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderPrimero"
                      src="./assets/img/proyectos/Documentacion_freeCodeCamp.PNG"
                      alt="Vista previa de la Página de Documentación Técnica">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderSegundo">
-                     <p class="experiencias-area__proyecto" tabindex="53">
+                     <p class="experiencias-area__proyecto" tabindex="57">
                         Construir una Página de Documentación Técnica (Sólo Diseño Web Responsivo), con
                         HTML5 y CSS3.
                      </p>
-                     <p class="experiencias-area__organizacion" tabindex="54">
+                     <p class="experiencias-area__organizacion" tabindex="58">
                         Formación Diseño Web Responsivo freeCodeCamp.org
                      </p>
                      <div class="experiencias-area__btns">
                         <a class="btn btn--blanco" href="https://github.com/EduardoUT/fCCProyectos-PaginaDocumentacion"
-                           tabindex="55">Repositorio</a>
+                           tabindex="59">Repositorio</a>
                         <a class="btn btn--azul" href="https://eduardout.github.io/fCCProyectos-PaginaDocumentacion/"
-                           tabindex="56">Ver
+                           tabindex="60">Ver
                            demo</a>
                      </div>
                   </div>
                </div>
 
                <!--6-->
-               <div class="experiencias-area__experiencia" tabindex="57">
+               <div class="experiencias-area__experiencia" tabindex="61">
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo"
                      src="./assets/img/proyectos/Productos_freeCodeCamp.PNG"
                      alt="Vista previa de la Página de Productos">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
-                     <p class="experiencias-area__proyecto" tabindex="58">
+                     <p class="experiencias-area__proyecto" tabindex="62">
                         Contruir una Landing Page de Productos (Sólo Diseño Web Responsivo), con HTML5 y
                         CSS3.
                      </p>
-                     <p class="experiencias-area__organizacion" tabindex="59">
+                     <p class="experiencias-area__organizacion" tabindex="63">
                         Formación Diseño Web Responsivo freeCodeCamp.org
                      </p>
                      <div class="experiencias-area__btns">
                         <a class="btn btn--blanco" href="https://github.com/EduardoUT/fCCProyectos-PaginaProductos"
-                           tabindex="60">Repositorio</a>
+                           tabindex="64">Repositorio</a>
                         <a class="btn btn--azul" href="https://eduardout.github.io/fCCProyectos-PaginaProductos/"
-                           tabindex="61">Ver
+                           tabindex="65">Ver
                            demo</a>
                      </div>
                   </div>
                </div>
 
                <!--7-->
-               <div class="experiencias-area__experiencia" tabindex="62">
+               <div class="experiencias-area__experiencia" tabindex="66">
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderPrimero"
                      src="./assets/img/proyectos/Portafolio_freeCodeCamp.PNG"
                      alt="Vista previa del Portafolio Web Personal">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderSegundo">
-                     <p class="experiencias-area__proyecto" tabindex="63">
+                     <p class="experiencias-area__proyecto" tabindex="67">
                         Construir un Portafolio Web Personal (Sólo Diseño Web Responsivo), con HTML5 y CSS3.
                      </p>
-                     <p class="experiencias-area__organizacion" tabindex="64">
+                     <p class="experiencias-area__organizacion" tabindex="68">
                         Formación Diseño Web Responsivo freeCodeCamp.org
                      </p>
                      <div class="experiencias-area__btns">
                         <a class="btn btn--blanco" href="https://github.com/EduardoUT/fCCProyectos-Portafolio"
-                           tabindex="65">Repositorio</a>
+                           tabindex="69">Repositorio</a>
                         <a class="btn btn--azul" href="https://eduardout.github.io/fCCProyectos-Portafolio/"
-                           tabindex="66">Ver
+                           tabindex="70">Ver
                            demo</a>
                      </div>
                   </div>
                </div>
 
                <!--8-->
-               <div class="experiencias-area__experiencia" tabindex="67">
+               <div class="experiencias-area__experiencia" tabindex="71">
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo"
                      src="./assets/img/proyectos/Login.PNG" alt="Vista previa del Sistema Interno de Gestión de información para Gateway Telecomunicaciones S.A. de
                      C.V.">
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
-                     <p class="experiencias-area__proyecto" tabindex="68">
+                     <p class="experiencias-area__proyecto" tabindex="72">
                         Sistema Interno de Gestión de información para Gateway Telecomunicaciones S.A. de
                         C.V. (Java y MySQL)
                      </p>
-                     <p class="experiencias-area__organizacion" tabindex="69">
+                     <p class="experiencias-area__organizacion" tabindex="73">
                         Práctica Profesional de Estadía en Gateway Telecomunicaciones S.A. de C.V.
                      </p>
                      <div class="experiencias-area__btns">
                         <a class="btn btn--blanco" href="https://github.com/EduardoUT/CRUD-Gateway-Telecomunicaciones"
-                           tabindex="70">Repositorio</a>
+                           tabindex="74">Repositorio</a>
                      </div>
                   </div>
                </div>
@@ -515,7 +506,7 @@
 
       <section class="seccion-formulario-contacto">
          <div class="container">
-            <div class="formulario-container" id="seccionFormulario" tabindex="72">
+            <div class="formulario-container" id="seccionFormulario" tabindex="75">
                <img class="formulario-container__imagen" src="">
                <div class="formulario-container__contacto">
                   <h2 class="subtitulos">Contacto</h2>
@@ -523,23 +514,23 @@
                      <label class="formulario-container__label" for="nombre">
                         Nombre Completo:
                         <input class="input-text input-text--style" id="nombre" type="text" placeholder="Nombre"
-                           required title="Escriba su nombre completo" tabindex="73">
+                           required title="Escriba su nombre completo" tabindex="76">
                      </label>
                      <label class="formulario-container__label" for="email">
                         Correo Electrónico:
                         <input class="input-email input-text--style" id="email" type="email" placeholder="E-mail"
-                           required title="Escriba su email" tabindex="74">
+                           required title="Escriba su email" tabindex="77">
                      </label>
                      <label class="formulario-container__label" for="Asunto">
                         <input class="input-text input-text--style" id="asunto" type="text" placeholder="Asunto"
-                           required title="Escriba el asunto" tabindex="75">
+                           required title="Escriba el asunto" tabindex="78">
                      </label>
                      <label class="formulario-container__label" for="mensaje">
                         Mensaje:
                         <textarea class="textarea textarea--style" id="mensaje" placeholder="Mensaje" required
-                           title="Escriba el mensaje" tabindex="76"></textarea>
+                           title="Escriba el mensaje" tabindex="79"></textarea>
                      </label>
-                     <button class="btn btn--azul" tabindex="77" title="Enviar mensaje">Enviar mensaje</button>
+                     <button class="btn btn--azul" tabindex="80" title="Enviar mensaje">Enviar mensaje</button>
                   </form>
                </div>
             </div>
@@ -554,8 +545,8 @@
    autores de los iconos y links de referencia-->
    <footer class="seccion-footer">
       <div class="container">
-         <div class="seccion-footer__copyright" tabindex="78">
-            <p class="seccion-footer__autor" tabindex="79">Desarrollado por Eduardo Reyes Hernández 2022</p>
+         <div class="seccion-footer__copyright" tabindex="81">
+            <p class="seccion-footer__autor" tabindex="82">Desarrollado por Eduardo Reyes Hernández 2022</p>
          </div>
       </div>
    </footer>

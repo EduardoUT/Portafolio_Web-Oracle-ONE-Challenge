@@ -32,7 +32,7 @@ descripciones-area__imagen--orderSegundo*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     /*Ancho: 704px Alto: 384px*/
     .experiencias-area__descripciones {
-        background: url('../../img/fondo/mobile.png') top / cover;
+        background: url('../../img/fondo/abs.png') center / cover;
         margin: 0.5em 0 0 0;
         width: 100%;
     }

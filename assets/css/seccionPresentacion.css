@@ -1,7 +1,7 @@
 /*Fondo de sección presentación de tamaño completo acorde a la altura del header
 de escritorio*/
 .seccion-presentacion {
-    background: url('../img/fondo/fondo-banner.png') no-repeat center / cover fixed;
+    background: url('../img/fondo/abs.png') no-repeat center / cover /*contain*/ fixed;
     height: var(--altura-seccionPresentacion);
     width: 100%;
 }
@@ -15,8 +15,10 @@ de escritorio*/
 
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    /*Estableciendo altura*/
+    /*Estableciendo fondo para celular*/
     .seccion-presentacion {
+        background: url('../img/fondo/mobile.png') no-repeat center / cover /*contain*/ fixed;
         height: var(--altura-seccionPresentacion-Celular);
+        width: 100%;
     }
 }

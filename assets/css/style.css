@@ -153,12 +153,12 @@ margen derecho de 16px sin subrayado en caso de ser links y con un ancho acorde 
     width: fit-content;
 }
 
-/*Configurado selector flag para boton normal con color de fondo acorde al
-fondo primario, color de letra acorde al color de boton primario azul, borde solido
+/*Configurado selector flag para boton normal con color de fondo transparente, 
+color de letra acorde al color de boton primario azul, borde solido
 con color azul, padding de 16px y transición*/
 .btn--blanco {
     color: var(--color-botones-primario);
-    background: var(--color-fondo-primario);
+    background: transparent;
     border: solid 0.1em var(--color-botones-primario);
     padding: 1em;
     transition: all 0.5s ease-out;
@@ -167,7 +167,7 @@ con color azul, padding de 16px y transición*/
 /*Configurando estilos para selector flag para boton normal con color de fondo al 
 pasar el mouse*/
 .btn--blanco:hover {
-    background-color: #02182b;
+    background-color: var(--color-botones-primario);
     color: var(--color-fondo-primario);
 }
 
@@ -182,11 +182,11 @@ y transición*/
     transition: all 0.5s ease-out;
 }
 
-/*Color de fondo acorde al fondo primario y color de letras azul al
+/*Color de fondo transparente y color de letras azul al
 pasar el puntero
 */
 .btn--azul:hover {
-    background-color: var(--color-fondo-primario);
+    background-color: transparent;
     color: var(--color-botones-primario);
 }
 

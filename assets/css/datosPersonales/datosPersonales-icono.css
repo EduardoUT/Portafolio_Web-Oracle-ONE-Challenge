@@ -1,11 +1,22 @@
 /*Despegando icono de texto y asignando ancho y alto de 13px*/
 .datos-personales__icono {
-    height: 0.812em;
-    margin: 0 0 0 0.5em;
-    width: 0.812em;
+    height: 2.5em;
+    width: 2.5em;
 }
 
-/*Configurando selector flag para iconos de flecha*/
-.datos-personales__icono--flecha {
-    background: url("../../img/iconos/flecha.png") no-repeat center / cover;
+/*Configurando selector flag para iconos de contacto*/
+.datos-personales__icono--github {
+    background: url("../../img/iconos/github.png") no-repeat center / cover;
+}
+
+.datos-personales__icono--linkedin {
+    background: url("../../img/iconos/linkedin.png") no-repeat center / cover;
+}
+
+.datos-personales__icono--instagram {
+    background: url("../../img/iconos/instagram.png") no-repeat center / cover;
+}
+
+.datos-personales__icono--curriculum {
+    background: url("../../img/iconos/curriculum.png") no-repeat center / cover;
 }

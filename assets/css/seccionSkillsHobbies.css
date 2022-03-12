@@ -1,13 +1,35 @@
 /*Estableciendo fondo para escritorios*/
 .seccion-skills-hobbies {
-    background: url('../img/fondo/abs.png') no-repeat center / cover /*contain*/ fixed;
+    /*Posicionando imagen de fondo con las siguientes propiedades:
+        - center: Centrando horizontalmente la imágen de fondo.
+        - var: Posicionando la imágen de fondo vérticalmente acorde a la altura
+        del header fijo.
+        */
+    background: url('../img/fondo/abs.png') no-repeat center var(--altura-header-Escritorio) / cover fixed;
+}
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .seccion-skills-hobbies {
+        /*Posicionando imagen de fondo con las siguientes propiedades:
+        - center: Centrando horizontalmente la imágen de fondo.
+        - var: Posicionando la imágen de fondo vérticalmente acorde a la altura
+        del header fijo.
+        */
+        background: url('../img/fondo/abs.png') no-repeat center var(--altura-header-Tablet) / cover fixed;
+    }
 }
 
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     /*Estableciendo fondo para celular*/
     .seccion-skills-hobbies {
-        background: url('../img/fondo/mobile.png') no-repeat center / cover /*contain*/ fixed;
+        /*Posicionando imagen de fondo con las siguientes propiedades:
+        - center: Centrando horizontalmente la imágen de fondo.
+        - var: Posicionando la imágen de fondo vérticalmente acorde a la altura
+        del header fijo.
+        */
+        background: url('../img/fondo/mobile.png') no-repeat center var(--altura-header-Celular) / cover fixed;
         width: 100%;
     }
 }

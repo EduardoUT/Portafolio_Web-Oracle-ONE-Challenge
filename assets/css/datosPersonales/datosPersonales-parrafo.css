@@ -1,7 +1,7 @@
-/*Estableciendo color de letra acorde al color de fondo claro y tamaño,
+/*Estableciendo color de letra, tamaño,
 subiendo parrafo un poco*/
 .datos-personales__parrafo {
-    color: var(--color-fondo-primario);
+    color: var(--font-color);
     font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
     margin: 0.5em 0 0 0;
 }

@@ -1,1 +1,13 @@
-.seccion-skills-hobbies {}
+/*Estableciendo fondo para escritorios*/
+.seccion-skills-hobbies {
+    background: url('../img/fondo/abs.png') no-repeat center / cover /*contain*/ fixed;
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    /*Estableciendo fondo para celular*/
+    .seccion-skills-hobbies {
+        background: url('../img/fondo/mobile.png') no-repeat center / cover /*contain*/ fixed;
+        width: 100%;
+    }
+}

@@ -1,1 +1,4 @@
-.seccion-formulario-contacto {}
+/*Estableciendo color de fondo*/
+.seccion-formulario-contacto {
+    background: var(--color-fondo-secundario);
+}

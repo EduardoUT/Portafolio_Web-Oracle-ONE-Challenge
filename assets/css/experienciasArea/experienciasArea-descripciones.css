@@ -3,7 +3,7 @@ en columna, con items centrados verticalmente y un
 ancho de 361.267px*/
 .experiencias-area__descripciones {
     display: flex;
-    background: url('../../img/fondo/mobile.png') center / cover;
+    background: url('../../img/fondo/fondo_descripciones.png') center/ cover;
     flex-direction: column;
     justify-content: center;
     width: 31.802%;
@@ -32,8 +32,9 @@ descripciones-area__imagen--orderSegundo*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     /*Ancho: 704px Alto: 384px*/
     .experiencias-area__descripciones {
-        background: url('../../img/fondo/abs.png') center / cover;
+        background-position: center;
         margin: 0.5em 0 0 0;
+        padding: 0 0 0.5em 0;
         width: 100%;
     }
 
@@ -51,7 +52,9 @@ descripciones-area__imagen--orderSegundo*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     /*Ancho: 296px Alto: 144px*/
     .experiencias-area__descripciones {
+        background-position: center;
         margin: 0.5em 0 0 0;
+        padding: 0 0 0.5em 0;
         width: 100%;
     }
 

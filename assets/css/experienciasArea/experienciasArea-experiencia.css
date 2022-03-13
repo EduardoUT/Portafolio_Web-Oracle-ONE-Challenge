@@ -6,6 +6,12 @@ de 64px*/
     margin: 0 0 4em 0;
 }
 
+/*Eliminando margen inferior del último elemento de la 
+sección*/
+.experiencias-area__experiencia:last-of-type {
+    margin: 0;
+}
+
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     /*Ancho: 704px Alto: 384px*/

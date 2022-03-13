@@ -2,9 +2,7 @@
 de escritorio*/
 .seccion-presentacion {
     /*Posicionando imagen de fondo con las siguientes propiedades:
-        - center: Centrando horizontalmente la imágen de fondo.
-        - var: Posicionando la imágen de fondo vérticalmente acorde a la altura
-        del header fijo.
+        - center: Centrando horizontal y verticalmente la imágen de fondo.
         */
     background: url('../img/fondo/fondo.png') no-repeat center / cover fixed;
     height: var(--altura-seccionPresentacion);
@@ -15,8 +13,7 @@ de escritorio*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     .seccion-presentacion {
         /*Posicionando imagen de fondo con las siguientes propiedades:
-        - center: Centrando horizontalmente la imágen de fondo.
-        - var: Posicionando la imágen de fondo vérticalmente acorde a la altura
+        - top.
         del header fijo.
         */
         background: url('../img/fondo/fondo_mobile.png') no-repeat top / cover fixed;
@@ -29,8 +26,7 @@ de escritorio*/
     /*Estableciendo fondo para celular*/
     .seccion-presentacion {
         /*Posicionando imagen de fondo con las siguientes propiedades:
-        - center: Centrando horizontalmente la imágen de fondo.
-        - var: Posicionando la imágen de fondo vérticalmente acorde a la altura
+        - top.
         del header fijo.
         */
         background: url('../img/fondo/fondo_mobile.png') no-repeat top / cover fixed;

@@ -1,5 +1,6 @@
 /*Eliminando margen inferior*/
 .biografia__parrafo {
+    line-height: 18.78px;
     margin-bottom: 0;
 }
 

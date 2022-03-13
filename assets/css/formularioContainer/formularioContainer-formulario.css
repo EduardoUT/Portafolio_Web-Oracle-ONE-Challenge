@@ -1,1 +1,33 @@
-.formulario-container__formulario {}
+/*Asignando propiedad flex a formulario, dirección de items en columna,
+margen superior a etiqueta legend de 1px*/
+.formulario-container__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Configurando selectores de clase de tipo texto, email y textarea,
+pueden agregarse numéricos*/
+.input-text[type="text"], .input-email[type="email"], .textarea {
+    border: none;
+    color: var(--font-color);
+    display: block;
+    height: 20px;
+    margin: 4px 0 0 0;
+    width: 100%;
+}
+
+/*Configurando selectores de clase sin borde al activar el focus*/
+.input-text[type="text"]:focus, .input-email[type="email"]:focus, textarea:focus {
+    outline: 0 none;
+}
+
+/*Selector de clase flag para email, al hacer focus el color
+del texto y focus cambiarán a azul*/
+.input-email--bluefocus[type="email"]:focus {
+    color: var(--color-botones-primario);
+}
+
+/*Aplicando altura default a textarea*/
+.textarea {
+    height: 82px;
+}

@@ -10,3 +10,17 @@ y alineación izquierda*/
     margin: 0 0 0.25em 0;
     text-align: left;
 }
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .formulario-container__contacto {
+        width: 100%;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formulario-container__contacto {
+        width: 100%;
+    }
+}

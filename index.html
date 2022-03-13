@@ -61,6 +61,7 @@
    <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-imagen.css">
    <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-contacto.css">
    <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-formulario.css">
+   <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-legend.css">
    <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-label.css">
    <link rel="stylesheet" href="./assets/css/seccionFooter/seccionFooter.css">
    <link rel="stylesheet" href="./assets/css/seccionFooter/seccionFooter-copyright.css">
@@ -508,30 +509,35 @@
 
       <section class="seccion-formulario-contacto">
          <div class="container">
-            <div class="formulario-container" id="seccionFormulario" tabindex="78">
-               <img class="formulario-container__imagen" src="">
+            <div class="formulario-container" tabindex="78" id="seccionFormulario">
+               <div class="formulario-container__imagen formulario-container__imagen--contacto"></div>
                <div class="formulario-container__contacto">
-                  <h2 class="subtitulos">Contacto</h2>
+                  <h2 class="subtitulos subtitulos--formulario">Contacto</h2>
                   <form class="formulario-container__formulario" action="">
+                     <legend class="formulario-container__legend">
+                        ¿Quieres contactarme?<br>
+                        Complete el siguiente formulario y me pondré en contacto con usted
+                        lo antes posible.
+                     </legend>
                      <label class="formulario-container__label" for="nombre">
                         Nombre Completo:
-                        <input class="input-text input-text--style" id="nombre" type="text" placeholder="Nombre"
+                        <input class="input-text input-text--style" id="nombre" type="text"
                            required title="Escriba su nombre completo" tabindex="79">
                      </label>
-                     <label class="formulario-container__label" for="email">
+                     <label class="formulario-container__label formulario-container__label--blue" for="email">
                         Correo Electrónico:
-                        <input class="input-email input-text--style" id="email" type="email" placeholder="E-mail"
+                        <input class="input-email input-email--bluefocus input-text--style" id="email" type="email"
                            required title="Escriba su email" tabindex="80">
                      </label>
                      <label class="formulario-container__label" for="asunto">
                         Asunto:
-                        <input class="input-text input-text--style" id="asunto" type="text" placeholder="Asunto"
+                        <input class="input-text input-text--style" id="asunto" type="text"
                            required title="Escriba el asunto" tabindex="81">
                      </label>
                      <label class="formulario-container__label" for="mensaje">
                         Mensaje:
-                        <textarea class="textarea textarea--style" id="mensaje" placeholder="Mensaje" required
-                           title="Escriba el mensaje" tabindex="82"></textarea>
+                        <textarea class="textarea input-text--style" id="mensaje" required
+                           title="Escriba el mensaje" tabindex="82" style="resize: vertical;"></textarea>
                      </label>
                      <input class="btn btn--azul" type="submit" tabindex="83" title="Enviar mensaje">
                   </form>

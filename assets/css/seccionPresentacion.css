@@ -6,7 +6,7 @@ de escritorio*/
         - var: Posicionando la imágen de fondo vérticalmente acorde a la altura
         del header fijo.
         */
-    background: url('../img/fondo/abs.png') no-repeat center var(--altura-header-Escritorio) / cover fixed;
+    background: url('../img/fondo/fondo.png') no-repeat center / cover fixed;
     height: var(--altura-seccionPresentacion);
     width: 100%;
 }
@@ -19,7 +19,7 @@ de escritorio*/
         - var: Posicionando la imágen de fondo vérticalmente acorde a la altura
         del header fijo.
         */
-        background: url('../img/fondo/abs.png') no-repeat center var(--altura-header-Tablet) / cover fixed;
+        background: url('../img/fondo/fondo_mobile.png') no-repeat top / cover fixed;
         height: var(--altura-seccionPresentacion-Tablet);
     }
 }
@@ -33,7 +33,7 @@ de escritorio*/
         - var: Posicionando la imágen de fondo vérticalmente acorde a la altura
         del header fijo.
         */
-        background: url('../img/fondo/mobile.png') no-repeat center var(--altura-header-Celular) / cover fixed;
+        background: url('../img/fondo/fondo_mobile.png') no-repeat top / cover fixed;
         height: var(--altura-seccionPresentacion-Celular);
         width: 100%;
     }

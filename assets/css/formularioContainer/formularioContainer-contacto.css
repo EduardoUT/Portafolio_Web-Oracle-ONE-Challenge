@@ -1,1 +1,12 @@
-.formulario-container__contacto {}
+/*Estableciendo ancho y alto en container de subtitulo y formulario*/
+.formulario-container__contacto {
+    height: inherit;
+    width: 656px;
+}
+
+/*Selector de clase flag para configurar margen de subtitulo
+y alineación izquierda*/
+.subtitulos--formulario {
+    margin: 0 0 0.25em 0;
+    text-align: left;
+}

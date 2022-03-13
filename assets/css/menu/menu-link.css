@@ -17,6 +17,7 @@
         border-top: solid 0.2em var(--font-color);
         display: inherit;
         font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+        font-weight: 500;
         padding: 0.1em 0;
         text-align: center;
         transition: 0.2s ease-out;

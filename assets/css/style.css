@@ -139,6 +139,7 @@ el puntero sobre el link*/
 y alineados al centro*/
 .subtitulos {
     font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
+    font-weight: 700;
     margin: 0 0 2em 0;;
     text-align: center;
 }

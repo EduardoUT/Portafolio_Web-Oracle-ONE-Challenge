@@ -2,6 +2,7 @@
 .datos-personales__titulo {
     color: var(--font-color);
     font-size: var(--tamañoLetraEscritorio-titulos);
+    font-weight: 700;
     margin-bottom: 0;
 }
 

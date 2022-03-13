@@ -2,7 +2,7 @@
 eliminando margenes*/
 .experiencias-area__proyecto {
     font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
-    font-weight: bold;
+    font-weight: 700;
     margin: 0;
 }
 

@@ -1,7 +1,7 @@
 /*Margen inferior de 8px*/
 .formacion-academica__formacion {
     font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
-    font-weight: bold;
+    font-weight: 700;
     margin: 0 0 0.5em 0;
 }
 

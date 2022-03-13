@@ -1,6 +1,7 @@
 /*Limpiando margen y estableciendo tamaño de letra*/
 .formacion-academica__nombre {
     font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
+    font-weight: 500;
     margin: 0;
 }
 

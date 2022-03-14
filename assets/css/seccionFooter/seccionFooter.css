@@ -1,1 +1,4 @@
-.seccion-footer {}
+/*Agregando imagen de fondo a pie de página*/
+.seccion-footer {
+    background: url('../../img/fondo/fondo.png') no-repeat center / cover;
+}

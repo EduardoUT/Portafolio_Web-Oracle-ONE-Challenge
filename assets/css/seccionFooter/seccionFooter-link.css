@@ -1,0 +1,16 @@
+/*Alto entre links de 16px*/
+.seccion-footer__link {
+    line-height: 1em;
+    transition: 0.5s;
+}
+
+/*Eliminando propiedad transform heredada del 
+selector de clase .link-style al pasar el puntero*/
+.seccion-footer__link.link-style:hover {
+    transform: none;
+}
+
+/*Color azul al pasar el mouse*/
+.seccion-footer__link:hover {
+    color: var(--color-botones-primario);
+}

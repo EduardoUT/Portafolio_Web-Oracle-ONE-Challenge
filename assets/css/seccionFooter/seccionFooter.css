@@ -2,3 +2,24 @@
 .seccion-footer {
     background: url('../../img/fondo/fondo.png') no-repeat center / cover;
 }
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .seccion-footer {
+        /*Posicionando imagen de fondo con las siguientes propiedades:
+        - bottom.
+        */
+        background: url('../../img/fondo/fondo_mobile.png') no-repeat bottom / cover;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    /*Estableciendo fondo para celular*/
+    .seccion-footer {
+        /*Posicionando imagen de fondo con las siguientes propiedades:
+        - bottom.
+        */
+        background: url('../../img/fondo/fondo_mobile.png') no-repeat bottom / cover;
+    }
+}

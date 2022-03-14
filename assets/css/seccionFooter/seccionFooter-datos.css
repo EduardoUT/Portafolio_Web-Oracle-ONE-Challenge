@@ -2,5 +2,5 @@
 .seccion-footer__datos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }

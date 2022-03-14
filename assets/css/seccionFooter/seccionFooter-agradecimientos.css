@@ -1,0 +1,5 @@
+/*Condigurando container flex*/
+.seccion-footer__agradecimientos {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,1 +1,4 @@
-.seccion-footer__autor {}
+/*Agregando peso a letra*/
+.seccion-footer__autor {
+    font-weight: 500;
+}

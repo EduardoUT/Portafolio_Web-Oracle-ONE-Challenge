@@ -1,4 +1,5 @@
 /*Agregando peso a letra*/
 .seccion-footer__parrafo {
+    color: black;
     font-weight: 500;
 }

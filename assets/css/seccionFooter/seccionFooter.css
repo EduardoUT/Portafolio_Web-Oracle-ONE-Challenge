@@ -1,6 +1,12 @@
 /*Agregando imagen de fondo a pie de página*/
 .seccion-footer {
-    background: url('../../img/fondo/fondo.png') no-repeat center / cover;
+    background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%, 
+    rgba(245, 245, 245, 0.575) 100%),
+    url('../../img/fondo/fondo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 /*Tablets y celulares grandes u horizontales*/
@@ -9,7 +15,12 @@
         /*Posicionando imagen de fondo con las siguientes propiedades:
         - bottom.
         */
-        background: url('../../img/fondo/fondo_mobile.png') no-repeat bottom / cover;
+        background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%, 
+        rgba(245, 245, 245, 0.575) 100%),
+        url('../../img/fondo/fondo_mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
     }
 }
 
@@ -20,6 +31,11 @@
         /*Posicionando imagen de fondo con las siguientes propiedades:
         - bottom.
         */
-        background: url('../../img/fondo/fondo_mobile.png') no-repeat bottom / cover;
+        background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%, 
+        rgba(245, 245, 245, 0.575) 100%),
+        url('../../img/fondo/fondo_mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }

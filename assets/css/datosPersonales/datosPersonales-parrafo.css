@@ -1,9 +1,9 @@
 /*Estableciendo color de letra, tamaño,
 subiendo parrafo un poco*/
 .datos-personales__parrafo {
-    color: var(--font-color);
+    color: #2c2828;/*#2c2828*/
     font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
-    font-weight: 400;
+    font-weight: 500;
     margin: 0.5em 0 0 0;
 }
 
@@ -12,6 +12,7 @@ subiendo parrafo un poco*/
     /*Estableciendo tamaño de letra 16px*/
     .datos-personales__parrafo {
         font-size: var(--tamañoLetraTablet-parrafosYLinks-dscBienvenida-subtitulosDscImagen);
+        font-weight: 500;
     }
 }
 
@@ -20,5 +21,6 @@ subiendo parrafo un poco*/
     /*Estableciendo tamaño de letra 14px*/
     .datos-personales__parrafo {
         font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+        font-weight: 500;
     }
 }

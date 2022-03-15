@@ -3,7 +3,7 @@ del contenedor acorde a la del header de escritorio*/
 .datos-personales__presentacion {
     display: flex;
     flex-direction: column;
-    height: var(--altura-seccionPresentacion);
+    height: auto;
     justify-content: center;
     width: 66.2%; /*752.017px*/
 }

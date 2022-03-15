@@ -4,9 +4,8 @@
     rgba(245, 245, 245, 0.575) 100%),
     url('../../img/fondo/fondo.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 /*Tablets y celulares grandes u horizontales*/

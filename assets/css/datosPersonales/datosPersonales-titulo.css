@@ -1,6 +1,6 @@
 /*Estableciendo color de letra y tamaño*/
 .datos-personales__titulo {
-    color: var(--font-color);
+    color: black;
     font-size: var(--tamañoLetraEscritorio-titulos);
     font-weight: 700;
     margin-bottom: 0;

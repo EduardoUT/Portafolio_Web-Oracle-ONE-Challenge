@@ -6,17 +6,21 @@
 
 /*Configurando selector flag para iconos de contacto*/
 .datos-personales__icono--github {
-    background: url("../../img/iconos/github.png") no-repeat center / cover;
+    background: url("../../img/iconos/contacto/github.png") no-repeat center / cover;
 }
 
 .datos-personales__icono--linkedin {
-    background: url("../../img/iconos/linkedin.png") no-repeat center / cover;
+    background: url("../../img/iconos/contacto/linkedin.png") no-repeat center / cover;
 }
 
 .datos-personales__icono--instagram {
-    background: url("../../img/iconos/instagram.png") no-repeat center / cover;
+    background: url("../../img/iconos/contacto/instagram.png") no-repeat center / cover;
+}
+
+.datos-personales__icono--correo {
+    background: url("../../img/iconos/contacto/correos-electronicos.png") no-repeat center / cover;
 }
 
 .datos-personales__icono--curriculum {
-    background: url("../../img/iconos/curriculum.png") no-repeat center / cover;
+    background: url("../../img/iconos/contacto/curriculum.png") no-repeat center / cover;
 }

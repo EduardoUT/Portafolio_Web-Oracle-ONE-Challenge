@@ -28,7 +28,9 @@ del texto y focus cambiarán a azul*/
     color: var(--color-botones-primario);
 }
 
-/*Aplicando altura default a textarea*/
+/*Aplicando altura default a textarea y expansión
+solo vértical*/
 .textarea {
     height: 82px;
+    resize: vertical;
 }

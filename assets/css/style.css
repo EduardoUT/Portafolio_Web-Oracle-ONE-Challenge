@@ -127,13 +127,13 @@ colocando una transición*/
     font-weight: 500;
     text-decoration: none;
     /*Estableciendo tiempo de desplazamiento al pasar el mouse*/
-    transition: all 0.5s ease-out;
+    transition: 0.5s;
 }
 
 /*Configurando desplazamiento hacia abajo al pasar 
 el puntero sobre el link*/
 .link-style:hover {
-    transform: translate(0, 0.3em);
+    color: var(--color-botones-primario);
 }
 
 /*Configurando subtitulos h2 con margen inferior de 32 px

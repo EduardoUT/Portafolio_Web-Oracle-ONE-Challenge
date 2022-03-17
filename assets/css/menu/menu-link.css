@@ -1,7 +1,5 @@
 /*Eliminando subrayado*/
-.menu__link {
-    text-decoration: none;
-}
+/**.menu__link {}**/
 
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {

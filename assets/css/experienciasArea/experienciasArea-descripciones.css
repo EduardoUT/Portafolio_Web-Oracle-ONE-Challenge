@@ -3,7 +3,12 @@ en columna, con items centrados verticalmente y un
 ancho de 361.267px*/
 .experiencias-area__descripciones {
     display: flex;
-    background: url('../../img/fondo/fondo_descripciones.png') center/ cover;
+    background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%, 
+    rgba(245, 245, 245, 0.575) 100%),
+    url('../../img/fondo/fondo_descripciones.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     flex-direction: column;
     justify-content: center;
     width: 31.802%;

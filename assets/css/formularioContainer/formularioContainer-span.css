@@ -1,0 +1,79 @@
+.formulario-container__span {
+    align-items: center;
+    border-radius: 0 0 1em 1em;
+    color: white;
+    display: flex;
+    height: 0;
+    justify-content: center;
+    width: auto;
+}
+
+.formulario-container__span--incorrecto {
+    background: red;
+    animation-name: efecto-cortina;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.formulario-container__span--correcto {
+    background: green;
+    animation-name: efecto-cortina;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes efecto-cortina {
+    0% {
+        height: 0.8px;
+        padding: 0;
+    }
+    20% {
+        height: 5.8px;
+        padding: 0.1em;
+    }
+    40% {
+        height: 10.8px;
+        padding: 0.2em;
+    }
+    60% {
+        height: 15.8px;
+        padding: 0.3em;
+    }
+    80% {
+        height: 20.8px;
+        padding: 0.4em;
+    }
+
+    90% {
+        height: 25.8px;
+    }
+
+    100% {
+        height: auto;
+        padding: 0.5em;
+    }
+}
+
+
+/*Uso de @keyframes
+Sintáxis:
+.animation-block {
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; <-- Establece una animación
+    en su mismo estado al llegar al 100%, en hover
+}
+@keyframes animation {
+    0% {
+        background: blue;
+    }
+    50% {
+        background: red;
+    }
+    100% {
+        background: green;
+    }
+}
+
+*/

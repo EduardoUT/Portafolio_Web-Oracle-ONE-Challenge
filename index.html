@@ -538,7 +538,9 @@
                         tabindex="90">
                         Correo Electrónico:
                         <input class="input-email input-email--bluefocus input-text--style" id="email" type="email"
-                           required title="Escriba su email" tabindex="91">
+                           required title="No debe estar vacío o en blanco, en formato correo@dominio.com" 
+                           pattern="^((?:(?:[a-záA-Z]+)[\b.\b-]?)+[\d]*)@((?:(?:[a-zA-Z]+)[.](?:(?:[a-z]+)[\d]?)[.])?(?:[a-z]+)[.]{1}(?:[a-z]{2,4})(?:[.](?:[a-z]{2,4}))?)$"
+                           tabindex="91">
                      </label>
                      <label class="formulario-container__label" for="asunto" tabindex="92">
                         Asunto:

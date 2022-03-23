@@ -529,7 +529,8 @@
                         Nombre Completo:
                         <input class="input-text input-text--style" id="nombre" type="text" required
                            title="La primer letra de cada nombre y apellido debe ser en mayúscula, no debe haber más de un espacio en blanco y no puede haber más de 50 carácteres." 
-                           tabindex="89" pattern="^(?=.{3,50}$)[A-ZÁÉÍÓÚ][a-záéíóúñ]+(:?[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+$" minlength="3" maxlength="50">
+                           tabindex="89" pattern="^(?=.{3,50}$)[A-ZÁÉÍÓÚ][a-záéíóúñ]+(:?[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+$" minlength="3" maxlength="50"
+                           data-campo="nombre">
                         <span class="formulario-container__span formulario-container__span--incorrecto" id="formulario-container__span-nombre">
                            Por favor, completa este campo.
                         </span>
@@ -539,18 +540,18 @@
                         Correo Electrónico:
                         <input class="input-email input-email--bluefocus input-text--style" id="email" type="email"
                            required title="No debe estar vacío o en blanco, en formato correo@dominio.com" 
-                           pattern="^((?:(?:[a-záA-Z]+)[\b.\b-]?)+[\d]*)@((?:(?:[a-zA-Z]+)[.](?:(?:[a-z]+)[\d]?)[.])?(?:[a-z]+)[.]{1}(?:[a-z]{2,4})(?:[.](?:[a-z]{2,4}))?)$"
-                           tabindex="91">
+                           pattern="^((?:(?:[a-záA-Z]+)[\b.\b-_]?)+[\d]*)@((?:(?:[a-zA-Z]+)[.](?:(?:[a-z]+)[\d]?)[.])?(?:[a-z]+)[.]{1}(?:[a-z]{2,4})(?:[.](?:[a-z]{2,4}))?)$"
+                           tabindex="91" data-campo="correo">
                      </label>
                      <label class="formulario-container__label" for="asunto" tabindex="92">
                         Asunto:
                         <input class="input-text input-text--style" id="asunto" type="text" required
-                           title="Escriba el asunto" tabindex="93">
+                           title="Escriba el asunto" tabindex="93" data-campo="asunto">
                      </label>
                      <label class="formulario-container__label" for="mensaje" tabindex="94">
                         Mensaje:
                         <textarea class="textarea input-text--style" id="mensaje" required title="Escriba el mensaje"
-                           tabindex="95"></textarea>
+                           tabindex="95" data-="mensaje"></textarea>
                      </label>
                      <input class="btn btn--azul" type="submit" tabindex="96" value="Enviar mensaje">
                   </form>
@@ -589,7 +590,8 @@
          </div>
       </div>
    </footer>
-
+<script src="assets/js/validaciones.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>

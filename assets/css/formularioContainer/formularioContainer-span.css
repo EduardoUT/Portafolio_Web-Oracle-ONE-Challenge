@@ -1,10 +1,14 @@
+/*Se ocultará inicialmente el mensaje*/
 .formulario-container__span--error {
     display: none;
 }
 
+/*Selector de cambio para mensajes de error, desplegado en flexbox, con 
+color de fondo validado en el  estándar de accesibilidad WCAG 2.0 acorde 
+a la tipografía en color blanco*/
 .formulario-container__inputs--incorrecto .formulario-container__span--error {
     align-items: center;
-    background: #b40000;
+    background: #b40000;/*Color generado en https://contrastchecker.com/?utm_source=pocket_mylist*/
     border-radius: 4px;
     color: white;
     display: flex;

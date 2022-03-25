@@ -1,4 +1,4 @@
-/*Configurando estilos de label*/
+/*Configurando estilos de input containers*/
 .formulario-container__inputs {
     background: #ffffff;
     border: 0 0 1px 0;
@@ -9,7 +9,7 @@
     padding: 0.5em 12px;
     position: static;
 }
-/*Selector flag de label para email con fuente
+/*Selector flag de input container para email con fuente
 azul y linea solida inferior azul*/
 .formulario-container__inputs--blue {
     color: var(--color-botones-primario);

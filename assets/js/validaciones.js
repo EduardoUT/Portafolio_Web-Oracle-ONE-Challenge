@@ -14,6 +14,18 @@ export function valida(input) {
     }
 }
 
+export function validaTextArea(textArea) {
+    const textAreaTipo = textArea.dataset.textarea;
+    if (textArea.validity.valid) {
+        textArea.parentElement.classList.remove("formulario-container__inputs--incorrecto");
+        textArea.parentElement.querySelector(".formulario-container__span--error").innerHTML = "";
+    } else {
+        textArea.parentElement.classList.add("formulario-container__inputs--incorrecto");
+        textArea.parentElement.querySelector(".formulario-container__span--error").innerHTML =
+            mensajeDeErrorTextArea(textAreaTipo, textArea);
+    }
+}
+
 const mensajeEncabezado = "Por favor, asegúrese de verificar los siguientes requerimientos: <br>";
 const mensajeMaxCaracteres = "No puedes agregar más de 50 carácteres.";
 const tiposDeErrores = [
@@ -36,7 +48,7 @@ const mensajesDeError = {
         tooLong: mensajeMaxCaracteres,
     },
     correo: {
-        valueMissing: "El campo nombre no puede estar en blanco o vacío.",
+        valueMissing: "El campo correo no puede estar en blanco o vacío.",
         patternMismatch: "El formato admitido debe ser en formato correousuario@dominio.com",
         typeMismatch:
             "Deber estar en formato e-mail conteniendo el caracter especial @ " +
@@ -51,6 +63,11 @@ const mensajesDeError = {
         tooShort: "Debes ingresar mínimo 6 carácteres",
         tooLong: mensajeMaxCaracteres,
     },
+    mensaje: {
+        valueMissing: "El campo mensaje no puede estar en blanco o vacío.",
+        tooLong: "Debe contener máximo 300 carácteres",
+        tooShort: "Debe contener mínimo 5 carácteres",
+    }
 };
 
 function mostrarMensajeDeError(tipoDeInput, input) {
@@ -61,6 +78,16 @@ function mostrarMensajeDeError(tipoDeInput, input) {
             console.log(input.validity[error]);
             console.log(mensajesDeError[tipoDeInput][error]);
             mensaje = mensajesDeError[tipoDeInput][error];
+        }
+    });
+    return mensaje;
+}
+
+function mensajeDeErrorTextArea(textAreaTipo, textArea) {
+    let mensaje = "";
+    tiposDeErrores.forEach((error) => {
+        if (textArea.validity[error]) {
+            mensaje = mensajesDeError[textAreaTipo][error];
         }
     });
     return mensaje;

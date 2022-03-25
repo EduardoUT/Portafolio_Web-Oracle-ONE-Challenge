@@ -529,9 +529,9 @@
                      <div class="formulario-container__inputs">
                         <label class="formulario-container__label" for="nombre" tabindex="88">Nombre Completo:</label>
                         <input class="input-text input-text--style" id="nombre" type="text" required
-                           title="La primer letra de cada nombre y apellido debe ser en mayúscula, no debe haber más de un espacio en blanco y no puede haber más de 50 carácteres." 
-                           tabindex="89" pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$" minlength="3" maxlength="50"
-                           data-campo="nombre">
+                           title="La primer letra de cada nombre y apellido debe ser en mayúscula, no debe haber más de un espacio en blanco y no puede haber más de 50 carácteres."
+                           tabindex="89" pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$"
+                           minlength="3" maxlength="50" data-campo="nombre">
                         <span class="formulario-container__span--error" id="formulario-container__span-nombre">
                            Por favor, completa este campo.
                         </span>
@@ -540,25 +540,28 @@
                         tabindex="90">
                         <label class="formulario-container__label">Correo Electrónico:</label>
                         <input class="input-email input-email--bluefocus input-text--style" id="email" type="email"
-                           required title="No debe estar vacío o en blanco, en formato correo@dominio.com" 
-                           pattern="^((?:(?:[a-záA-Z]+)[\b.\b-_]?)+[\d]*)@((?:(?:[a-zA-Z]+)[.](?:(?:[a-z]+)[\d]?)[.])?(?:[a-z]+)[.]{1}(?:[a-z]{2,4})(?:[.](?:[a-z]{2,4}))?)$"
+                           required title="No debe estar vacío o en blanco, en formato correo@dominio.com"
+                           pattern="^((?:(?:[a-zA-Z]+)[\b.\b-_]?)+[\d]*)@((?:(?:[a-zA-Z]+)[.](?:(?:[a-z]+)[\d]?)[.])?(?:[a-z]+)[.]{1}(?:[a-z]{2,4})(?:[.](?:[a-z]{2,4}))?)$"
                            tabindex="91" data-campo="correo">
-                           <span class="formulario-container__span--error" id="formulario-container__span-correo">
-                              Por favor, completa este campo.
-                           </span>
+                        <span class="formulario-container__span--error" id="formulario-container__span-correo">
+                           Por favor, completa este campo.
+                        </span>
                      </div>
                      <div class="formulario-container__inputs">
                         <label class="formulario-container__label" for="asunto" tabindex="92">Asunto:</label>
                         <input class="input-text input-text--style" id="asunto" type="text" required
-                           title="No debe estar vacío o en blanco, no se admiten números, sólo texto y signos (,.|), no puede ingresar más de 50 carácteres." 
+                           title="No debe estar vacío o en blanco, no se admiten números, sólo texto y signos (,.|), no puede ingresar más de 50 carácteres."
                            pattern="^(?=.{10,50}$)([A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+(?:[\s][A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+)+)$"
                            tabindex="93" data-campo="asunto" minlength="6" maxlength="50">
-                           <span class="formulario-container__span--error"></span>
+                        <span class="formulario-container__span--error"></span>
                      </div>
                      <div class="formulario-container__inputs">
                         <label class="formulario-container__label" for="mensaje" tabindex="94">Mensaje:</label>
                         <textarea class="textarea input-text--style" id="mensaje" required title="Escriba el mensaje"
-                           tabindex="95" data-campo="mensaje"></textarea>
+                           tabindex="95" data-textarea="mensaje" minlength="5" maxlength="300"></textarea>
+                        <span class="formulario-container__span--error">
+                           Por favor, completa este campo.
+                        </span>
                      </div>
                      <input class="btn btn--azul" id="btn-enviar" type="submit" tabindex="96" value="Enviar mensaje">
                   </form>
@@ -597,7 +600,7 @@
          </div>
       </div>
    </footer>
-<script src="assets/js/main.js" type="module"></script>
+   <script src="assets/js/main.js" type="module"></script>
 </body>
 
 </html>

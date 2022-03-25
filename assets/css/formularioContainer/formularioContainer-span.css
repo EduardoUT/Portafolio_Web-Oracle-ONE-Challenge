@@ -4,8 +4,8 @@
 
 .formulario-container__inputs--incorrecto .formulario-container__span--error {
     align-items: center;
-    background: red;
-    border-radius: 0 0 0.8em 0.8em;
+    background: #b40000;
+    border-radius: 4px;
     color: white;
     display: flex;
     font-size: 0.8em;

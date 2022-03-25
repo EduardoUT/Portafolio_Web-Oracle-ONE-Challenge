@@ -65,6 +65,7 @@
    <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-contacto.css">
    <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-formulario.css">
    <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-legend.css">
+   <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-inputs.css">
    <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-label.css">
    <link rel="stylesheet" href="./assets/css/formularioContainer/formularioContainer-span.css">
    <link rel="stylesheet" href="./assets/css/seccionFooter/seccionFooter.css">
@@ -525,34 +526,40 @@
                         Complete el siguiente formulario y me pondré en contacto con usted
                         lo antes posible.
                      </legend>
-                     <label class="formulario-container__label" for="nombre" tabindex="88">
-                        Nombre Completo:
+                     <div class="formulario-container__inputs">
+                        <label class="formulario-container__label" for="nombre" tabindex="88">Nombre Completo:</label>
                         <input class="input-text input-text--style" id="nombre" type="text" required
                            title="La primer letra de cada nombre y apellido debe ser en mayúscula, no debe haber más de un espacio en blanco y no puede haber más de 50 carácteres." 
                            tabindex="89" pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$" minlength="3" maxlength="50"
                            data-campo="nombre">
-                        <span class="formulario-container__span formulario-container__span--incorrecto" id="formulario-container__span-nombre">
+                        <span class="formulario-container__span--error" id="formulario-container__span-nombre">
                            Por favor, completa este campo.
                         </span>
-                     </label>
-                     <label class="formulario-container__label formulario-container__label--blue" for="email"
+                     </div>
+                     <div class="formulario-container__inputs formulario-container__inputs--blue" for="email"
                         tabindex="90">
-                        Correo Electrónico:
+                        <label class="formulario-container__label">Correo Electrónico:</label>
                         <input class="input-email input-email--bluefocus input-text--style" id="email" type="email"
                            required title="No debe estar vacío o en blanco, en formato correo@dominio.com" 
                            pattern="^((?:(?:[a-záA-Z]+)[\b.\b-_]?)+[\d]*)@((?:(?:[a-zA-Z]+)[.](?:(?:[a-z]+)[\d]?)[.])?(?:[a-z]+)[.]{1}(?:[a-z]{2,4})(?:[.](?:[a-z]{2,4}))?)$"
                            tabindex="91" data-campo="correo">
-                     </label>
-                     <label class="formulario-container__label" for="asunto" tabindex="92">
-                        Asunto:
+                           <span class="formulario-container__span--error" id="formulario-container__span-correo">
+                              Por favor, completa este campo.
+                           </span>
+                     </div>
+                     <div class="formulario-container__inputs">
+                        <label class="formulario-container__label" for="asunto" tabindex="92">Asunto:</label>
                         <input class="input-text input-text--style" id="asunto" type="text" required
-                           title="Escriba el asunto" tabindex="93" data-campo="asunto">
-                     </label>
-                     <label class="formulario-container__label" for="mensaje" tabindex="94">
-                        Mensaje:
+                           title="No debe estar vacío o en blanco, no se admiten números, sólo texto y signos (,.|), no puede ingresar más de 50 carácteres." 
+                           pattern="^(?=.{10,50}$)([A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+(?:[\s][A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+)+)$"
+                           tabindex="93" data-campo="asunto" minlength="6" maxlength="50">
+                           <span class="formulario-container__span--error"></span>
+                     </div>
+                     <div class="formulario-container__inputs">
+                        <label class="formulario-container__label" for="mensaje" tabindex="94">Mensaje:</label>
                         <textarea class="textarea input-text--style" id="mensaje" required title="Escriba el mensaje"
-                           tabindex="95" data-="mensaje"></textarea>
-                     </label>
+                           tabindex="95" data-campo="mensaje"></textarea>
+                     </div>
                      <input class="btn btn--azul" id="btn-enviar" type="submit" tabindex="96" value="Enviar mensaje">
                   </form>
                </div>

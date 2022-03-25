@@ -3,8 +3,8 @@
     display: none;
 }
 
-/*Selector de cambio para mensajes de error, desplegado en flexbox, con 
-color de fondo validado en el  estándar de accesibilidad WCAG 2.0 acorde 
+/*Selector de cambio para mensajes de error de los elementos span, 
+desplegados en flexbox, con color de fondo validado en el  estándar de accesibilidad WCAG 2.0 acorde 
 a la tipografía en color blanco*/
 .formulario-container__inputs--incorrecto .formulario-container__span--error {
     align-items: center;

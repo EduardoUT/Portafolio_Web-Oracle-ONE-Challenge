@@ -64,12 +64,14 @@ const statusError = {
     },
 };
 
-function validarStatusError (statusError) {
+function validarStatusError(statusError) {
     let nombre = statusError.nombre.errorSt;
     let correo = statusError.correo.errorSt;
     let asunto = statusError.asunto.errorSt;
     let mensaje = statusError.mensaje.errorSt;
-    if ( (nombre == true) && (correo == true) && (asunto == true) && (mensaje == true)) {
+    if ((nombre == true) && (correo == true) && (asunto == true) && (mensaje == true)) {
+        document.querySelector("#btn-enviar").disabled = false;
+    } else {
         document.querySelector("#btn-enviar").disabled = false;
     }
 }

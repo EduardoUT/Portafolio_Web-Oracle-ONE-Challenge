@@ -72,7 +72,7 @@ function validarStatusError(statusError) {
     if ((nombre == true) && (correo == true) && (asunto == true) && (mensaje == true)) {
         document.querySelector("#btn-enviar").disabled = false;
     } else {
-        document.querySelector("#btn-enviar").disabled = false;
+        document.querySelector("#btn-enviar").disabled = true;
     }
 }
 

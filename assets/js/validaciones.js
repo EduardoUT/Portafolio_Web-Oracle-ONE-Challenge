@@ -1,3 +1,17 @@
+const mensajeEncabezado = "Por favor, asegúrese de verificar los siguientes requerimientos: <br>";
+const mensajeMaxCaracteres = "No puedes agregar más de 50 carácteres.";
+const tiposDeErrores = [
+    "valueMissing",
+    "patternMismatch",
+    "tooShort",
+    "tooLong",
+    "typeMismatch",
+];
+const tiposDeInputs = [
+    "nombre",
+    "correo",
+    "asunto",
+];
 export function valida(input) {
     const tipoDeInput = input.dataset.campo;
     let esCorrecto = false;
@@ -49,6 +63,40 @@ export function validaTextArea(textArea) {
         statusError.mensaje.errorSt = esCorrecto;
     }
 }
+
+function validarStatusError(statusError) {
+    let nombre = statusError.nombre.errorSt;
+    let correo = statusError.correo.errorSt;
+    let asunto = statusError.asunto.errorSt;
+    let mensaje = statusError.mensaje.errorSt;
+    if ((nombre == true) && (correo == true) && (asunto == true) && (mensaje == true)) {
+        document.querySelector("#btn-enviar").disabled = false;
+    }
+}
+
+function mostrarMensajeDeError(tipoDeInput, input) {
+    let mensaje = "";
+    tiposDeErrores.forEach((error) => {
+        if (input.validity[error]) {
+            console.log(tipoDeInput, error);
+            console.log(input.validity[error]);
+            console.log(mensajesDeError[tipoDeInput][error]);
+            mensaje = mensajesDeError[tipoDeInput][error];
+        }
+    });
+    return mensaje;
+}
+
+function mensajeDeErrorTextArea(textAreaTipo, textArea) {
+    let mensaje = "";
+    tiposDeErrores.forEach((error) => {
+        if (textArea.validity[error]) {
+            mensaje = mensajesDeError[textAreaTipo][error];
+        }
+    });
+    return mensaje;
+}
+
 const statusError = {
     nombre: {
         errorSt: false,
@@ -63,32 +111,6 @@ const statusError = {
         errorSt: false,
     },
 };
-
-function validarStatusError(statusError) {
-    let nombre = statusError.nombre.errorSt;
-    let correo = statusError.correo.errorSt;
-    let asunto = statusError.asunto.errorSt;
-    let mensaje = statusError.mensaje.errorSt;
-    if ((nombre == true) && (correo == true) && (asunto == true) && (mensaje == true)) {
-        document.querySelector("#btn-enviar").disabled = false;
-    }
-}
-
-const mensajeEncabezado = "Por favor, asegúrese de verificar los siguientes requerimientos: <br>";
-const mensajeMaxCaracteres = "No puedes agregar más de 50 carácteres.";
-const tiposDeErrores = [
-    "valueMissing",
-    "patternMismatch",
-    "tooShort",
-    "tooLong",
-    "typeMismatch",
-];
-
-const tiposDeInputs = [
-    "nombre",
-    "correo",
-    "asunto",
-];
 
 const mensajesDeError = {
     nombre: {
@@ -123,29 +145,6 @@ const mensajesDeError = {
         tooShort: "Debe contener mínimo 5 carácteres",
     }
 };
-
-function mostrarMensajeDeError(tipoDeInput, input) {
-    let mensaje = "";
-    tiposDeErrores.forEach((error) => {
-        if (input.validity[error]) {
-            console.log(tipoDeInput, error);
-            console.log(input.validity[error]);
-            console.log(mensajesDeError[tipoDeInput][error]);
-            mensaje = mensajesDeError[tipoDeInput][error];
-        }
-    });
-    return mensaje;
-}
-
-function mensajeDeErrorTextArea(textAreaTipo, textArea) {
-    let mensaje = "";
-    tiposDeErrores.forEach((error) => {
-        if (textArea.validity[error]) {
-            mensaje = mensajesDeError[textAreaTipo][error];
-        }
-    });
-    return mensaje;
-}
 
 const validadores = {
     /*nombre: (input) => validarNombre(input),*/

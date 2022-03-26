@@ -1,5 +1,6 @@
 export function valida(input) {
     const tipoDeInput = input.dataset.campo;
+    let esCorrecto = false;
     if (validadores[tipoDeInput]) {
         validadores[tipoDeInput](input);
     }
@@ -7,22 +8,69 @@ export function valida(input) {
     if (input.validity.valid) {
         input.parentElement.classList.remove("formulario-container__inputs--incorrecto");
         input.parentElement.querySelector(".formulario-container__span--error").innerHTML = "";
+        esCorrecto = true;
+        if (tipoDeInput == tiposDeInputs[0]) {
+            statusError.nombre.errorSt = esCorrecto;
+        } else if (tipoDeInput == tiposDeInputs[1]) {
+            statusError.correo.errorSt = esCorrecto;
+        } else if (tipoDeInput == tiposDeInputs[2]) {
+            statusError.asunto.errorSt = esCorrecto;
+        }
+        validarStatusError(statusError);
     } else {
         input.parentElement.classList.add("formulario-container__inputs--incorrecto");
         input.parentElement.querySelector(".formulario-container__span--error").innerHTML =
             mostrarMensajeDeError(tipoDeInput, input);
+        esCorrecto = false;
+        if (tipoDeInput == tiposDeInputs[0]) {
+            statusError.nombre.errorSt = esCorrecto;
+        } else if (tipoDeInput == tiposDeInputs[1]) {
+            statusError.correo.errorSt = esCorrecto;
+        } else if (tipoDeInput == tiposDeInputs[2]) {
+            statusError.asunto.errorSt = esCorrecto;
+        }
+        validarStatusError(statusError);
     }
 }
 
 export function validaTextArea(textArea) {
     const textAreaTipo = textArea.dataset.textarea;
+    let esCorrecto = false;
     if (textArea.validity.valid) {
         textArea.parentElement.classList.remove("formulario-container__inputs--incorrecto");
         textArea.parentElement.querySelector(".formulario-container__span--error").innerHTML = "";
+        esCorrecto = true;
+        statusError.mensaje.errorSt = esCorrecto;
     } else {
         textArea.parentElement.classList.add("formulario-container__inputs--incorrecto");
         textArea.parentElement.querySelector(".formulario-container__span--error").innerHTML =
             mensajeDeErrorTextArea(textAreaTipo, textArea);
+        esCorrecto = false;
+        statusError.mensaje.errorSt = esCorrecto;
+    }
+}
+const statusError = {
+    nombre: {
+        errorSt: false,
+    },
+    correo: {
+        errorSt: false,
+    },
+    asunto: {
+        errorSt: false,
+    },
+    mensaje: {
+        errorSt: false,
+    },
+};
+
+function validarStatusError (statusError) {
+    let nombre = statusError.nombre.errorSt;
+    let correo = statusError.correo.errorSt;
+    let asunto = statusError.asunto.errorSt;
+    let mensaje = statusError.mensaje.errorSt;
+    if ( (nombre == true) && (correo == true) && (asunto == true) && (mensaje == true)) {
+        document.querySelector("#btn-enviar").disabled = false;
     }
 }
 
@@ -33,7 +81,13 @@ const tiposDeErrores = [
     "patternMismatch",
     "tooShort",
     "tooLong",
-    "typeMismatch"
+    "typeMismatch",
+];
+
+const tiposDeInputs = [
+    "nombre",
+    "correo",
+    "asunto",
 ];
 
 const mensajesDeError = {

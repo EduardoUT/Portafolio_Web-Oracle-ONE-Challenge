@@ -71,8 +71,6 @@ function validarStatusError(statusError) {
     let mensaje = statusError.mensaje.errorSt;
     if ((nombre == true) && (correo == true) && (asunto == true) && (mensaje == true)) {
         document.querySelector("#btn-enviar").disabled = false;
-    } else {
-        document.querySelector("#btn-enviar").disabled = true;
     }
 }
 

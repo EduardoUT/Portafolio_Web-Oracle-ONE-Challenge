@@ -26,17 +26,6 @@ const tiposDeErrores = [
 ];
 
 /**
- * @const
- * Arreglo con los distintos tipos de inputs en el 
- * formulario, acorde al dataset.campo.
- */
-const tiposDeInputs = [
-    "nombre",
-    "correo",
-    "asunto",
-];
-
-/**
  * 
  * @param {Object} input 
  * Elemento input del DOM en el formulario.
@@ -79,40 +68,10 @@ export function valida(input) {
     if (input.validity.valid) {
         input.parentElement.classList.remove("formulario-container__inputs--incorrecto");
         input.parentElement.querySelector(".formulario-container__span--error").innerHTML = "";
-        /**
-         * Si hay una coincidencia entre el arreglo tiposDeInputs[]
-         * y tipoDeInput, se alterará el valor boleano de la propiedad 
-         * errorSt del objeto statusError, asignandole el valor
-         * de la variable esCorrecto, en este caso true.
-         */
-        esCorrecto = true;
-        if (tipoDeInput == tiposDeInputs[0]) {
-            statusError.nombre.errorSt = esCorrecto;
-        } else if (tipoDeInput == tiposDeInputs[1]) {
-            statusError.correo.errorSt = esCorrecto;
-        } else if (tipoDeInput == tiposDeInputs[2]) {
-            statusError.asunto.errorSt = esCorrecto;
-        }
-        desbloquearBotonEnviar(statusError);
     } else {
         input.parentElement.classList.add("formulario-container__inputs--incorrecto");
         input.parentElement.querySelector(".formulario-container__span--error").innerHTML =
             mostrarMensajeDeError(tipoDeInput, input);
-        /**
-         * Si hay una coincidencia entre el arreglo tiposDeInputs[]
-         * y tipoDeInput, se alterará el valor boleano de la propiedad 
-         * errorSt del objeto statusError, asignandole el valor
-         * de la variable esCorrecto, en este caso false.
-         */
-        esCorrecto = false;
-        if (tipoDeInput == tiposDeInputs[0]) {
-            statusError.nombre.errorSt = esCorrecto;
-        } else if (tipoDeInput == tiposDeInputs[1]) {
-            statusError.correo.errorSt = esCorrecto;
-        } else if (tipoDeInput == tiposDeInputs[2]) {
-            statusError.asunto.errorSt = esCorrecto;
-        }
-        desbloquearBotonEnviar(statusError);
     }
 }
 
@@ -130,51 +89,10 @@ export function validaTextArea(textArea) {
     if (textArea.validity.valid) {
         textArea.parentElement.classList.remove("formulario-container__inputs--incorrecto");
         textArea.parentElement.querySelector(".formulario-container__span--error").innerHTML = "";
-        /**
-         * En caso de ser true el resultado de esCorrecto,
-         * altera el valor de la propiedad errorSt del objeto
-         * statusError.
-         */
-        esCorrecto = true;
-        statusError.mensaje.errorSt = esCorrecto;
     } else {
         textArea.parentElement.classList.add("formulario-container__inputs--incorrecto");
         textArea.parentElement.querySelector(".formulario-container__span--error").innerHTML =
             mensajeDeErrorTextArea(textAreaTipo, textArea);
-        /**
-         * En caso de ser false el resultado de esCorrecto,
-         * altera el valor de la propiedad errorSt del objeto
-         * statusError.
-         */
-        esCorrecto = false;
-        statusError.mensaje.errorSt = esCorrecto;
-    }
-}
-
-/**
- * 
- * @param {Object} statusError 
- * 
- * @function
- * Función que permite obtener como parámetro el objeto
- * statusError.
- * 
- * Una vez obtenido, se asigna a las variables nombre, correo, asunto
- * y mensaje el contenido de la propiedad boleana errorSt, obtenidas
- * en las funciones
- * @function valida
- * @function validaTextArea
- * 
- * En caso de ser todas true, el botón de enviar
- * se deshabilita.
- */
-function desbloquearBotonEnviar(statusError) {
-    let nombre = statusError.nombre.errorSt;
-    let correo = statusError.correo.errorSt;
-    let asunto = statusError.asunto.errorSt;
-    let mensaje = statusError.mensaje.errorSt;
-    if ((nombre == true) && (correo == true) && (asunto == true) && (mensaje == true)) {
-        document.querySelector("#btn-enviar").disabled = false;
     }
 }
 
@@ -228,28 +146,6 @@ function mensajeDeErrorTextArea(textAreaTipo, textArea) {
     });
     return mensaje;
 }
-
-/**
- * @const 
- * Objeto que contiene el nombre de la propiedades acorde
- * al data- del DOM, posee propiedades hijas de tipo
- * boleanas inicializadas en false, estas cumplen la función
- * de comprobar si un input cumple o no con las validaciones.
- */
-const statusError = {
-    nombre: {
-        errorSt: false,
-    },
-    correo: {
-        errorSt: false,
-    },
-    asunto: {
-        errorSt: false,
-    },
-    mensaje: {
-        errorSt: false,
-    },
-};
 
 /**
  * @const

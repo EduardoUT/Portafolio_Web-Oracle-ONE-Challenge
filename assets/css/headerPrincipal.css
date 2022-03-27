@@ -1,6 +1,6 @@
 /*
 Header posicionado fijamente en la parte superior, con altura de 88px
-y un ancho de 100%
+y un ancho de 100%, las clases scroll-down y scroll-up se utilizan en menu.js
 */
 .header-principal {
     background-color: var(--color-fondo-primario);
@@ -8,6 +8,15 @@ y un ancho de 100%
     position: fixed;
     top: 0;
     width: 100%;
+    transition: transform 0.4s;
+}
+
+.scroll-down .header-principal {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .header-principal {
+    transform: none;
 }
 
 /*Tablets y celulares grandes u horizontales*/

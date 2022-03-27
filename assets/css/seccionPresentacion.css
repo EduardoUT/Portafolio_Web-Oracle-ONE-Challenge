@@ -10,7 +10,7 @@ de escritorio*/
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    height: var(--altura-seccionPresentacion);
+    height: 100vh;
     width: 100%;
 }
 
@@ -27,7 +27,7 @@ de escritorio*/
         background-attachment: fixed;
         background-size: cover;
         background-position: bottom;
-        height: var(--altura-seccionPresentacion-Tablet);
+        height: 100vh;
     }
 }
 
@@ -46,7 +46,7 @@ de escritorio*/
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
-        height: var(--altura-seccionPresentacion-Celular);
+        height: 100vh;
         width: 100%;
     }
 }

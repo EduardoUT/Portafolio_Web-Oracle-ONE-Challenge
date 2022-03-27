@@ -1,6 +1,8 @@
 /*
 Header posicionado fijamente en la parte superior, con altura de 88px
 y un ancho de 100%, las clases scroll-down y scroll-up se utilizan en menu.js
+se asigna una transición con tiempo de 400ms al momento de hacer 
+scroll hacía arriba.
 */
 .header-principal {
     background-color: var(--color-fondo-primario);
@@ -11,10 +13,14 @@ y un ancho de 100%, las clases scroll-down y scroll-up se utilizan en menu.js
     transition: transform 0.4s;
 }
 
+/*El menú subirá con un porcentaje de -100%, en el
+eje Y*/
 .scroll-down .header-principal {
     transform: translate3d(0, -100%, 0);
 }
 
+/*El menú se mantendrá en su posición
+original*/
 .scroll-up .header-principal {
     transform: none;
 }

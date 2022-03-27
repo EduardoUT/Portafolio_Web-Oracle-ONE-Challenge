@@ -5,6 +5,7 @@ del contenedor acorde a la del header de escritorio*/
     flex-direction: column;
     height: auto;
     justify-content: center;
+    margin-top: var(--altura-header-Escritorio);
     width: 66.2%; /*752.017px*/
 }
 
@@ -21,6 +22,7 @@ del contenedor acorde a la del header de escritorio*/
     ancho completo*/
     .datos-personales__presentacion {
         height: auto;
+        margin-top: 0;
         order: 1;
         width: 100%;
     }

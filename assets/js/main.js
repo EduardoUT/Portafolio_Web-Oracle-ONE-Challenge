@@ -35,8 +35,7 @@ window.addEventListener("load",
      * página.
      * 
      * Contiene las siguientes funciones:
-     * @function ocultarMenu
-     * @function mostrarMenu
+     * @function mostrarOcultarMenu
      */
     function (event) {
         event.preventDefault();

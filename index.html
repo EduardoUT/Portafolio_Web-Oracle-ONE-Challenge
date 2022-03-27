@@ -531,7 +531,7 @@
                            title="La primer letra de cada nombre y apellido debe ser en mayúscula, no debe haber más de un espacio en blanco y no puede haber más de 50 carácteres."
                            tabindex=0 pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$"
                            minlength="3" maxlength="50" data-campo="nombre">
-                        <span class="formulario-container__span--error" id="formulario-container__span-nombre">
+                        <span class="formulario-container__span--error" id="formulario-container__span-nombre" tabindex=0>
                            Por favor, completa este campo.
                         </span>
                      </div>
@@ -551,7 +551,9 @@
                            title="No debe estar vacío o en blanco, no se admiten números, sólo texto y signos (,.|), no puede ingresar más de 50 carácteres."
                            pattern="^(?=.{10,50}$)([A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+(?:[\s][A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+)+)$"
                            tabindex=0 data-campo="asunto" minlength="6" maxlength="50">
-                        <span class="formulario-container__span--error" tabindex=0></span>
+                        <span class="formulario-container__span--error" tabindex=0>
+                           Por favor, completa este campo.
+                        </span>
                      </div>
                      <div class="formulario-container__inputs" tabindex=0>
                         <label class="formulario-container__label" for="mensaje" tabindex=0>Mensaje:</label>

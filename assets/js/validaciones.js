@@ -55,12 +55,6 @@ export function valida(input) {
      * de la propiedad data- del DOM.
      */
     const tipoDeInput = input.dataset.campo;
-    /**
-     * @let
-     * Variable boleana que permitirá saber si un
-     * input cumple o no con una validación.
-     */
-    let esCorrecto = false;
     if (validadores[tipoDeInput]) {
         validadores[tipoDeInput](input);
     }
@@ -85,7 +79,6 @@ export function valida(input) {
  */
 export function validaTextArea(textArea) {
     const textAreaTipo = textArea.dataset.textarea;
-    let esCorrecto = false;
     if (textArea.validity.valid) {
         textArea.parentElement.classList.remove("formulario-container__inputs--incorrecto");
         textArea.parentElement.querySelector(".formulario-container__span--error").innerHTML = "";

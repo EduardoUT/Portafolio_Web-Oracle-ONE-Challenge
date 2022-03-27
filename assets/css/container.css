@@ -2,6 +2,7 @@
 respetar un ancho de 1136px como máximo, un 100% al reducir la ventana y centrado, se agregará un padding
 en el modo responsive exceptuando al header*/
 .container {
+    height: inherit;
     margin: var(--centrar-con-margin);
     max-width: var(--tamaño-containerMaxWidth);
     width: 100%;

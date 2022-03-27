@@ -4,9 +4,9 @@ espaciado entre ellos*/
 .datos-personales {
     align-items: center;
     display: flex;
-    height: var(--altura-seccionPresentacion);
+    height: 100vh;
     justify-content: space-between;
-    margin-top: var(--altura-header-Escritorio);
+    margin-top: 0;
     width: inherit;
 }
 
@@ -14,8 +14,8 @@ espaciado entre ellos*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     /*Ancho de 100% heredado de .header-principal*/
     .datos-personales {
-        height: var(--altura-seccionPresentacion-Tablet);
-        margin-top: var(--altura-header-Tablet);
+        height: 100vh;
+        margin-top: 0;
     }
 }
 
@@ -25,8 +25,8 @@ espaciado entre ellos*/
     alineando contenido al centro horizontalmente y estableciendo items en columna*/
     .datos-personales {
         flex-direction: column;
-        height: var(--altura-seccionPresentacion-Celular);
+        height: 100vh;
         justify-content: center;
-        margin-top: var(--altura-header-Celular);
+        margin-top: 0;
     }
 }

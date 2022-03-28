@@ -41,7 +41,7 @@ const tiposDeErrores = [
  * De lo contrario:
  * 
  * --Agrega la clase css formulario-container__inputs--incorrecto
-
+ * 
  * --Selecciona al elemento span de error formulario-container__span--error
  * 
  * @function mostrarMensajeDeError

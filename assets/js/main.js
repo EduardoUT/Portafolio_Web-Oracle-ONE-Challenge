@@ -1,7 +1,7 @@
 import { valida } from "../js/validaciones.js";
 import { validaTextArea } from "../js/validaciones.js";
 import { mostrarOcultarMenu } from "./menu.js";
-
+import { desbloquearBotonEnviar } from "./habilitarBoton.js";
 /**
  * @const 
  * Contiene todos los inputs existentes
@@ -14,6 +14,8 @@ const inputs = document.querySelectorAll("input");
  */
 const textArea = document.querySelector("textarea");
 
+//const btnEnviar = document.querySelector("#btn-enviar");
+//const form = document.querySelector(".formulario-container__formulario");
 /**
  * @let 
  * Devuelve un valor boleano, en caso de cumplirse la coincidencia (true)
@@ -39,25 +41,56 @@ window.addEventListener("load",
      */
     function (event) {
         event.preventDefault();
+        validarCampos(inputs, textArea);
         mostrarOcultarMenu(inputs, textArea, mediaQueryMin, mediaQueryMax);
+        desbloquearBotonEnviar();
     }
 );
 
 /**
- * Permite validar el textarea una vez el
- * campo pierde el foco.
+ * @param {Object} inputs 
+ * Todos los elementos de tipo input del DOM.
+ * @param {Object} textArea 
+ * Elemento textarea del DOM.
+ * @returns void
+ * @function
+ * Realiza un ciclo através de todos los inputs del @param inputs y en cada uno hace
+ * una validación en la función:
+ * @function valida() la cual determina que mensaje mostrar al usuario por
+ * medio de un evento blur (El campo pierde el focus).
+ * 
+ * El segundo evento dentro del ciclo se encarga de mantener bloqueado o
+ * desbloqueado el botón de envío del formulario por medio del keyup (El usuario escribe
+ * en el campo).
+ * 
+ * El primer evento del @param textArea 
+ * Se encarga de validar que mensaje mostrar al usuario en caso de perder el focus,
+ * por medio del evento blur, además de mantener el botón bloqueado o desbloqueado
+ * con la segunda función.
+ * 
+ * El segundo evento del @param textArea
+ * Se encarga de mantener bloqueado o desbloqueado el botón de envío 
+ * del formulario por medio del keyup (El usuario escribe en el campo).
  */
-textArea.addEventListener("blur", (textArea) => {
-    validaTextArea(textArea.target);
-});
-
-/**
- * Realiza un ciclo por los inputs y 
- * de forma individual valida en el caso 
- * de que se pierda el foco.
- */
-inputs.forEach((input) => {
-    input.addEventListener("blur", (input) => {
-        valida(input.target);
+function validarCampos(inputs, textArea) {
+    inputs.forEach((input) => {
+        input.addEventListener("blur", (input) => {
+            valida(input.target);
+            desbloquearBotonEnviar();
+        });
+    
+        input.addEventListener("keyup", function () {
+            desbloquearBotonEnviar();
+        });
     });
-});
+
+    textArea.addEventListener("blur", (textArea) => {
+        validaTextArea(textArea.target);
+        desbloquearBotonEnviar();
+    });
+    
+    textArea.addEventListener("keyup", function () {
+        desbloquearBotonEnviar();
+    });
+    return;
+}

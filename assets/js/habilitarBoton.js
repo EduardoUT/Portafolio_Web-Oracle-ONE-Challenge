@@ -1,6 +1,6 @@
 /**
  * @function
- * Permite validar si el valor de todos los campos del formulario cumplan
+ * Permite validar si todos los campos del formulario cumplan
  * con las propiedades del objeto validity.
  * 
  * El botón enviar se mostrará inhabilitado en caso de estar vacio al menos un campo,

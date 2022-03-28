@@ -54,7 +54,7 @@ window.addEventListener("load",
  * Elemento textarea del DOM.
  * @returns void
  * @function
- * Realiza un ciclo através de todos los inputs del @param inputs y en cada uno hace
+ * Realiza un ciclo através de todos los @param inputs y en cada uno hace
  * una validación en la función:
  * @function valida() la cual determina que mensaje mostrar al usuario por
  * medio de un evento blur (El campo pierde el focus).

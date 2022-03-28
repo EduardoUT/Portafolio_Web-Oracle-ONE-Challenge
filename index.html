@@ -519,7 +519,7 @@
                <div class="formulario-container__imagen formulario-container__imagen--contacto"></div>
                <div class="formulario-container__contacto">
                   <h2 class="subtitulos subtitulos--formulario" tabindex=0>Contacto</h2>
-                  <form class="formulario-container__formulario" action="">
+                  <form class="formulario-container__formulario" action="GET">
                      <legend class="formulario-container__legend" tabindex=0>
                         ¿Quieres contactarme?<br>
                         Complete el siguiente formulario y me pondré en contacto con usted
@@ -558,12 +558,12 @@
                      <div class="formulario-container__inputs" tabindex=0>
                         <label class="formulario-container__label" for="mensaje" tabindex=0>Mensaje:</label>
                         <textarea class="textarea input-text--style" id="mensaje" required title="Escriba el mensaje"
-                        tabindex=0 data-textarea="mensaje" minlength="5" maxlength="300"></textarea>
+                        tabindex=0 data-textarea="mensaje" minlength="10" maxlength="300"></textarea>
                         <span class="formulario-container__span--error" tabindex=0>
                            Por favor, completa este campo.
                         </span>
                      </div>
-                     <input class="btn btn--azul" id="btn-enviar" type="submit" tabindex=0 value="Enviar mensaje">
+                     <button class="btn btn--azul" id="btn-enviar" type="submit" tabindex=0>Enviar mensaje</button>
                   </form>
                </div>
             </div>
@@ -602,6 +602,7 @@
    </footer>
    <script src="assets/js/main.js" type="module"></script>
    <script src="assets/js/menu.js" type="module"></script>
+   <script src="assets/js/habilitarBoton.js" type="module"></script>
 </body>
 
 </html>

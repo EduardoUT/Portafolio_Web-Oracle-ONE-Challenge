@@ -34,3 +34,11 @@ solo vértical*/
     height: 82px;
     resize: vertical;
 }
+
+/*Selector de cambio para deshabilitar el puntero, con fondo
+y borde gris acorde a la WCAG*/
+.btn--bloqueado[type="submit"] {
+    background: #4e4b4b;
+    border: solid 0.1em #4e4b4b;
+    pointer-events: none;
+}

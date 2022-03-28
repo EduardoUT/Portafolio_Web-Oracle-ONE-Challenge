@@ -3,10 +3,13 @@
  * Permite validar si el valor de todos los campos del formulario no 
  * se encuentren en blanco.
  * 
- * El botón enviar se mostrará inhabilitado en caso de estar vacio al menos un campo.
+ * El botón enviar se mostrará inhabilitado en caso de estar vacio al menos un campo,
+ * se agregará la propiedad disabled por medio de setAttribute y el estilo css
+ * que anula el pointer-event, además de pintar el borde y fondo de color gris.
  * 
  * Si todos los campos del formulario son validos con el objeto
- * validity.valid, el botón de enviar se deshabilitará.
+ * validity.valid, el botón de enviar se deshabilitará, se quitará la propiedad
+ * disabled y se removerá el estilo de color gris, volviendo a su estado original.
  */
 export function desbloquearBotonEnviar() {
     let nombre = document.getElementById("nombre");
@@ -27,4 +30,3 @@ export function desbloquearBotonEnviar() {
         btnEnviar.classList.add("deshabilitar-btn");
     }
 }
-

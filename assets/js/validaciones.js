@@ -178,7 +178,7 @@ const mensajesDeError = {
     mensaje: {
         valueMissing: "El campo mensaje no puede estar en blanco o vacío.",
         tooLong: "Debe contener máximo 300 carácteres",
-        tooShort: "Debe contener mínimo 5 carácteres",
+        tooShort: "Debe contener mínimo 10 carácteres",
     }
 };
 

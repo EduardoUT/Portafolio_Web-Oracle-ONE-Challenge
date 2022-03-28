@@ -29,6 +29,6 @@ export function desbloquearBotonEnviar() {
         btnEnviar.classList.remove("btn--bloqueado");
     } else {
         btnEnviar.setAttribute("disabled", "true");
-        btnEnviar.classList.add("btn-bloqueado");
+        btnEnviar.classList.add("btn--bloqueado");
     }
 }

@@ -14,14 +14,14 @@ const inputs = document.querySelectorAll("input");
  */
 const textArea = document.querySelector("textarea");
 
-//const btnEnviar = document.querySelector("#btn-enviar");
-//const form = document.querySelector(".formulario-container__formulario");
+const btnEnviar = document.querySelector("#btn-enviar");
+const form = document.querySelector(".formulario-container__formulario");
 /**
  * @let 
  * Devuelve un valor boleano, en caso de cumplirse la coincidencia (true)
  * de tamaño mínimo en dispositivos de 768px.
  */
-let mediaQueryMin = window.matchMedia("(min-width: 768px) and (max-width: 1080px)");
+let mediaQueryWidth = window.matchMedia("(min-width: 768px) and (max-width: 1080px)");
 
 /**
  * @let 
@@ -42,7 +42,7 @@ window.addEventListener("load",
     function (event) {
         event.preventDefault();
         validarCampos(inputs, textArea);
-        mostrarOcultarMenu(inputs, textArea, mediaQueryMin);
+        mostrarOcultarMenu(inputs, textArea, mediaQueryWidth);
         desbloquearBotonEnviar();
     }
 );
@@ -94,3 +94,7 @@ function validarCampos(inputs, textArea) {
     });
     return;
 }
+
+btnEnviar.addEventListener("click", function () {
+    form.reset();
+});

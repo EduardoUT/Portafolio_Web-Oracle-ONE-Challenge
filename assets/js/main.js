@@ -14,8 +14,8 @@ const inputs = document.querySelectorAll("input");
  */
 const textArea = document.querySelector("textarea");
 
-const btnEnviar = document.querySelector("#btn-enviar");
-const form = document.querySelector(".formulario-container__formulario");
+//const btnEnviar = document.querySelector("#btn-enviar");
+//const form = document.querySelector(".formulario-container__formulario");
 /**
  * @let 
  * Devuelve un valor boleano, en caso de cumplirse la coincidencia (true)
@@ -94,7 +94,3 @@ function validarCampos(inputs, textArea) {
     });
     return;
 }
-
-btnEnviar.addEventListener("click", function () {
-    form.reset();
-});

@@ -111,7 +111,7 @@ export function mostrarOcultarMenu(inputs, textArea, mediaQueryMin) {
                 body.classList.remove(ocultarMenu);
                 body.classList.add(mostrarMenu);
             });
-            input.addEventListener("onkeyup", function () {
+            input.addEventListener("keyup", function () {
                 body.classList.remove(ocultarMenu);
                 body.classList.add(mostrarMenu);
             });

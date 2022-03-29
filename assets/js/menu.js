@@ -107,6 +107,14 @@ export function mostrarOcultarMenu(inputs, textArea, mediaQueryMin) {
                 body.classList.remove(mostrarMenu);
                 body.classList.add(ocultarMenu);
             });
+            input.addEventListener("blur", function () {
+                body.classList.remove(ocultarMenu);
+                body.classList.add(mostrarMenu);
+            });
+            input.addEventListener("onkeyup", function () {
+                body.classList.remove(ocultarMenu);
+                body.classList.add(mostrarMenu);
+            });
         });
 
         textArea.addEventListener("focus", function () {
@@ -114,13 +122,6 @@ export function mostrarOcultarMenu(inputs, textArea, mediaQueryMin) {
             body.classList.add(ocultarMenu);
         });
         
-        inputs.forEach((input) => {
-            input.addEventListener("blur", function () {
-                body.classList.remove(ocultarMenu);
-                body.classList.add(mostrarMenu);
-            });
-        });
-
         textArea.addEventListener("blur", function () {
             body.classList.remove(ocultarMenu);
             body.classList.add(mostrarMenu);

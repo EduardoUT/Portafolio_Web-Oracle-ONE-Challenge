@@ -113,7 +113,7 @@ export function mostrarOcultarMenu(inputs, textArea, mediaQueryMin) {
                 body.classList.add(ocultarMenu);
             });
 
-            input.addEventListener("blur", function () {
+            input.addEventListener("focusout", function () {
                 body.classList.remove(ocultarMenu);
                 body.classList.add(mostrarMenu);
             });
@@ -129,7 +129,7 @@ export function mostrarOcultarMenu(inputs, textArea, mediaQueryMin) {
             body.classList.add(ocultarMenu);
         });
 
-        textArea.addEventListener("blur", function () {
+        textArea.addEventListener("focusout", function () {
             body.classList.remove(ocultarMenu);
             body.classList.add(mostrarMenu);
         });

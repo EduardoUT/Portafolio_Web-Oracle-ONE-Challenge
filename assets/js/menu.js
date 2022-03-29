@@ -72,36 +72,51 @@ George Martsoukos
 https://webdesign.tutsplus.com/es/tutorials/how-to-hide-reveal-a-sticky-header-on-scroll-with-javascript--cms-33756
 */
 
-
 /**
  * @param {Object} inputs
  * Elementos input del DOM en el formulario. 
  * @param {Object} textArea 
  * Elemento textarea del DOM en el formulario.
- * @param {Object} mediaQueryMin
+ * @param {Object} mediaQueryWidth
  * Objeto que devuelve un valor boleano en caso de cumplirse el media query, para
- * valores min-width.
- * @param {Object} mediaQueryMax 
- * Objeto que devuelve un valor boleano en caso de cumplirse el media query, para
- * valores max-width.
+ * valores entre min-width y max-width.
  * @returns void.
- * 
  * @function 
- * Cuando cualquier campo este seleccionado y contenga el foco,
- * el menú automáticamente se ocultará en inputs y textarea del formulario, 
- * esto a fin de evitar abarcar toda la pantalla mientras el teclado en Android, iOS, etc,
+ * La condición permite validar un mediaQuery con un rango min-width y max-width.
+ * Esto a fin de evitar abarcar toda la pantalla mientras el teclado en Android, iOS, etc,
  * se encuentra abierto en dispositivos móviles orientados horizontalmente.
+ *
+ * Eventos para @param inputs
+ * focus: 
  * 
- * Cuando cualquier campo no este seleccionado y pierda el foco,
- * el menú automáticamente se mostrará de vuelta.
+ * Cuando un campo contenga el foco, el menú se ocultará. 
  * 
- * La condición permite validar un rango entre min-width y max-width en pixeles del objeto
- * MediaQueryList.
+ * keyup: 
+ * 
+ * Cuando el usuario escriba en el campo input, el menú se ocultará.
+ * 
+ * blur:
+ * 
+ * Cuando el campo pierda el foco, el menú volerá a visualizarse.
+ * 
+ * Eventos para @param textArea
+ * 
+ * focus:
+ * 
+ * Cuando el textarea contenga el foco, el menú se ocultará.
+ * 
+ * keyup:
+ * 
+ * Cuando el usuario escriba en el textarea, el menú se ocultará.
+ * 
+ * blur:
+ * 
+ * Cuando el textarea pierda el foco, el menú volverá a visualizarse.
  */
-export function mostrarOcultarMenu(inputs, textArea, mediaQueryMin) {
+export function mostrarOcultarMenu(inputs, textArea, mediaQueryWidth) {
     let mostrarMenu = scrollArriba;
     let ocultarMenu = scrollAbajo;
-    if (mediaQueryMin.matches) {
+    if (mediaQueryWidth.matches) {
         inputs.forEach((input) => {
             input.addEventListener("focus", function () {
                 body.classList.remove(mostrarMenu);

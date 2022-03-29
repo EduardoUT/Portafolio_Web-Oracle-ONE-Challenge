@@ -21,14 +21,14 @@ const textArea = document.querySelector("textarea");
  * Devuelve un valor boleano, en caso de cumplirse la coincidencia (true)
  * de tamaño mínimo en dispositivos de 768px.
  */
-let mediaQueryMin = window.matchMedia("(min-width: 768px)");
+let mediaQueryMin = window.matchMedia("(min-width: 768px) and (max-width: 1080px)");
 
 /**
  * @let 
  * Devuelve un valor boleano, en caso de cumplirse la coincidencia (true)
  * de tamaño máximo en dispositivos de 1080px.
  */
-let mediaQueryMax = window.matchMedia("(max-width: 1080px)");
+//let mediaQueryMax = window.matchMedia("");
 
 window.addEventListener("load",
     /**
@@ -42,7 +42,7 @@ window.addEventListener("load",
     function (event) {
         event.preventDefault();
         validarCampos(inputs, textArea);
-        mostrarOcultarMenu(inputs, textArea, mediaQueryMin, mediaQueryMax);
+        mostrarOcultarMenu(inputs, textArea, mediaQueryMin);
         desbloquearBotonEnviar();
     }
 );

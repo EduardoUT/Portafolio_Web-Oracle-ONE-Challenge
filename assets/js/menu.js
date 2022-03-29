@@ -98,34 +98,33 @@ https://webdesign.tutsplus.com/es/tutorials/how-to-hide-reveal-a-sticky-header-o
  * La condición permite validar un rango entre min-width y max-width en pixeles del objeto
  * MediaQueryList.
  */
-export function mostrarOcultarMenu(inputs, textArea, mediaQueryMin, mediaQueryMax) {
-    let ocultarMenu = scrollArriba;
-    let mostrarMenu = scrollAbajo;
-    if (mediaQueryMin.matches && mediaQueryMax.matches) {
-
+export function mostrarOcultarMenu(inputs, textArea, mediaQueryMin) {
+    let mostrarMenu = scrollArriba;
+    let ocultarMenu = scrollAbajo;
+    if (mediaQueryMin.matches) {
         inputs.forEach((input) => {
             input.addEventListener("focus", function () {
-                body.classList.remove(ocultarMenu);
-                body.classList.add(mostrarMenu);
-            });
-        });
-
-        textArea.addEventListener("focus", function () {
-            body.classList.remove(ocultarMenu);
-            body.classList.add(mostrarMenu);
-        });
-
-        inputs.forEach((input) => {
-            input.addEventListener("focusout", function () {
                 body.classList.remove(mostrarMenu);
                 body.classList.add(ocultarMenu);
             });
         });
 
-        textArea.addEventListener("focusout", function () {
+        textArea.addEventListener("focus", function () {
             body.classList.remove(mostrarMenu);
             body.classList.add(ocultarMenu);
         });
-        return;
+        
+        inputs.forEach((input) => {
+            input.addEventListener("focusout", function () {
+                body.classList.remove(ocultarMenu);
+                body.classList.add(mostrarMenu);
+            });
+        });
+
+        textArea.addEventListener("focusout", function () {
+            body.classList.remove(ocultarMenu);
+            body.classList.add(mostrarMenu);
+        });
     }
+    return;
 }

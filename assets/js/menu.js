@@ -115,13 +115,13 @@ export function mostrarOcultarMenu(inputs, textArea, mediaQueryMin) {
         });
         
         inputs.forEach((input) => {
-            input.addEventListener("focusout", function () {
+            input.addEventListener("blur", function () {
                 body.classList.remove(ocultarMenu);
                 body.classList.add(mostrarMenu);
             });
         });
 
-        textArea.addEventListener("focusout", function () {
+        textArea.addEventListener("blur", function () {
             body.classList.remove(ocultarMenu);
             body.classList.add(mostrarMenu);
         });

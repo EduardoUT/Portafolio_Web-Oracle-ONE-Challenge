@@ -11,7 +11,7 @@ https://eduardout.github.io/Portafolio_Web-Oracle-ONE-Challenge/
 
 ![Vista previa de portafolio web](https://raw.githubusercontent.com/EduardoUT/Portafolio_Web-Oracle-ONE-Challenge/master/assets/img/readme/vista_inicio.PNG)
 
-Publicado en el topic:
+Publicado en el topic: https://github.com/topics/challengeoneportafolio
 
 Tercer proyecto de Alura Latam en el que el desafío será crear un portafolio personal en el que mostremos nuestros proyectos desarrollados a lo largo de nuestra carrera como Devs, compartir nuestras experiencias laborales, así como nuestras soft-skills, este será dividido en diversas etapas:
 

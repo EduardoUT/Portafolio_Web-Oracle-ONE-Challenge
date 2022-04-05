@@ -539,10 +539,11 @@
                         <label class="formulario-container__label" for="email" tabindex=0>Correo Electrónico:</label>
                         <input class="input-email input-email--bluefocus input-text--style" id="email" type="email"
                            required title="No debe estar vacío o en blanco, en formato correo@dominio.com"
-                           pattern="^((?:(?:[a-zA-Z]+)[\b.\b-_]?)+[\d]*)@((?:(?:[a-zA-Z]+)[.](?:(?:[a-z]+)[\d]?)[.])?(?:[a-z]+)[.]{1}(?:[a-z]{2,4})(?:[.](?:[a-z]{2,4}))?)$"
+                           pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+[.](?:[a-zA-Z0-9-]+)([.][a-z]{2,4})?$"
                            tabindex=0 data-campo="correo">
                         <span class="formulario-container__span--error" id="formulario-container__span-correo" tabindex=0>
                            Por favor, completa este campo.
+                           <!--^((?:(?:[a-zA-Z]+)[\b.\b-_]?)+[\d]*)@((?:(?:[a-zA-Z]+)[.](?:(?:[a-z]+)[\d]?)[.])?(?:[a-z]+)[.]{1}(?:[a-z]{2,4})(?:[.](?:[a-z]{2,4}))?)$-->
                         </span>
                      </div>
                      <div class="formulario-container__inputs" tabindex=0>

@@ -529,7 +529,8 @@
                         <label class="formulario-container__label" for="nombre" tabindex=0>Nombre Completo:</label>
                         <input class="input-text input-text--style" id="nombre" type="text" required
                            title="La primer letra de cada nombre y apellido debe ser en mayúscula, no debe haber más de un espacio en blanco y no puede haber más de 50 carácteres."
-                           tabindex=0 pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$"
+                           tabindex=0 placeholder="Nombre(s) Apellido(s)"
+                           pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$"
                            minlength="3" maxlength="50" data-campo="nombre">
                         <span class="formulario-container__span--error" id="formulario-container__span-nombre" tabindex=0>
                            Por favor, completa este campo.
@@ -539,6 +540,7 @@
                         <label class="formulario-container__label" for="email" tabindex=0>Correo Electrónico:</label>
                         <input class="input-email input-email--bluefocus input-text--style" id="email" type="email"
                            required title="No debe estar vacío o en blanco, en formato correo@dominio.com"
+                           placeholder="correousuario@dominio.com"
                            pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+[.](?:[a-zA-Z0-9-]+)([.][a-z]{2,4})?$"
                            tabindex=0 data-campo="correo">
                         <span class="formulario-container__span--error" id="formulario-container__span-correo" tabindex=0>
@@ -550,6 +552,7 @@
                         <label class="formulario-container__label" for="asunto" tabindex=0>Asunto:</label>
                         <input class="input-text input-text--style" id="asunto" type="text" required
                            title="No debe estar vacío o en blanco, no se admiten números, sólo texto y signos (,.|), no puede ingresar más de 50 carácteres."
+                           placeholder="Asunto"
                            pattern="^(?=.{10,50}$)([A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+(?:[\s][A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+)+)$"
                            tabindex=0 data-campo="asunto" minlength="6" maxlength="50">
                         <span class="formulario-container__span--error" tabindex=0>
@@ -559,7 +562,7 @@
                      <div class="formulario-container__inputs" tabindex=0>
                         <label class="formulario-container__label" for="mensaje" tabindex=0>Mensaje:</label>
                         <textarea class="textarea input-text--style" id="mensaje" required title="Escriba el mensaje"
-                        tabindex=0 data-textarea="mensaje" minlength="20" maxlength="300"></textarea>
+                        placeholder="Escribe tu mensaje" tabindex=0 data-textarea="mensaje" minlength="20" maxlength="300"></textarea>
                         <span class="formulario-container__span--error" tabindex=0>
                            Por favor, completa este campo.
                         </span>

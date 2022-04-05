@@ -14,11 +14,11 @@
  * disabled y se removerá el estilo de color gris, volviendo a su estado original.
  */
 export function desbloquearBotonEnviar() {
-    let nombre = document.getElementById("nombre");
-    let correo = document.getElementById("email");
-    let asunto = document.getElementById("asunto");
-    let mensaje = document.getElementById("mensaje");
-    let btnEnviar = document.getElementById("btn-enviar");
+    const nombre = document.getElementById("nombre");
+    const correo = document.getElementById("email");
+    const asunto = document.getElementById("asunto");
+    const mensaje = document.getElementById("mensaje");
+    const btnEnviar = document.getElementById("btn-enviar");
     let nombreValido = nombre.validity.valid;
     let correoValido = correo.validity.valid;
     let asuntoValido = asunto.validity.valid;

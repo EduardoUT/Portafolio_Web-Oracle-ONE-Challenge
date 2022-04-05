@@ -14,8 +14,12 @@ const inputs = document.querySelectorAll("input");
  */
 const textArea = document.querySelector("textarea");
 
-//const btnEnviar = document.querySelector("#btn-enviar");
-//const form = document.querySelector(".formulario-container__formulario");
+/**
+ * @const
+ * Contiene el elemento form del DOM.
+ */
+const formularioContacto = document.querySelector(".formulario-container__formulario");
+
 /**
  * @let 
  * Devuelve un valor boleano, en caso de cumplirse la coincidencia (true)
@@ -23,27 +27,32 @@ const textArea = document.querySelector("textarea");
  */
 let mediaQueryWidth = window.matchMedia("(min-width: 768px) and (max-width: 1080px)");
 
+mostrarOcultarMenu(inputs, textArea, mediaQueryWidth);
+validarCampos(inputs, textArea);
+desbloquearBotonEnviar();
+
 /**
- * @let 
- * Devuelve un valor boleano, en caso de cumplirse la coincidencia (true)
- * de tamaño máximo en dispositivos de 1080px.
+ * Usando delegación de eventos para inputs y textarea.
+ * Cuando el usuario escriba en los campos de tipo input
+ * o textArea se ejecutará la función desbloquearBotonEnviar
+ * para comprobar si se desbloqueará el botón.
  */
-//let mediaQueryMax = window.matchMedia("");
+formularioContacto.addEventListener("keyup", (e) => {
+    if ((e.target && e.target.tagName == 'INPUT')) {
+        desbloquearBotonEnviar();
+    } else if (e.target && e.target.tagName == 'TEXTAREA') {
+        desbloquearBotonEnviar();
+    }
+});
 
 window.addEventListener("load",
     /**
      * @function
      * Evita que el formulario se envíe al cargar la
      * página.
-     * 
-     * Contiene las siguientes funciones:
-     * @function mostrarOcultarMenu
      */
     function (event) {
         event.preventDefault();
-        validarCampos(inputs, textArea);
-        mostrarOcultarMenu(inputs, textArea, mediaQueryWidth);
-        desbloquearBotonEnviar();
     }
 );
 
@@ -78,18 +87,10 @@ function validarCampos(inputs, textArea) {
             valida(input.target);
             desbloquearBotonEnviar();
         });
-    
-        input.addEventListener("keyup", function () {
-            desbloquearBotonEnviar();
-        });
     });
 
     textArea.addEventListener("blur", (textArea) => {
         validaTextArea(textArea.target);
-        desbloquearBotonEnviar();
-    });
-    
-    textArea.addEventListener("keyup", function () {
         desbloquearBotonEnviar();
     });
     return;

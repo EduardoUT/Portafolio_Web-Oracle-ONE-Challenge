@@ -1,7 +1,7 @@
 /*Estableciendo ancho y alto en container de subtitulo y formulario*/
 .formulario-container__contacto {
     height: inherit;
-    width: 656px;
+    width: 57%;
 }
 
 /*Selector de clase flag para configurar margen de subtitulo

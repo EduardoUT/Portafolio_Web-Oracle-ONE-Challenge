@@ -1,26 +1,26 @@
 /*Container con ancho y alto de 30px*/
 .seccion-hobbies__icono {
-    width: 1.875em;
-    height: 1.875em;
+    width: 2.3125rem;
+    height: 2.3125rem;
 }
 
 /*Selectores flag para iconos*/
 .seccion-hobbies__icono--audifonos {
-    background: url("../../img/iconos/hobbies/musica.png") no-repeat center / contain;
+    background: url("../../img/iconos/hobbies/musica.svg") center / 100% 100% no-repeat;
 }
 
 .seccion-hobbies__icono--pantalla {
-    background: url("../../img/iconos/hobbies/pantalla.png") no-repeat center / contain;
+    background: url("../../img/iconos/hobbies/pantalla.svg") center / 100% 100% no-repeat;
 }
 
 .seccion-hobbies__icono--libro {
-    background: url("../../img/iconos/hobbies/libro-abierto.png") no-repeat center / contain;
+    background: url("../../img/iconos/hobbies/libro-abierto.png") center / 100% 100% no-repeat;
 }
 
 .seccion-hobbies__icono--cine {
-    background: url("../../img/iconos/hobbies/rollo-de-pelicula.png") no-repeat center / contain;
+    background: url("../../img/iconos/hobbies/rollo-de-pelicula.png") center / 100% 100% no-repeat;
 }
 
 .seccion-hobbies__icono--ojo {
-    background: url("../../img/iconos/hobbies/ojo.png") no-repeat center / contain;
+    background: url("../../img/iconos/hobbies/ojo.png") center / 100% 100% no-repeat;
 }

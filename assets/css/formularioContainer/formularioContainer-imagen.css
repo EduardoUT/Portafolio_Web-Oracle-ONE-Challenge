@@ -1,7 +1,7 @@
 /*Configurando ancho y alto de container para imagen*/
 .formulario-container__imagen {
     height: 593px;
-    width: 464px; /*464px*/
+    width: 41%; /*464px*/
 }
 
 /*Selector de clase flag para imagen de fondo*/

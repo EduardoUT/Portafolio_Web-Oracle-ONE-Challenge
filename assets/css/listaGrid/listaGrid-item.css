@@ -10,3 +10,17 @@ Aplicando border shadow*/
     justify-content: flex-end;
     padding: 1em;
 }
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .lista-grid__item {
+        height: 7.375rem;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .lista-grid__item {
+        height: 7.375rem;
+    }
+}

@@ -7,14 +7,10 @@
  * @returns {boolean} Si el resultado es true, el contenido cambiara para
  * dispositivos móviles entre 667px a 1080px cuando estén inclinados horizintalmente.
  */
- const mediaQueryCelular = () => {
+ const mediaQueryCelularHorizontal = () => {
     const mediaQueryCelular = window.matchMedia("(min-width: 667px) and (max-width: 1080px)");
     const anchoValido = (mediaQueryCelular.matches);
-    if (anchoValido) {
-        return anchoValido;
-    } else {
-        return anchoValido;
-    }
+    return anchoValido;
 }
 
-export default mediaQueryCelular;
+export default mediaQueryCelularHorizontal;

@@ -2,7 +2,7 @@
 Alto: 406px Ancho: 752px*/
 .experiencias-area__imagen {
     height: 25.375em;
-    /*margin: 0 0 1em 0; <-Agregar cuando sea en columna*/
+    image-rendering: -webkit-optimize-contrast;
     width: 66.198%;
 }
 

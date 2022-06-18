@@ -55,6 +55,7 @@
    <link rel="stylesheet" href="./assets/css/experienciasArea/experienciasArea.css">
    <link rel="stylesheet" href="./assets/css/experienciasArea/experienciasArea-experiencia.css">
    <link rel="stylesheet" href="./assets/css/experienciasArea/experienciasArea-imagen.css">
+   <link rel="stylesheet" href="./assets/css/experienciasArea/experienciasArea-video.css">
    <link rel="stylesheet" href="./assets/css/experienciasArea/experienciasArea-descripciones.css">
    <link rel="stylesheet" href="./assets/css/experienciasArea/experienciasArea-proyecto.css">
    <link rel="stylesheet" href="./assets/css/experienciasArea/experienciasArea-organizacion.css">
@@ -146,8 +147,8 @@
                      </li>
                      <li class="datos-personales__contacto">
                         <a class="datos-personales__link"
-                           href="https://drive.google.com/file/d/12MOR4EVgqrvN88ET_sPaDGAH6e3Afksv/view"
-                           target="_blank" title="Ver Currículum Vitae" tabindex=0>
+                           href="https://drive.google.com/file/d/12MOR4EVgqrvN88ET_sPaDGAH6e3Afksv/view" target="_blank"
+                           title="Ver Currículum Vitae" tabindex=0>
                            <div class="datos-personales__icono datos-personales__icono--curriculum"></div>
                         </a>
                      </li>
@@ -376,7 +377,8 @@
                      title="E-Commerce AluraGeek" tabindex=0>
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
                      <p class="experiencias-area__proyecto" tabindex=0>
-                        E-Commerce AluraGeek CRUD con HTML5, CSS3 y Javascript(JSON(json-server), JS asíncrono y fetch(Promesas)).
+                        E-Commerce AluraGeek CRUD con HTML5, CSS3 y Javascript(JSON(json-server), JS asíncrono y
+                        fetch(Promesas)).
                      </p>
                      <p class="experiencias-area__organizacion" tabindex=0>
                         Challenge Oracle Next Education y Alura.
@@ -390,11 +392,17 @@
 
                   </div>
                </div>
-               
+
                <div class="experiencias-area__experiencia">
+                  <!--
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderSegundo"
                      src="./assets/img/proyectos/Login.PNG" alt="Vista previa del Conversor de Moneda"
                        title="Conversor de Moneda con Java" tabindex=0>
+                  -->
+                  <iframe class="experiencias-area__video experiencias-area__video--ordenSegundo"
+                     src="https://www.youtube.com/embed/4nH2Jz8-bh0" title="YouTube video Conversor de Moneda" frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen></iframe>
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
                      <p class="experiencias-area__proyecto" tabindex=0>
                         Conversor de Moneda con Java
@@ -403,8 +411,9 @@
                         Challenge Oracle Next Education y Alura.
                      </p>
                      <div class="experiencias-area__btns">
-                        <a class="btn btn--blanco" href="https://github.com/EduardoUT/ConversorMoneda-ONE-Alura_Challenge"
-                           target="_blank" tabindex=0>Repositorio</a>
+                        <a class="btn btn--blanco"
+                           href="https://github.com/EduardoUT/ConversorMoneda-ONE-Alura_Challenge" target="_blank"
+                           tabindex=0>Repositorio</a>
                      </div>
                   </div>
                </div>
@@ -562,9 +571,10 @@
                         <input class="input-text input-text--style" id="nombre" type="text" required
                            title="La primer letra de cada nombre y apellido debe ser en mayúscula, no debe haber más de un espacio en blanco y no puede haber más de 50 carácteres."
                            tabindex=0 placeholder="Nombre(s) Apellido(s)"
-                           pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$"
-                           minlength="3" maxlength="50" data-campo="nombre">
-                        <span class="formulario-container__span--error" id="formulario-container__span-nombre" tabindex=0>
+                           pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$" minlength="3"
+                           maxlength="50" data-campo="nombre">
+                        <span class="formulario-container__span--error" id="formulario-container__span-nombre"
+                           tabindex=0>
                            Por favor, completa este campo.
                         </span>
                      </div>
@@ -575,7 +585,8 @@
                            placeholder="correousuario@dominio.com"
                            pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+[.](?:[a-zA-Z0-9-]+)([.][a-z]{2,4})?$"
                            tabindex=0 data-campo="correo">
-                        <span class="formulario-container__span--error" id="formulario-container__span-correo" tabindex=0>
+                        <span class="formulario-container__span--error" id="formulario-container__span-correo"
+                           tabindex=0>
                            Por favor, completa este campo.
                            <!--^((?:(?:[a-zA-Z]+)[\b.\b-_]?)+[\d]*)@((?:(?:[a-zA-Z]+)[.](?:(?:[a-z]+)[\d]?)[.])?(?:[a-z]+)[.]{1}(?:[a-z]{2,4})(?:[.](?:[a-z]{2,4}))?)$-->
                         </span>
@@ -594,7 +605,8 @@
                      <div class="formulario-container__inputs" tabindex=0>
                         <label class="formulario-container__label" for="mensaje" tabindex=0>Mensaje:</label>
                         <textarea class="textarea input-text--style" id="mensaje" required title="Escriba el mensaje"
-                        placeholder="Escribe tu mensaje" tabindex=0 data-campo="mensaje" minlength="20" maxlength="300"></textarea>
+                           placeholder="Escribe tu mensaje" tabindex=0 data-campo="mensaje" minlength="20"
+                           maxlength="300"></textarea>
                         <span class="formulario-container__span--error" tabindex=0>
                            Por favor, completa este campo.
                         </span>

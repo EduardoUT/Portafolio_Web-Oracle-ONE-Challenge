@@ -9,4 +9,11 @@ const validarCampos = () => {
     });
 }
 
+export const limpiarCampos = () => {
+    const campos = document.querySelectorAll("[data-campo]");
+    campos.forEach((campo) => {
+        campo.value = "";
+    });
+}
+
 export default validarCampos;

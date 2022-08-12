@@ -1,6 +1,6 @@
 import { habilitarBotonEnviar } from "./formulario/habilitarBoton.js";
 import menu from "../js/componentes/menu.js";
-import validarCampos from "./formulario/validarCampos.js";
+import validarCampos, { limpiarCampos } from "./formulario/validarCampos.js";
 
 (() => {
     /**
@@ -29,4 +29,5 @@ import validarCampos from "./formulario/validarCampos.js";
     }
 
     formularioContacto.addEventListener("keyup", validarBtnFormulario);
+    window.addEventListener("DOMContentLoaded", limpiarCampos);
 })();

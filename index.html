@@ -574,7 +574,7 @@
                <div class="formulario-container__imagen formulario-container__imagen--contacto"></div>
                <div class="formulario-container__contacto">
                   <h2 class="subtitulos subtitulos--formulario" tabindex=0>Contacto</h2>
-                  <form class="formulario-container__formulario" action="GET">
+                  <form class="formulario-container__formulario" action="https://formspree.io/f/mknenbrr" method="POST">
                      <legend class="formulario-container__legend" tabindex=0>
                         ¿Quieres contactarme?<br>
                         Complete el siguiente formulario y me pondré en contacto con usted
@@ -582,7 +582,7 @@
                      </legend>
                      <div class="formulario-container__inputs">
                         <label class="formulario-container__label" for="nombre" tabindex=0>Nombre Completo:</label>
-                        <input class="input-text input-text--style" id="nombre" type="text" required
+                        <input class="input-text input-text--style" id="nombre" name="nombre" type="text" required
                            title="La primer letra de cada nombre y apellido debe ser en mayúscula, no debe haber más de un espacio en blanco y no puede haber más de 50 carácteres."
                            tabindex=0 placeholder="Nombre(s) Apellido(s)"
                            pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$" minlength="3"
@@ -594,7 +594,7 @@
                      </div>
                      <div class="formulario-container__inputs formulario-container__inputs--blue">
                         <label class="formulario-container__label" for="email" tabindex=0>Correo Electrónico:</label>
-                        <input class="input-email input-email--bluefocus input-text--style" id="email" type="email"
+                        <input class="input-email input-email--bluefocus input-text--style" id="email" name="email" type="email"
                            required title="No debe estar vacío o en blanco, en formato correo@dominio.com"
                            placeholder="correousuario@dominio.com"
                            pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+[.](?:[a-zA-Z0-9-]+)([.][a-z]{2,4})?$"
@@ -607,7 +607,7 @@
                      </div>
                      <div class="formulario-container__inputs" tabindex=0>
                         <label class="formulario-container__label" for="asunto" tabindex=0>Asunto:</label>
-                        <input class="input-text input-text--style" id="asunto" type="text" required
+                        <input class="input-text input-text--style" id="asunto" name="asunto" type="text" required
                            title="No debe estar vacío o en blanco, no se admiten números, sólo texto y signos (,.|), no puede ingresar más de 50 carácteres."
                            placeholder="Asunto"
                            pattern="^(?=.{10,50}$)([A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+(?:[\s][A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+)+)$"
@@ -618,7 +618,7 @@
                      </div>
                      <div class="formulario-container__inputs" tabindex=0>
                         <label class="formulario-container__label" for="mensaje" tabindex=0>Mensaje:</label>
-                        <textarea class="textarea input-text--style" id="mensaje" required title="Escriba el mensaje"
+                        <textarea class="textarea input-text--style" id="mensaje" name="mensaje" required title="Escriba el mensaje"
                            placeholder="Escribe tu mensaje" tabindex=0 data-campo="mensaje" minlength="20"
                            maxlength="300"></textarea>
                         <span class="formulario-container__span--error" tabindex=0>

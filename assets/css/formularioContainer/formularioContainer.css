@@ -5,10 +5,147 @@
     padding: var(--altura-header-Escritorio) 0;
 }
 
+/*Configurando ancho y alto de container para imagen*/
+.formulario-container__imagen {
+    height: 593px;
+    width: 41%;
+    /*464px*/
+}
+
+/*Selector de clase flag para imagen de fondo*/
+.formulario-container__imagen--contacto {
+    background: url('../../img/contacto.png') no-repeat center / cover;
+}
+
+/*Estableciendo ancho y alto en container de subtitulo y formulario*/
+.formulario-container__contacto {
+    height: inherit;
+    width: 57%;
+}
+
+/*Selector de clase flag para configurar margen de subtitulo
+y alineación izquierda*/
+.subtitulos--formulario {
+    margin: 0 0 0.25em 0;
+    text-align: left;
+}
+
+/*Asignando propiedad flex a formulario, dirección de items en columna,
+margen superior a etiqueta legend de 1px*/
+.formulario-container__formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Agregando margen inferior de 32px*/
+.formulario-container__legend {
+    font-weight: 500;
+    margin: 0 0 2em 0;
+}
+
+/*Configurando estilos de input containers*/
+.formulario-container__inputs {
+    background: #ffffff;
+    border: 0 0 1px 0;
+    border-bottom: solid 1px #C8C8C8;
+    border-radius: 4px;
+    display: block;
+    margin: 0 0 40px 0;
+    padding: 0.5em 12px;
+    position: static;
+}
+
+/*Selector flag de input container para email con fuente
+azul y linea solida inferior azul*/
+.formulario-container__inputs--blue {
+    color: var(--color-botones-primario);
+    border-bottom: solid 1px var(--color-botones-primario);
+}
+
+.formulario-container__inputs .formulario-container__label {
+    color: #5e4f4f;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*Configurando selectores de clase de tipo texto, email y textarea,
+pueden agregarse numéricos*/
+.input-text[type="text"],
+.input-email[type="email"],
+.textarea {
+    border: none;
+    color: var(--font-color);
+    display: block;
+    font-weight: 400;
+    height: 20px;
+    margin: 4px 0 0 0;
+    width: 100%;
+}
+
+/*Configurando selectores de clase sin borde al activar el focus*/
+.input-text[type="text"]:focus,
+.input-email[type="email"]:focus,
+textarea:focus {
+    outline: 0 none;
+}
+
+/*Selector de clase flag para email, al hacer focus el color
+del texto y focus cambiarán a azul*/
+.input-email--bluefocus[type="email"]:focus {
+    color: var(--color-botones-primario);
+}
+
+/*Aplicando altura default a textarea y expansión
+solo vértical*/
+.textarea {
+    height: 82px;
+    resize: vertical;
+}
+
+/*Selector de cambio para deshabilitar el puntero, con fondo
+y borde gris acorde a la WCAG*/
+.btn--bloqueado[type="submit"] {
+    background: #4e4b4b;
+    border: solid 0.1em #4e4b4b;
+    pointer-events: none;
+}
+
+/*Se ocultará inicialmente el mensaje*/
+.formulario-container__span--error {
+    display: none;
+}
+
+/*Selector de cambio para mensajes de error de los elementos span usados en validaciones.js,
+desplegados en flexbox, con color de fondo validado en el  estándar de accesibilidad WCAG 2.0 acorde 
+a la tipografía en color blanco*/
+.formulario-container__inputs--incorrecto .formulario-container__span--error {
+    align-items: center;
+    background: #b40000;
+    /*Color generado en https://contrastchecker.com/?utm_source=pocket_mylist*/
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    font-size: 0.8em;
+    font-weight: 400;
+    justify-content: flex-start;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em;
+    width: auto;
+}
+
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     .formulario-container {
         padding: var(--altura-header-Tablet) 0;
+    }
+
+    /*Eliminando visualización de imagen de contacto*/
+    .formulario-container__imagen {
+        display: none;
+    }
+
+    .formulario-container__contacto {
+        width: 100%;
     }
 }
 
@@ -16,5 +153,14 @@
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .formulario-container {
         padding: var(--altura-header-Celular) 0;
+    }
+
+    /*Eliminando visualización de imagen de contacto*/
+    .formulario-container__imagen {
+        display: none;
+    }
+
+    .formulario-container__contacto {
+        width: 100%;
     }
 }

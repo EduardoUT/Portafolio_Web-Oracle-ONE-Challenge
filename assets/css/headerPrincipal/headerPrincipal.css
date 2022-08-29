@@ -1,4 +1,31 @@
 /*
+Header posicionado fijamente en la parte superior, con altura de 88px
+y un ancho de 100%, las clases scroll-down y scroll-up se utilizan en menu.js
+se asigna una transición con tiempo de 400ms al momento de hacer 
+scroll hacía arriba.
+*/
+.header-principal {
+    background-color: var(--color-fondo-primario);
+    height: var(--altura-header-Escritorio);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.4s;
+}
+
+/*El menú subirá con un porcentaje de -100%, en el
+eje Y*/
+.scroll-down .header-principal {
+    transform: translate3d(0, -100%, 0);
+}
+
+/*El menú se mantendrá en su posición
+original*/
+.scroll-up .header-principal {
+    transform: none;
+}
+
+/*
 Header contenedor con propiedad flexbox con altura heredada del
 .headerPrincipal, elementos alineados verticalmente alineados al centro
 con espacio entre el logo y el menú.
@@ -16,6 +43,10 @@ Centrado con margin.
 
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .header-principal {
+        height: var(--altura-header-Tablet);
+    }   
+    
     /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
     .header-principal__container {
         flex-direction: column;
@@ -25,6 +56,11 @@ Centrado con margin.
 
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+    /*El header aumentará de altura */
+    .header-principal {
+        height: var(--altura-header-Celular); /*145.6px*/
+    }
+
     /*Definiendo tamaño de 100% al menú nav y centrando horizondalmente los elementos*/
     .header-principal__container {
         flex-direction: column;

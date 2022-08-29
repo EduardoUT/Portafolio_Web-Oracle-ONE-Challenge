@@ -3,16 +3,39 @@ a la altura del header de escritorio y tablet, con un ancho máximo de 751px
 y de 100% al reducirse*/
 .biografia {
     max-width: 46.937em;
-    padding:var(--altura-header-Escritorio) 0;
+    padding: var(--altura-header-Escritorio) 0;
     width: 100%;
+}
+
+/*Eliminando margenes*/
+.biografia__subtitulo {
+    margin: 0;
+}
+
+/*Eliminando margen inferior*/
+.biografia__parrafo {
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 0;
 }
 
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
+
     /*Estableciendo padding superior e inferior acorde al alto
     del header de tablt*/
     .biografia {
         padding: var(--altura-header-Tablet) 0;
+    }
+
+    /*Estableciendo tamaño de subtitulo en 22px*/
+    .biografia__subtitulo {
+        font-size: var(--tamañoLetraTablet-titulosYSubtitulos);
+    }
+
+    /*Estableciendo tamaño de letra para parrafo de 14px*/
+    .biografia__parrafo {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
     }
 }
 
@@ -22,5 +45,15 @@ y de 100% al reducirse*/
         /*Asignando margen superior e inferior
         acorde al tamaño del header del celular y estableciendo un ancho completo*/
         padding: var(--altura-header-Celular) 0;
+    }
+
+    /*Estableciendo tamaño de subtitulo en 22px*/
+    .biografia__subtitulo {
+        font-size: var(--tamañoLetraCelular-tituloBienvenida-subtitulosSeccion);
+    }
+
+    /*Estableciendo tamaño de letra para parrafo de 14px*/
+    .biografia__parrafo {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
     }
 }

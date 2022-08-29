@@ -19,12 +19,8 @@
    <link rel="stylesheet" href="./assets/css/datosPersonales/datosPersonales.css">
    <link rel="stylesheet" href="./assets/css/seccionSobreMi.css">
    <link rel="stylesheet" href="./assets/css/biografia/biografia.css">
-   <link rel="stylesheet" href="./assets/css/seccionSkillsHobbies.css">
    <link rel="stylesheet" href="./assets/css/listaGrid/listaGrid.css">
-   <link rel="stylesheet" href="./assets/css/listaGrid/listaGrid-item.css">
    <link rel="stylesheet" href="./assets/css/seccionSkills/seccionSkills.css">
-   <link rel="stylesheet" href="./assets/css/seccionSkills/seccionSkills-icono.css">
-   <link rel="stylesheet" href="./assets/css/seccionSkills/seccionSkills-descripcion.css">
    <link rel="stylesheet" href="./assets/css/seccionHobbies/seccionHobbies.css">
    <link rel="stylesheet" href="./assets/css/seccionHobbies/seccionHobbies-icono.css">
    <link rel="stylesheet" href="./assets/css/seccionHobbies/seccionHobbies-parrafo.css">
@@ -92,9 +88,7 @@
    </header>
 
    <main class="seccion-principal font-style" id="home">
-
       <section class="seccion-presentacion">
-
          <div class="container">
             <div class="datos-personales">
                <div class="datos-personales__presentacion">
@@ -103,7 +97,7 @@
                   </h1>
                   <p class="datos-personales__parrafo tamaño-parrafos" tabindex=0>
                      Soy egresado de la Universidad Tecnológica Fidel Velázquez, actualmente soy parte del programa
-                     Oracle Next Education y Alura LATAM, aprendiendo Javascript, HTML5 y CSS3 del lado Front End y 
+                     Oracle Next Education y Alura LATAM, aprendiendo Javascript, HTML5 y CSS3 del lado Front End y
                      Java y MySQL del lado Back End.
                   </p>
                   <ul class="datos-personales__contactos">
@@ -134,8 +128,8 @@
                      </li>
                      <li class="datos-personales__contacto">
                         <a class="datos-personales__link"
-                           href="https://drive.google.com/file/d/1uWsCZiKJtDPF0ID5lCHWxHsWsNLOypwf/view?usp=sharing" target="_blank"
-                           title="Ver Currículum Vitae" tabindex=0>
+                           href="https://drive.google.com/file/d/1uWsCZiKJtDPF0ID5lCHWxHsWsNLOypwf/view?usp=sharing"
+                           target="_blank" title="Ver Currículum Vitae" tabindex=0>
                            <div class="datos-personales__icono datos-personales__icono--curriculum"></div>
                         </a>
                      </li>
@@ -169,92 +163,61 @@
          </div>
       </section>
 
-      <section class="seccion-skills-hobbies">
+      <section class="container">
+         <div class="seccion-skills" id="seccionSkills">
+            <h2 class="subtitulos" tabindex=0>Skills</h2>
+            <ul class="lista-grid">
+               <li class="lista-grid__item">
+                  <div class="seccion-skills__icono seccion-skills__icono--html5"></div>
+                  <p class="seccion-skills__descripcion" tabindex=0>HTML5</p>
+               </li>
+               <li class="lista-grid__item">
+                  <div class="seccion-skills__icono seccion-skills__icono--javascript"></div>
+                  <p class="seccion-skills__descripcion" tabindex=0>JavaScript</p>
+               </li>
+               <li class="lista-grid__item">
+                  <div class="seccion-skills__icono seccion-skills__icono--css3"></div>
+                  <p class="seccion-skills__descripcion" tabindex=0>CSS3</p>
+               </li>
+               <li class="lista-grid__item">
+                  <div class="seccion-skills__icono seccion-skills__icono--java"></div>
+                  <p class="seccion-skills__descripcion" tabindex=0>Java</p>
+               </li>
+               <li class="lista-grid__item">
+                  <div class="seccion-skills__icono seccion-skills__icono--mysql"></div>
+                  <p class="seccion-skills__descripcion" tabindex=0>MySQL</p>
+               </li>
+               <li class="lista-grid__item">
+                  <div class="seccion-skills__icono seccion-skills__icono--git"></div>
+                  <p class="seccion-skills__descripcion" tabindex=0>Git</p>
+               </li>
+            </ul>
+         </div>
 
-         <div class="container">
-            <div class="seccion-skills" id="seccionSkills">
-
-               <h2 class="subtitulos" tabindex=0>Skills</h2>
-
-               <ul class="lista-grid">
-                  <li class="lista-grid__item">
-                     <div class="seccion-skills__icono seccion-skills__icono--html5"></div>
-                     <p class="seccion-skills__descripcion" tabindex=0>
-                        HTML5
-                     </p>
-                  </li>
-                  <li class="lista-grid__item">
-                     <div class="seccion-skills__icono seccion-skills__icono--javascript"></div>
-                     <p class="seccion-skills__descripcion" tabindex=0>
-                        JavaScript
-                     </p>
-                  </li>
-                  <li class="lista-grid__item">
-                     <div class="seccion-skills__icono seccion-skills__icono--css3"></div>
-                     <p class="seccion-skills__descripcion" tabindex=0>
-                        CSS3
-                     </p>
-                  </li>
-                  <li class="lista-grid__item">
-                     <div class="seccion-skills__icono seccion-skills__icono--java"></div>
-                     <p class="seccion-skills__descripcion" tabindex=0>
-                        Java
-                     </p>
-                  </li>
-                  <li class="lista-grid__item">
-                     <div class="seccion-skills__icono seccion-skills__icono--mysql"></div>
-                     <p class="seccion-skills__descripcion" tabindex=0>
-                        MySQL
-                     </p>
-                  </li>
-                  <li class="lista-grid__item">
-                     <div class="seccion-skills__icono seccion-skills__icono--git"></div>
-                     <p class="seccion-skills__descripcion" tabindex=0>
-                        Git
-                     </p>
-                  </li>
-               </ul>
-
-            </div>
-
-            <div class="seccion-hobbies" id="seccionHobbies">
-
-               <h2 class="subtitulos" tabindex=0>Hobbies</h2>
-
-               <ul class="lista-grid">
-                  <li class="lista-grid__item">
-                     <div class="seccion-hobbies__icono seccion-hobbies__icono--audifonos"></div>
-                     <p class="seccion-hobbies__parrafo font-style" tabindex=0>
-                        Oir Música
-                     </p>
-                  </li>
-                  <li class="lista-grid__item">
-                     <div class="seccion-hobbies__icono seccion-hobbies__icono--pantalla"></div>
-                     <p class="seccion-hobbies__parrafo font-style" tabindex=0>
-                        Ver Series
-                     </p>
-                  </li>
-                  <li class="lista-grid__item">
-                     <div class="seccion-hobbies__icono seccion-hobbies__icono--libro"></div>
-                     <p class="seccion-hobbies__parrafo font-style" tabindex=0>
-                        Leer
-                     </p>
-                  </li>
-                  <li class="lista-grid__item">
-                     <div class="seccion-hobbies__icono seccion-hobbies__icono--cine"></div>
-                     <p class="seccion-hobbies__parrafo font-style" tabindex=0>
-                        Ver Películas
-                     </p>
-                  </li>
-                  <li class="lista-grid__item">
-                     <div class="seccion-hobbies__icono seccion-hobbies__icono--ojo"></div>
-                     <p class="seccion-hobbies__parrafo font-style" tabindex=0>
-                        Ver Fútbol
-                     </p>
-                  </li>
-               </ul>
-
-            </div>
+         <div class="seccion-hobbies" id="seccionHobbies">
+            <h2 class="subtitulos" tabindex=0>Hobbies</h2>
+            <ul class="lista-grid">
+               <li class="lista-grid__item">
+                  <div class="seccion-hobbies__icono seccion-hobbies__icono--audifonos"></div>
+                  <p class="seccion-hobbies__parrafo font-style" tabindex=0>Oir Música</p>
+               </li>
+               <li class="lista-grid__item">
+                  <div class="seccion-hobbies__icono seccion-hobbies__icono--pantalla"></div>
+                  <p class="seccion-hobbies__parrafo font-style" tabindex=0>Ver Series</p>
+               </li>
+               <li class="lista-grid__item">
+                  <div class="seccion-hobbies__icono seccion-hobbies__icono--libro"></div>
+                  <p class="seccion-hobbies__parrafo font-style" tabindex=0>Leer</p>
+               </li>
+               <li class="lista-grid__item">
+                  <div class="seccion-hobbies__icono seccion-hobbies__icono--cine"></div>
+                  <p class="seccion-hobbies__parrafo font-style" tabindex=0>Ver Películas</p>
+               </li>
+               <li class="lista-grid__item">
+                  <div class="seccion-hobbies__icono seccion-hobbies__icono--ojo"></div>
+                  <p class="seccion-hobbies__parrafo font-style" tabindex=0>Ver Fútbol</p>
+               </li>
+            </ul>
          </div>
       </section>
 
@@ -262,7 +225,6 @@
          <div class="formacion-academica" id="seccionFormacion">
             <div class="container">
                <h2 class="subtitulos" tabindex=0>Formación Académica</h2>
-
                <ul class="formacion-academica__instituciones">
                   <li class="formacion-academica__institucion">
                      <a class="formacion-academica__link" href="https://utfv.edomex.gob.mx/" target="_blank"
@@ -291,8 +253,9 @@
                      </div>
                   </li>
                   <li class="formacion-academica__institucion">
-                     <a class="formacion-academica__link" href="https://app.aluracursos.com/user/eduardoreyeshernandez98/program/certificate" target="_blank"
-                        title="Ir a Alura" tabindex=0>
+                     <a class="formacion-academica__link"
+                        href="https://app.aluracursos.com/user/eduardoreyeshernandez98/program/certificate"
+                        target="_blank" title="Ir a Alura" tabindex=0>
                         <img class="formacion-academica__imagen" src="./assets/img/educacion/aluraoracle.jpg"
                            alt="Logotipo de Alura" tabindex=0>
                      </a>
@@ -307,16 +270,12 @@
                </ul>
             </div>
          </div>
-
       </section>
 
       <section class="seccion-experiencia-profesional" id="seccionProyectos">
-
          <div class="container">
             <div class="experiencias-area">
-
                <h2 class="subtitulos" tabindex=0>Experiencia Profesional</h2>
-
                <div class="experiencias-area__experiencia">
                   <img class="experiencias-area__imagen experiencias-area__imagen--orderPrimero"
                      src="./assets/img/proyectos/encriptador.PNG" alt="Vista previa del Encriptador de Texto"
@@ -383,7 +342,8 @@
 
                <div class="experiencias-area__experiencia">
                   <iframe class="experiencias-area__video experiencias-area__video--orderSegundo"
-                     src="https://www.youtube.com/embed/4nH2Jz8-bh0" title="YouTube video Conversor de Moneda" frameborder="0"
+                     src="https://www.youtube.com/embed/4nH2Jz8-bh0" title="YouTube video Conversor de Moneda"
+                     frameborder="0"
                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                      allowfullscreen></iframe>
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderPrimero">
@@ -402,7 +362,10 @@
                </div>
 
                <div class="experiencias-area__experiencia">
-                  <iframe class="experiencias-area__video experiencias-area__video--orderPrimero" src="https://www.youtube.com/embed/rR4tobMMCE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="experiencias-area__video experiencias-area__video--orderPrimero"
+                     src="https://www.youtube.com/embed/rR4tobMMCE8" title="YouTube video player" frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen></iframe>
                   <div class="experiencias-area__descripciones experiencias-area__descripciones--orderSegundo">
                      <p class="experiencias-area__proyecto" tabindex=0>
                         Hotel Alura CRUD con Java y MySQL.
@@ -580,8 +543,8 @@
                      </div>
                      <div class="formulario-container__inputs formulario-container__inputs--blue">
                         <label class="formulario-container__label" for="email" tabindex=0>Correo Electrónico:</label>
-                        <input class="input-email input-email--bluefocus input-text--style" id="email" name="email" type="email"
-                           required title="No debe estar vacío o en blanco, en formato correo@dominio.com"
+                        <input class="input-email input-email--bluefocus input-text--style" id="email" name="email"
+                           type="email" required title="No debe estar vacío o en blanco, en formato correo@dominio.com"
                            placeholder="correousuario@dominio.com"
                            pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+[.](?:[a-zA-Z0-9-]+)([.][a-z]{2,4})?$"
                            tabindex=0 data-campo="correo">
@@ -604,9 +567,9 @@
                      </div>
                      <div class="formulario-container__inputs" tabindex=0>
                         <label class="formulario-container__label" for="mensaje" tabindex=0>Mensaje:</label>
-                        <textarea class="textarea input-text--style" id="mensaje" name="mensaje" required title="Escriba el mensaje"
-                           placeholder="Escribe tu mensaje" tabindex=0 data-campo="mensaje" minlength="20"
-                           maxlength="300"></textarea>
+                        <textarea class="textarea input-text--style" id="mensaje" name="mensaje" required
+                           title="Escriba el mensaje" placeholder="Escribe tu mensaje" tabindex=0 data-campo="mensaje"
+                           minlength="20" maxlength="300"></textarea>
                         <span class="formulario-container__span--error" tabindex=0>
                            Por favor, completa este campo.
                         </span>

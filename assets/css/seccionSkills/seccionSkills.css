@@ -3,6 +3,45 @@
     padding: var(--altura-header-Escritorio) 0;
 }
 
+/*Container con ancho y alto de 30px*/
+.seccion-skills__icono {
+    width: 2.3125rem;
+    height: 2.3125rem;
+}
+
+/*Selectores flag para iconos*/
+.seccion-skills__icono--html5 {
+    background: url("../../img/iconos/skills/html5.svg") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--javascript {
+    background: url("../../img/iconos/skills/js.svg") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--css3 {
+    background: url("../../img/iconos/skills/css3.svg") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--java {
+    background: url("../../img/iconos/skills/java.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--mysql {
+    background: url("../../img/iconos/skills/mysql.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--git {
+    background: url("../../img/iconos/skills/git.png") center / 100% 100% no-repeat;
+}
+
+/*Aplicando ancho completo al texto, texto en 
+negritas y margen superior de 8px*/
+.seccion-skills__descripcion {
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+    width: 100%;
+}
+
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     .seccion-skills {

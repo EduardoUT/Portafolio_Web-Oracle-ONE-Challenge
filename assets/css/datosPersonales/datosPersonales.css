@@ -10,17 +10,135 @@ espaciado entre ellos*/
     width: inherit;
 }
 
+/*Ajustando texto al centro horizontalmente y definiendo altura
+del contenedor acorde a la del header de escritorio*/
+.datos-personales__presentacion {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin-top: var(--altura-header-Escritorio);
+    width: 66.2%;
+    /*752.017px*/
+}
+
+/*Estableciendo color de letra y tamaño*/
+.datos-personales__titulo {
+    color: #2c2828;
+    font-size: var(--tamañoLetraEscritorio-titulos);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/*Estableciendo color de letra, tamaño,
+subiendo parrafo un poco*/
+.datos-personales__parrafo {
+    color: #2c2828;
+    /*#2c2828*/
+    font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
+    font-weight: 500;
+    margin: 0.5em 0 0 0;
+}
+
+/*Limpiando configuraciones de lista por defecto y alineando en 
+filas, el ancho es heredado de .datos-personales__presentacion*/
+.datos-personales__contactos {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    width: 25.1em;
+    /*401.6px*/
+}
+
+/*Eliminando subrayado y colocando transición*/
+.datos-personales__contacto {
+    /*Estableciendo tiempo de desplazamiento al pasar el mouse*/
+    transition: all 0.5s ease-out;
+}
+
+/*Trasladando elemento li hacía abajo al pasar el mouse*/
+.datos-personales__contacto:hover {
+    transform: translate(0, 0.3em);
+}
+
+/*Agregando color y eliminando subrayado*/
+.datos-personales__link {
+    align-items: center;
+    color: var(--font-color);
+    display: flex;
+    text-decoration: none;
+}
+
+/*Despegando icono de texto y asignando ancho y alto de 13px*/
+.datos-personales__icono {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+/*Configurando selector flag para iconos de contacto*/
+.datos-personales__icono--github {
+    background: url("../../img/iconos/contacto/github.png") no-repeat center / cover;
+}
+
+.datos-personales__icono--linkedin {
+    background: url("../../img/iconos/contacto/linkedin.png") no-repeat center / cover;
+}
+
+.datos-personales__icono--instagram {
+    background: url("../../img/iconos/contacto/instagram.png") no-repeat center / cover;
+}
+
+.datos-personales__icono--correo {
+    background: url("../../img/iconos/contacto/correos-electronicos.png") no-repeat center / cover;
+}
+
+.datos-personales__icono--curriculum {
+    background: url("../../img/iconos/contacto/curriculum.png") no-repeat center / cover;
+}
+
+/*Estableciendo tamaño de foto y radio circular*/
+.datos-personales__foto {
+    border-radius: 100%;
+    height: var(--ancho-alto-foto-Escritorio);
+    margin-top: var(--altura-header-Escritorio);
+    width: var(--ancho-alto-foto-Escritorio);
+}
+
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
+
     /*Ancho de 100% heredado de .header-principal*/
     .datos-personales {
         height: 100vh;
         margin-top: 0;
     }
+
+    .datos-personales__presentacion {
+        height: auto;
+    }
+
+    /*Estableciendo tamaño de letra 22px*/
+    .datos-personales__titulo {
+        font-size: var(--tamañoLetraTablet-titulosYSubtitulos);
+    }
+
+    /*Estableciendo tamaño de letra 16px*/
+    .datos-personales__parrafo {
+        font-size: var(--tamañoLetraTablet-parrafosYLinks-dscBienvenida-subtitulosDscImagen);
+        font-weight: 500;
+    }
+
+    /*Estableciendo tamaño de foto para tablet*/
+    .datos-personales__foto {
+        height: var(--ancho-alto-foto-Tablet);
+        width: var(--ancho-alto-foto-Tablet);
+    }
 }
 
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+
     /*Ajustando sección datos-personales acorde a la altura del menú de celular
     alineando contenido al centro horizontalmente y estableciendo items en columna*/
     .datos-personales {
@@ -28,5 +146,43 @@ espaciado entre ellos*/
         height: 100vh;
         justify-content: center;
         margin-top: 0;
+    }
+
+    /*Ajustando texto con una altura automática y un 
+    ancho completo*/
+    .datos-personales__presentacion {
+        height: auto;
+        margin-top: 0;
+        order: 1;
+        width: 100%;
+    }
+
+    /*Estableciendo tamaño de letra 22px*/
+    .datos-personales__titulo {
+        font-size: var(--tamañoLetraCelular-tituloBienvenida-subtitulosSeccion);
+    }
+
+    /*Estableciendo tamaño de letra 14px*/
+    .datos-personales__parrafo {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+        font-weight: 500;
+    }
+
+    /*Ajustando sección de contactos a 100%*/
+    .datos-personales__contactos {
+        width: 100%;
+    }
+
+    /*Estableciendo tamaño de letra 14px*/
+    .datos-personales__link {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+    }
+
+    /*Estableciendo tamaño de foto para Celulares*/
+    .datos-personales__foto {
+        height: var(--ancho-alto-foto-Celular);
+        margin-top: 0;
+        order: 0;
+        width: var(--ancho-alto-foto-Celular);
     }
 }

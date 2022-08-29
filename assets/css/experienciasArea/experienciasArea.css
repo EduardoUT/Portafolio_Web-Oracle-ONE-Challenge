@@ -3,10 +3,168 @@
     padding: var(--altura-header-Escritorio) 0;
 }
 
+/*Configurando container flex con margin inferior
+de 64px*/
+.experiencias-area__experiencia {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 4em 0;
+}
+
+/*Eliminando margen inferior del último elemento de la 
+sección*/
+.experiencias-area__experiencia:last-of-type {
+    margin: 0;
+}
+
+/*Configurando margen inferior de 16px
+Alto: 406px Ancho: 752px*/
+.experiencias-area__imagen {
+    height: 25.375em;
+    image-rendering: -webkit-optimize-contrast;
+    width: 66.198%;
+}
+
+/*Estableciendo tamaño del video*/
+.experiencias-area__video {
+    height: 25.375rem;
+    width: 66.198%;
+}
+
+/*Estableciendo selectores flag de estado para orden
+de aparición visual de items tipo video o imágen.
+
+Nota: Seguir orden de imagen o video primero y descripción segundo y invertir orden en 
+el html al siguiente proyecto sucesivamente
+
+Colocar en el html cuando imagen o video tenga la clase flag
+experiencias-area__descripciones--orderSegundo*/
+.experiencias-area__imagen--orderPrimero,
+.experiencias-area__video--orderPrimero {
+    order: 0;
+}
+
+/*Colocar en el html cuando imagen o video tenga la clase flag
+experiencias-area__descripciones--orderPrimero*/
+.experiencias-area__imagen--orderSegundo,
+.experiencias-area__video--orderSegundo {
+    order: 1;
+}
+
+/*Estableciendo contenedor flex en el área de descripciones
+en columna, con items centrados verticalmente y un
+ancho de 361.267px*/
+.experiencias-area__descripciones {
+    display: flex;
+    background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%,
+            rgba(245, 245, 245, 0.575) 100%),
+        url('../../img/fondo/fondo_descripciones.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 31.802%;
+}
+
+/*Estableciendo selectores flag de estado para orden
+de aparición visual de item.
+
+Nota: Seguir orden de imagen primero y descripción segundo y invertir orden en 
+el html al siguiente proyecto sucesivamente
+
+Colocar en el html cuando imagen tenga la clase flag
+experiencias-area__descripciones--orderPrimero*/
+.experiencias-area__descripciones--orderSegundo {
+    order: 1;
+}
+
+/*Colocar en el html cuando imagen tenga la clase flag
+descripciones-area__imagen--orderSegundo*/
+.experiencias-area__descripciones--orderPrimero {
+    order: 0;
+}
+
+/*Configurando tipografía, fuente en negritas y 
+eliminando margenes*/
+.experiencias-area__proyecto {
+    font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
+    font-weight: 700;
+    margin: 0;
+}
+
+/*Configurando tamaños de fuente y margenes superior
+e inferior de 8px*/
+.experiencias-area__organizacion {
+    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
+    font-weight: 500;
+    margin: 0.5em 0;
+}
+
+/*Configurando container flex para botones con ancho
+de 100%*/
+.experiencias-area__btns {
+    display: flex;
+    width: 100%;
+}
+
 /*Tablets y celulares grandes u horizontales*/
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
     .experiencias-area {
         padding: var(--altura-header-Tablet) 0;
+    }
+
+    /*Ancho: 704px Alto: 384px*/
+    .experiencias-area__experiencia {
+        flex-direction: column;
+    }
+
+    /*Ancho: 100% Alto: 400px*/
+    .experiencias-area__imagen {
+        height: 25em;
+        width: 100%;
+    }
+
+    /*Ancho: 100% Alto: 400px*/
+    .experiencias-area__video {
+        height: 25em;
+        width: 100%;
+    }
+
+    /*Eliminando orden de items*/
+    .experiencias-area__imagen--orderPrimero,
+    .experiencias-area__video--orderPrimero {
+        order: 0;
+    }
+
+    .experiencias-area__imagen--orderSegundo,
+    .experiencias-area__video--orderSegundo {
+        order: 0;
+    }
+
+    /*Ancho: 704px Alto: 384px*/
+    .experiencias-area__descripciones {
+        background-position: center;
+        margin: 0.5em 0 0 0;
+        padding: 0 0 0.5em 0;
+        width: 100%;
+    }
+
+    /*Eliminando orden de items*/
+    .experiencias-area__descripciones--orderSegundo {
+        order: 0;
+    }
+
+    .experiencias-area__descripciones--orderPrimero {
+        order: 0;
+    }
+
+    .experiencias-area__proyecto {
+        font-size: var(--tamañoLetraTablet-parrafosYLinks-dscBienvenida-subtitulosDscImagen);
+    }
+
+    .experiencias-area__organizacion {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
     }
 }
 
@@ -14,5 +172,72 @@
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .experiencias-area {
         padding: var(--altura-header-Celular) 0;
+    }
+
+    /*Ancho: 296px Alto: 144px*/
+    .experiencias-area__experiencia {
+        flex-direction: column;
+    }
+
+    /*Ancho: 100% Alto: 192px*/
+    .experiencias-area__imagen {
+        height: 12em;
+        width: 100%;
+    }
+
+    /*Ancho: 100% Alto: 192px*/
+    .experiencias-area__video {
+        height: 12em;
+        width: 100%;
+    }
+
+    /*Eliminando orden de items*/
+    .experiencias-area__imagen--orderPrimero,
+    .experiencias-area__video--orderPrimero {
+        order: 0;
+    }
+
+    .experiencias-area__imagen--orderSegundo,
+    .experiencias-area__video--orderSegundo {
+        order: 0;
+    }
+
+    /*Anidando media query para dispositivos entre 428px y 767px,
+    para ajustar ancho y alto de imagen*/
+    @media only screen and (min-width: 428px) and (max-width: 767px) {
+        .experiencias-area__imagen {
+            width: 100%;
+            height: 20em;
+        }
+
+        .experiencias-area__video {
+            width: 100%;
+            height: 20em;
+        }
+    }
+
+    /*Ancho: 296px Alto: 144px*/
+    .experiencias-area__descripciones {
+        background-position: center;
+        margin: 0.5em 0 0 0;
+        padding: 0 0 0.5em 0;
+        width: 100%;
+    }
+
+    /*Eliminando orden de items*/
+    .experiencias-area__descripciones--orderSegundo {
+        order: 0;
+    }
+
+    .experiencias-area__descripciones--orderPrimero {
+        order: 0;
+    }
+
+    .experiencias-area__proyecto {
+        font-size: var(--tamañoLetraCelular-subtituloDescripcionImagen);
+    }
+
+    .experiencias-area__organizacion {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
     }
 }

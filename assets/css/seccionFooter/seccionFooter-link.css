@@ -1,7 +1,0 @@
-/*Alto entre links de 16px*/
-.seccion-footer__link {
-    color: #2c2828;
-    line-height: 1.5em;
-    text-decoration: underline;
-    transition: 0.5s;
-}

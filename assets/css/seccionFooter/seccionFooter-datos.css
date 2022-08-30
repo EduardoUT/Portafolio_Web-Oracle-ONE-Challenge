@@ -1,6 +1,0 @@
-/*Condigufando container flex para datos del autor*/
-.seccion-footer__datos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}

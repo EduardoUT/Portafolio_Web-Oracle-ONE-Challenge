@@ -1,11 +1,53 @@
 /*Agregando imagen de fondo a pie de página*/
 .seccion-footer {
-    background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%, 
-    rgba(245, 245, 245, 0.575) 100%),
-    url('../../img/fondo/fondo.png');
+    background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%,
+            rgba(245, 245, 245, 0.575) 100%),
+        url('../../img/fondo/fondo.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+}
+
+/*Configurando container flex y alineando items verticalmente
+con un espacio entre ellos, padding de 32px*/
+.seccion-footer__copyright {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+/*Condigufando container flex para datos del autor*/
+.seccion-footer__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Agregando peso a letra*/
+.seccion-footer__autor {
+    color: #2c2828;
+    font-weight: 500;
+}
+
+/*Condigurando container flex*/
+.seccion-footer__agradecimientos {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Agregando peso a letra*/
+.seccion-footer__parrafo {
+    color: #2c2828;
+    font-weight: 500;
+}
+
+/*Alto entre links de 16px*/
+.seccion-footer__link {
+    color: #2c2828;
+    line-height: 1.5em;
+    text-decoration: underline;
+    transition: 0.5s;
 }
 
 /*Tablets y celulares grandes u horizontales*/
@@ -14,9 +56,9 @@
         /*Posicionando imagen de fondo con las siguientes propiedades:
         - bottom.
         */
-        background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%, 
-        rgba(245, 245, 245, 0.575) 100%),
-        url('../../img/fondo/fondo_mobile.png');
+        background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%,
+                rgba(245, 245, 245, 0.575) 100%),
+            url('../../img/fondo/fondo_mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -25,16 +67,33 @@
 
 /*Celulares verticales*/
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+
     /*Estableciendo fondo para celular*/
     .seccion-footer {
         /*Posicionando imagen de fondo con las siguientes propiedades:
         - bottom.
         */
-        background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%, 
-        rgba(245, 245, 245, 0.575) 100%),
-        url('../../img/fondo/fondo_mobile.png');
+        background-image: linear-gradient(90deg, rgba(245, 245, 245, 0.575) 50%,
+                rgba(245, 245, 245, 0.575) 100%),
+            url('../../img/fondo/fondo_mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+
+    /*Cambiando dirección flex a columna*/
+    .seccion-footer__copyright {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*Centrando texto*/
+    .seccion-footer__autor {
+        text-align: center;
+    }
+
+    /*Cambiando dirección flex a columna*/
+    .seccion-footer__agradecimientos {
+        width: 100%;
     }
 }

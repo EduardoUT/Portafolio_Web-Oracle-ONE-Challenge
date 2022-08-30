@@ -18,7 +18,7 @@ export function habilitarBotonEnviar() {
     const correo = document.getElementById("email");
     const asunto = document.getElementById("asunto");
     const mensaje = document.getElementById("mensaje");
-    const btnEnviar = document.getElementById("btn-enviar");
+    const btnEnviar = document.getElementById("boton-enviar");
     let nombreValido = nombre.validity.valid;
     let correoValido = correo.validity.valid;
     let asuntoValido = asunto.validity.valid;
@@ -26,9 +26,9 @@ export function habilitarBotonEnviar() {
 
     if (nombreValido && correoValido && asuntoValido && mensajeValido) {
         btnEnviar.removeAttribute("disabled");
-        btnEnviar.classList.remove("btn--bloqueado");
+        btnEnviar.classList.remove("boton--bloqueado");
     } else {
         btnEnviar.setAttribute("disabled", "true");
-        btnEnviar.classList.add("btn--bloqueado");
+        btnEnviar.classList.add("boton--bloqueado");
     }
 }

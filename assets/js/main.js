@@ -7,7 +7,7 @@ import validarCampos, { limpiarCampos } from "./formulario/validarCampos.js";
      * @const
      * Contiene el elemento form del DOM.
      */
-    const formularioContacto = document.querySelector(".formulario-container__formulario");
+    const formularioContacto = document.querySelector(".formulario");
 
     menu();
     validarCampos();

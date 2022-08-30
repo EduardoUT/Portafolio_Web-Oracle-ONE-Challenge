@@ -1,0 +1,59 @@
+/*Configurado selector flag para boton normal con color de fondo transparente, 
+color de letra acorde al color de boton primario secundario, borde solido
+con color secundario, padding de 16px y transición*/
+.boton {
+    color: var(--color-botones-primario);
+    cursor: pointer;
+    background: transparent;
+    border: solid 0.1em var(--color-botones-primario);
+    font-size: var(--tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones);
+    font-weight: 400;
+    margin: 0 1em 0 0;
+    padding: 1em;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    width: fit-content;
+}
+
+.boton:hover {
+    background-color: var(--color-botones-primario);
+    color: var(--color-fondo-primario);
+}
+
+/*Configurando selector flag para botón normal con color de fondo secundario,
+color de letra acorde al color de fondo primario, borde secundario, padding de 16px
+y transición*/
+.boton--secundario {
+    color: var(--color-fondo-primario);
+    background: var(--color-botones-primario);
+}
+
+/*Color de fondo transparente y color de letras secundario al
+pasar el puntero
+*/
+.boton--secundario:hover {
+    background-color: transparent;
+    color: var(--color-botones-primario);
+}
+
+/*Selector de cambio para deshabilitar el puntero, con fondo
+y borde gris acorde a la WCAG*/
+.boton--bloqueado[type="submit"] {
+    background: #4e4b4b;
+    border: solid 0.1em #4e4b4b;
+    pointer-events: none;
+}
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .boton {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .boton {
+        font-size: var(--tamañoLetraCelular-parrafosYLinks-descripcionImagen);
+    }
+}

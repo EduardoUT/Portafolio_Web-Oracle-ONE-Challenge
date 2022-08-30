@@ -1,0 +1,92 @@
+/*Asignando propiedad flex a formulario, dirección de items en columna,
+margen superior a etiqueta legend de 1px*/
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Agregando margen inferior de 32px*/
+.formulario__legend {
+    font-weight: 500;
+    margin: 0 0 2em 0;
+}
+
+/*Configurando estilos de input containers*/
+.formulario__campos {
+    background: #ffffff;
+    border: 0 0 1px 0;
+    border-bottom: solid 1px #C8C8C8;
+    border-radius: 4px;
+    display: block;
+    margin: 0 0 40px 0;
+    padding: 0.5em 12px;
+    position: static;
+}
+
+/*Selector flag de input container para email con fuente
+azul y linea solida inferior azul*/
+.formulario__campos--blue {
+    color: var(--color-botones-primario);
+    border-bottom: solid 1px var(--color-botones-primario);
+}
+
+.formulario__campos .formulario__label {
+    color: #5e4f4f;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*Configurando selectores de clase de tipo texto, email y textarea,
+pueden agregarse numéricos*/
+.formulario__campo,
+.formulario__textarea {
+    border: none;
+    color: var(--font-color);
+    display: block;
+    font-weight: 400;
+    height: 20px;
+    margin: 4px 0 0 0;
+    width: 100%;
+}
+
+/*Configurando selectores de clase sin borde al activar el focus*/
+.formulario__campo,
+.formulario__textarea:focus {
+    outline: 0 none;
+}
+
+/*Selector de clase flag para email, al hacer focus el color
+del texto y focus cambiarán a azul*/
+.formulario__campo--bluefocus:focus {
+    color: var(--color-botones-primario);
+}
+
+/*Aplicando altura default a textarea y expansión
+solo vértical*/
+.formulario__textarea {
+    height: 82px;
+    resize: vertical;
+}
+
+/*Se ocultará inicialmente el mensaje*/
+.formulario__span--error {
+    display: none;
+}
+
+/*Selector de cambio para mensajes de error de los elementos span usados en validaciones.js,
+desplegados en flexbox, con color de fondo validado en el  estándar de accesibilidad WCAG 2.0 acorde 
+a la tipografía en color blanco*/
+.formulario__campos--incorrecto .formulario__span--error {
+    align-items: center;
+    background: #b40000;
+    /*Color generado en https://contrastchecker.com/?utm_source=pocket_mylist*/
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    font-size: 0.8em;
+    font-weight: 400;
+    justify-content: flex-start;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em;
+    width: auto;
+}

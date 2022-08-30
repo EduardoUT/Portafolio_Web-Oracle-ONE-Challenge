@@ -60,11 +60,11 @@ export function valida(input) {
     }
 
     if (input.validity.valid) {
-        input.parentElement.classList.remove("formulario-container__inputs--incorrecto");
-        input.parentElement.querySelector(".formulario-container__span--error").innerHTML = "";
+        input.parentElement.classList.remove("formulario__campos--incorrecto");
+        input.parentElement.querySelector(".formulario__span--error").innerHTML = "";
     } else {
-        input.parentElement.classList.add("formulario-container__inputs--incorrecto");
-        input.parentElement.querySelector(".formulario-container__span--error").innerHTML =
+        input.parentElement.classList.add("formulario__campos--incorrecto");
+        input.parentElement.querySelector(".formulario__span--error").innerHTML =
             mostrarMensajeDeError(tipoDeInput, input);
     }
 }

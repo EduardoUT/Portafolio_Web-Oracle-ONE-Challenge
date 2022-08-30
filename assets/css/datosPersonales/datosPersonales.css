@@ -44,7 +44,7 @@ subiendo parrafo un poco*/
 filas, el ancho es heredado de .datos-personales__presentacion*/
 .datos-personales__contactos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
     width: 25.1em;
@@ -83,14 +83,6 @@ filas, el ancho es heredado de .datos-personales__presentacion*/
 
 .datos-personales__icono--linkedin {
     background: url("../../img/iconos/contacto/linkedin.png") no-repeat center / cover;
-}
-
-.datos-personales__icono--instagram {
-    background: url("../../img/iconos/contacto/instagram.png") no-repeat center / cover;
-}
-
-.datos-personales__icono--correo {
-    background: url("../../img/iconos/contacto/correos-electronicos.png") no-repeat center / cover;
 }
 
 .datos-personales__icono--curriculum {
